@@ -4,9 +4,9 @@ import Router from './Router';
 class App extends Component {
   render() {
     return (
-      <section>
+      <div>
         {Router}
-      </section>
+      </div>
     );
   }
 }

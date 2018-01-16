@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 export default class FAQ extends Component {
     constructor(props) {
@@ -9,8 +11,11 @@ export default class FAQ extends Component {
     }
     render() {
         return (
-            <div>
-            </div>
+            <section>
+                <Header />
+
+                <Footer />
+            </section>
         )
     }
 }

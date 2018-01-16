@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from './Components/Home/LandingPage';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import FullStory from './Components/About/FullStory';
 import Contact from './Components/Contact/Contact';
 import FAQ from './Components/FAQ/FAQ';
 import Policies from './Components/Policies/Disclaimers';
@@ -29,23 +30,24 @@ import BlogMain from './Components/Blog/BlogMain';
 //start router
 export default (
     <Switch>
-        <Route exact to="/" component={LandingPage} />
-        <Route to="/home" component={Home} />
-        <Route to="/about" component={About} />
-        <Route to="/contact" component={Contact} />
-        <Route to="/faq" component={FAQ} />
-        <Route to="/disclaimers-policies" component={Policies} />
-        <Route to="/return-policy" component={ReturnPolicy} />
+        <Route exact path="/" component={Home} />
+        <Route path="/home" component={LandingPage} />
+        <Route exact path="/about" component={About} />
+        <Route path="/about/fullstory" component={FullStory} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/disclaimers-policies" component={Policies} />
+        <Route path="/return-policy" component={ReturnPolicy} />
 
-        <Route exact to="/store" component={StoreMain} />
+        <Route exact path="/store" component={StoreMain} />
 
-        <Route to="/store/beanies" component={BeanieMain} />
+        <Route path="/store/beanies" component={BeanieMain} />
 
-        <Route to="/store/t-shirts" component={TShirtMain} />
+        <Route path="/store/t-shirts" component={TShirtMain} />
 
-        <Route to="/store/raglans" component={RaglanMain} />
+        <Route path="/store/raglans" component={RaglanMain} />
 
-        <Route exact to="/blog" component={BlogMain} />
+        <Route exact path="/blog" component={BlogMain} />
 
     </Switch>
 )

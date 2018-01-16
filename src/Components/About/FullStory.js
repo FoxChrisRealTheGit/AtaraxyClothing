@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-export default class BlogMain extends Component {
+import {
+    Container1,
+} from 'react-stylux';
+
+
+
+export default class FullStory extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,7 +19,9 @@ export default class BlogMain extends Component {
         return (
             <section>
                 <Header />
+                <Container1>
 
+                </Container1>
                 <Footer />
             </section>
         )

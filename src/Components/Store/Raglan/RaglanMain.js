@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+import Header from '../../Header/Header';
+import Footer from '../../Footer/Footer';
+
+import {
+    SubNavBar1,
+} from 'react-stylux';
 
 export default class RaglanMain extends Component {
     constructor(props) {
@@ -9,8 +16,15 @@ export default class RaglanMain extends Component {
     }
     render() {
         return (
-            <div>
-            </div>
+            <section>
+                <Header />
+                <SubNavBar1>
+                    <Link to="/store/beanies">Beanies</Link>
+                    <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
+                    <Link to="/store/t-shirts">T-Shirts</Link>
+                </SubNavBar1>
+                <Footer />
+            </section>
         )
     }
 }
