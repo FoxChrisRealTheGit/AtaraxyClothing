@@ -40,12 +40,11 @@ export default class Header extends Component {
                             <Link to="/contact">Contact</Link>
                         </NavBar1>
                         <NavBar1
-
                             navbarWidth="50%">
-                            <Link to="facebook.com"></Link>
-                            <Link to="twitter.com"></Link>
-                            <Link to="instagram.com"></Link>
-                            <Link to="pinterest.com"></Link>
+                            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="http://www.pinterest.com" target="_blank" rel="noopener noreferrer"></a>
                         </NavBar1>
                     </Holder2>
                 </Container1>
