@@ -19,7 +19,7 @@ export default class Footer extends Component {
                     <Holder5>
                         <NavBar1
                             navbarWidth="60%">
-                            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="https://www.facebook.com/ataraxyclothing" target="_blank" rel="noopener noreferrer"></a>
                             <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"></a>
                             <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"></a>
                             <a href="http://www.pinterest.com" target="_blank" rel="noopener noreferrer"></a>

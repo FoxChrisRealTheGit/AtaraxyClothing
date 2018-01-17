@@ -73,7 +73,7 @@ export default class Home extends Component {
                                     {fb}
                                 </TallRectangleImage>
                                 <SecondarySubHeading2>
-                                    <Link to="/store/beanies">Beanies</Link>
+                                    <Link to="/blog">Blog 1</Link>
                                 </SecondarySubHeading2>
                             </Holder5>
                             <Holder5>
@@ -81,7 +81,7 @@ export default class Home extends Component {
                                     {fb}
                                 </TallRectangleImage>
                                 <SecondarySubHeading2>
-                                    <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
+                                    <Link to="/blog">Blog 2</Link>
                                 </SecondarySubHeading2>
                             </Holder5>
                             <Holder5>
@@ -89,7 +89,7 @@ export default class Home extends Component {
                                     {fb}
                                 </TallRectangleImage>
                                 <SecondarySubHeading2>
-                                    <Link to="/store/t-shirts">T-Shirts</Link>
+                                    <Link to="/blog">Blog 3</Link>
                                 </SecondarySubHeading2>
                             </Holder5>
                         </Holder2>

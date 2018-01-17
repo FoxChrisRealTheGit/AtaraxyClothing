@@ -4,8 +4,9 @@ import Footer from '../Footer/Footer';
 
 import {
     Container1,
+    Holder5,
+    Heading2,
 } from 'react-stylux';
-
 
 
 export default class FullStory extends Component {
@@ -20,7 +21,11 @@ export default class FullStory extends Component {
             <section>
                 <Header />
                 <Container1>
-
+                    <Holder5>
+                        <Heading2>
+                            Full Story
+                        </Heading2>
+                    </Holder5>
                 </Container1>
                 <Footer />
             </section>

@@ -6,6 +6,7 @@ import {
     NavBar1,
     Brand1,
     DropDownNav1,
+    Toggler2,
 } from 'react-stylux';
 
 import fb from '../../Images/facebookbanner1.jpg';
@@ -40,11 +41,18 @@ export default class Header extends Component {
                             <Link to="/contact">Contact</Link>
                         </NavBar1>
                         <NavBar1
-                            navbarWidth="50%">
-                            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"></a>
-                            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"></a>
-                            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"></a>
-                            <a href="http://www.pinterest.com" target="_blank" rel="noopener noreferrer"></a>
+                            navbarWidth="70%"
+                            >
+                            <p>Login/Register</p>
+                            <Toggler2
+                                buttonText="Cart"
+                                position="absolute"
+                                padding="5px"
+                                offset="-5"
+                                width="150px"
+                                height="200px">
+                                Your cart is empty...
+                            </Toggler2>
                         </NavBar1>
                     </Holder2>
                 </Container1>
