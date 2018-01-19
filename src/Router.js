@@ -21,6 +21,14 @@ import TShirtMain from './Components/Store/tShirts/TShirtsMain';
 
 //import 3/4 Sleeve Components
 import RaglanMain from './Components/Store/Raglan/RaglanMain';
+//import raglan product views
+import IDontBelieveRag from './Components/Store/Raglan/RaglanProductViews/Other/RaglanPV-IDontBelieve';
+import DopamineRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-DopamineChem';
+import DMTRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-DMTChemical';
+import GenderSmileRag from './Components/Store/Raglan/RaglanProductViews/Gender/RaglanPV-GenderSmileyFace';
+import DontAssumeRag from './Components/Store/Raglan/RaglanProductViews/Gender/RaglanPV-DontAssume';
+import DiscoverRag from './Components/Store/Raglan/RaglanProductViews/Happiness/RaglanPV-DiscoverYourself';
+import BeTheBestYouRag from './Components/Store/Raglan/RaglanProductViews/Happiness/RaglanPV-BeTheBestYou';
 
 //import blog components
 import BlogMain from './Components/Blog/BlogMain';
@@ -45,7 +53,14 @@ export default (
 
         <Route path="/store/t-shirts" component={TShirtMain} />
 
-        <Route path="/store/raglans" component={RaglanMain} />
+        <Route exact path="/store/raglans" component={RaglanMain} />
+        <Route path="/store/raglans/idontbelieve" component={IDontBelieveRag} />
+        <Route path="/store/raglans/dopamine" component={DopamineRag} />
+        <Route path="/store/raglans/dmt" component={DMTRag} />
+        <Route path="/store/raglans/gendersmile" component={GenderSmileRag} />
+        <Route path="/store/raglans/dontassume" component={DontAssumeRag} />
+        <Route path="/store/raglans/discoveryourself" component={DiscoverRag} />
+        <Route path="/store/raglans/bethebestyou" component={BeTheBestYouRag} />
 
         <Route exact path="/blog" component={BlogMain} />
 
