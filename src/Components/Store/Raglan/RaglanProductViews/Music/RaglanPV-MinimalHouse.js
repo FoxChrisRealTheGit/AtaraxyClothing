@@ -14,9 +14,9 @@ import {
     Carousel4,
 } from 'react-stylux';
 
-import IDont from '../../../../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
+import MinimalHouse from '../../../../../Images/raglans/music/minimalhouse/minimal-House_mockup_WhiteBlack.png';
 
-export default class RaglanPVIDontBelieve extends Component {
+export default class RaglanPVIMinimalHouse extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,19 +31,19 @@ export default class RaglanPVIDontBelieve extends Component {
                 <Container1>
                     <Holder6>
                         <SubHeading2>
-                            I Dont Believe - 3/4 Sleeve
+                            Minimal House - 3/4 Sleeve
                         </SubHeading2>
                         <Holder1
                             alignBlock1="flex-end"
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {IDont}
-                                I Dont Believe in Humans 3/4 Sleeve Shirt
+                                {MinimalHouse}
+                                Minimal House 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder9>
                                 <Paragraph3>
-                                    Price
+                                $25.00
                                 </Paragraph3>
                                 <Paragraph2>
                                     Color?

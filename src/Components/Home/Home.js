@@ -13,9 +13,12 @@ import {
     SubHeading1,
     SecondarySubHeading2,
     TallRectangleImage,
+    SquareImage,
 } from 'react-stylux';
 
 import fb from '../../Images/facebookbanner1.jpg';
+
+import IDontBelieve from '../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
 
 export default class Home extends Component {
     constructor(props) {
@@ -35,62 +38,97 @@ export default class Home extends Component {
                                 image={`url(${fb})`}>
                             </Hero1>
                         </Carousel1>
-                        <SubHeading1><Link to="/store">Products</Link></SubHeading1>
+                        <SubHeading1>
+                            Products
+                        </SubHeading1>
                         <Holder2
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
+
                             <Holder5>
-                                <TallRectangleImage>
-                                    {fb}
-                                </TallRectangleImage>
-                                <SecondarySubHeading2>
-                                    <Link to="/store/beanies">Beanies</Link>
-                                </SecondarySubHeading2>
+                                <Link to="/store/raglans">
+                                    <SquareImage
+                                        size="md">
+                                        {IDontBelieve}
+                                    </SquareImage>
+                                </Link>
+                                <Link to="/store/raglans">
+                                    <SecondarySubHeading2>
+                                        3/4 Sleeve Shirts
+                                    </SecondarySubHeading2>
+                                </Link>
                             </Holder5>
                             <Holder5>
-                                <TallRectangleImage>
-                                    {fb}
-                                </TallRectangleImage>
-                                <SecondarySubHeading2>
-                                    <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
-                                </SecondarySubHeading2>
+                                <Link to="/store/t-shirts">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                    </SquareImage>
+                                </Link>
+                                <Link to="/store/t-shirts">
+                                    <SecondarySubHeading2>
+                                        T-Shirts
+                                    </SecondarySubHeading2>
+                                </Link>
                             </Holder5>
                             <Holder5>
-                                <TallRectangleImage>
-                                    {fb}
-                                </TallRectangleImage>
-                                <SecondarySubHeading2>
-                                    <Link to="/store/t-shirts">T-Shirts</Link>
-                                </SecondarySubHeading2>
+                                <Link to="/store/beanies">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                    </SquareImage>
+                                </Link>
+                                <Link to="/store/beanies">
+                                    <SecondarySubHeading2>
+                                        Handmade Beanies
+                                    </SecondarySubHeading2>
+                                </Link>
                             </Holder5>
                         </Holder2>
-                        <SubHeading1><Link to="/blog">Blog</Link></SubHeading1>
+                        <Link to="/blog">
+                            <SubHeading1>Blog</SubHeading1>
+                        </Link>
                         <Holder2
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
                             <Holder5>
-                                <TallRectangleImage>
-                                    {fb}
-                                </TallRectangleImage>
-                                <SecondarySubHeading2>
-                                    <Link to="/blog">Blog 1</Link>
-                                </SecondarySubHeading2>
+                                <Link to="/blog">
+                                    <SquareImage
+                                        size="md">
+                                        {fb}
+                                    </SquareImage>
+                                </Link>
+                                <Link to="/blog">
+                                    <SecondarySubHeading2>
+                                        Blog 1
+                                    </SecondarySubHeading2>
+                                </Link>
                             </Holder5>
                             <Holder5>
-                                <TallRectangleImage>
-                                    {fb}
-                                </TallRectangleImage>
-                                <SecondarySubHeading2>
-                                    <Link to="/blog">Blog 2</Link>
-                                </SecondarySubHeading2>
+                                <Link to="/blog">
+                                    <SquareImage
+                                        size="md">
+                                        {fb}
+                                    </SquareImage>
+                                </Link>
+                                <Link to="/blog">
+                                    <SecondarySubHeading2>
+                                        Blog 2
+                                    </SecondarySubHeading2>
+                                </Link>
                             </Holder5>
                             <Holder5>
-                                <TallRectangleImage>
-                                    {fb}
-                                </TallRectangleImage>
-                                <SecondarySubHeading2>
-                                    <Link to="/blog">Blog 3</Link>
-                                </SecondarySubHeading2>
+                                <Link to="/blog">
+                                    <SquareImage
+                                        size="md">
+                                        {fb}
+                                    </SquareImage>
+                                </Link>
+                                <Link to="/blog">
+                                    <SecondarySubHeading2>
+                                        Blog 3
+                                    </SecondarySubHeading2>
+                                </Link>
                             </Holder5>
                         </Holder2>
                     </Holder8>

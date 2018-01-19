@@ -43,7 +43,7 @@ export default class RaglanPVIDontBelieve extends Component {
                             </SquareImage>
                             <Holder9>
                                 <Paragraph3>
-                                    Price
+                                    $25.00
                                 </Paragraph3>
                                 <Paragraph2>
                                     Color?

@@ -29,6 +29,8 @@ import GenderSmileRag from './Components/Store/Raglan/RaglanProductViews/Gender/
 import DontAssumeRag from './Components/Store/Raglan/RaglanProductViews/Gender/RaglanPV-DontAssume';
 import DiscoverRag from './Components/Store/Raglan/RaglanProductViews/Happiness/RaglanPV-DiscoverYourself';
 import BeTheBestYouRag from './Components/Store/Raglan/RaglanProductViews/Happiness/RaglanPV-BeTheBestYou';
+import MinimalPerfection from './Components/Store/Raglan/RaglanProductViews/Music/RaglanPV-MinimalPerfection';
+import MinimalHouse from './Components/Store/Raglan/RaglanProductViews/Music/RaglanPV-MinimalHouse';
 
 //import blog components
 import BlogMain from './Components/Blog/BlogMain';
@@ -61,6 +63,8 @@ export default (
         <Route path="/store/raglans/dontassume" component={DontAssumeRag} />
         <Route path="/store/raglans/discoveryourself" component={DiscoverRag} />
         <Route path="/store/raglans/bethebestyou" component={BeTheBestYouRag} />
+        <Route path="/store/raglans/minimalperfection" component={MinimalPerfection} />
+        <Route path="/store/raglans/minimalhouse" component={MinimalHouse} />
 
         <Route exact path="/blog" component={BlogMain} />
 

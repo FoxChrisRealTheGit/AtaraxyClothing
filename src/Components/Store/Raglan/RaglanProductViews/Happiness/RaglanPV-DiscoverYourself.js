@@ -16,7 +16,7 @@ import {
 
 import Discover from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';
 
-export default class RaglanPVIDontBelieve extends Component {
+export default class RaglanPVDiscoverYourself extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,7 +43,7 @@ export default class RaglanPVIDontBelieve extends Component {
                             </SquareImage>
                             <Holder9>
                                 <Paragraph3>
-                                    Price
+                                $25.00
                                 </Paragraph3>
                                 <Paragraph2>
                                     Color?
