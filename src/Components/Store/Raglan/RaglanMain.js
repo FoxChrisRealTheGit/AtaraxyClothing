@@ -12,10 +12,10 @@ import {
     Holder2,
     SubNavBar1,
     RectangleImage,
-    Heading2,
+    H22,
     SquareImage,
-    Paragraph2,
-    SecondarySubHeading2,
+    P2,
+    H42,
 } from 'react-stylux';
 
 import sh from "../../../Images/shirtbasic.jpg";
@@ -48,15 +48,15 @@ export default class RaglanMain extends Component {
                             size="lg">
                             {sh}
                         </RectangleImage>
-                        <Heading2>
+                        <H22>
                             3/4 Sleeve Shirts
-                        </Heading2>
+                        </H22>
                         <Holder2>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         Be The Best You
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -68,17 +68,17 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
                                 <Link to="/store/raglans/idontbelieve">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         I Dont Believe
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/idontbelieve">
                                     <SquareImage
@@ -90,17 +90,17 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
                                 <Link to="/store/raglans/gendersmile">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         Gender Smiley Face
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/gendersmile">
                                     <SquareImage
@@ -112,9 +112,9 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
@@ -122,9 +122,9 @@ export default class RaglanMain extends Component {
                         <Holder2>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -136,17 +136,17 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -158,17 +158,17 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -180,9 +180,9 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
@@ -190,9 +190,9 @@ export default class RaglanMain extends Component {
                         <Holder2>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -204,17 +204,17 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -226,17 +226,17 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
                                 <Link to="/store/raglans/bethebestyou">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 </Link>
                                 <Link to="/store/raglans/bethebestyou">
                                     <SquareImage
@@ -248,9 +248,9 @@ export default class RaglanMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $25
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>

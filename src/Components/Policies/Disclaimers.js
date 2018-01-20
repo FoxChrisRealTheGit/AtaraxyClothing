@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import {
     Container1,
     Holder5,
-    Heading2,
+    H22,
 } from 'react-stylux';
 
 export default class Disclaimers extends Component {
@@ -21,9 +21,9 @@ export default class Disclaimers extends Component {
                 <Header />
                 <Container1>
                     <Holder5>
-                        <Heading2>
+                        <H22>
                             Disclaimers
-                        </Heading2>
+                        </H22>
                     </Holder5>
                 </Container1>
                 <Footer />

@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import {
     Container1,
     Holder5,
-    Heading2,
+    H22,
 } from 'react-stylux';
 
 
@@ -22,9 +22,9 @@ export default class FullStory extends Component {
                 <Header />
                 <Container1>
                     <Holder5>
-                        <Heading2>
+                        <H22>
                             Full Story
-                        </Heading2>
+                        </H22>
                     </Holder5>
                 </Container1>
                 <Footer />

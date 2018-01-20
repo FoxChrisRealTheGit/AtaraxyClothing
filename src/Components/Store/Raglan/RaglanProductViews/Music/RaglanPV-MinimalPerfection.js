@@ -6,11 +6,11 @@ import {
     Holder1,
     Holder6,
     Holder9,
-    SubHeading2,
+    H32,
     SquareImage,
-    Paragraph3,
-    Paragraph2,
-    Paragraph4,
+    P3,
+    P2,
+    P4,
     Carousel4,
 } from 'react-stylux';
 
@@ -30,9 +30,9 @@ export default class RaglanPVMinimalPerfection extends Component {
                 <Header />
                 <Container1>
                     <Holder6>
-                        <SubHeading2>
+                        <H32>
                             Minimal Perfection - 3/4 Sleeve
-                        </SubHeading2>
+                        </H32>
                         <Holder1
                             alignBlock1="flex-end"
                             alignBlock2="flex-start">
@@ -42,21 +42,21 @@ export default class RaglanPVMinimalPerfection extends Component {
                                 Minimal Perfection 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder9>
-                                <Paragraph3>
+                                <P3>
                                 $25.00
-                                </Paragraph3>
-                                <Paragraph2>
+                                </P3>
+                                <P2>
                                     Color?
-                                </Paragraph2>
-                                <Paragraph2>
+                                </P2>
+                                <P2>
                                     Size?
-                                </Paragraph2>
-                                <Paragraph2>
+                                </P2>
+                                <P2>
                                     Prop?
-                                </Paragraph2>
-                                <Paragraph4>
+                                </P2>
+                                <P4>
                                     Product decription
-                                </Paragraph4>
+                                </P4>
                                 <button>Add To Cart</button>
                             </Holder9>
                         </Holder1>

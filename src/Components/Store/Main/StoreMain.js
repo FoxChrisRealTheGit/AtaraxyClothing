@@ -10,9 +10,9 @@ import {
     Holder5,
     Holder6,
     Holder11,
-    SecondarySubHeading2,
-    Paragraph1,
-    Paragraph2,
+    H42,
+    P1,
+    P2,
     Carousel4,
     TallRectangleImage,
     SquareImage,
@@ -46,24 +46,24 @@ export default class StoreMain extends Component {
                 <Header />
                 <Container1>
                     <Holder11>
-                        <SecondarySubHeading2>
+                        <H42>
                             Featured Products
-                        </SecondarySubHeading2>
+                        </H42>
                         <Carousel4>
                         </Carousel4>
                         <Link to="/store/raglans">
-                            <SecondarySubHeading2
+                            <H42
                                 margin="70px 0 30px 0">
                                 3/4 Sleeve Shirts
-                            </SecondarySubHeading2>
+                            </H42>
                         </Link>
                         <Holder5>
                             <Holder3>
                                 <Holder6>
                                     <Link to="/store/raglans/idontbelieve">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             I Don't Believe
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/idontbelieve">
                                         <SquareImage
@@ -75,17 +75,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $25
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/raglans/bethebestyou">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Be The Best You
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/bethebestyou">
                                         <SquareImage
@@ -97,17 +97,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $25
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/raglans/bethebestyou">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Minimal Perfection
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/bethebestyou">
                                         <SquareImage
@@ -119,17 +119,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $25
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/raglans/gendersmile">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Gender Smiley Face
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/gendersmile">
                                         <SquareImage
@@ -141,26 +141,26 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $25
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                             </Holder3>
-                            <Paragraph1><Link to="/store/raglans">Shop 3/4 Sleeve Shirts...</Link></Paragraph1>
+                            <P1><Link to="/store/raglans">Shop 3/4 Sleeve Shirts...</Link></P1>
                         </Holder5>
-                        <SecondarySubHeading2
+                        <H42
                             margin="70px 0 30px 0">
                             T-Shirts
-                        </SecondarySubHeading2>
+                        </H42>
                         <Holder5>
                             <Holder3>
                                 <Holder6>
                                     <Link to="/store/raglans/bethebestyou">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             t-shirt Name
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/bethebestyou">
                                         <SquareImage
@@ -172,17 +172,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $22
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/raglans/bethebestyou">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             T-shirt Name
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/bethebestyou">
                                         <SquareImage
@@ -194,17 +194,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $22
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/raglans/bethebestyou">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             T-shirt Name
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/bethebestyou">
                                         <SquareImage
@@ -216,17 +216,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $22
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/raglans/bethebestyou">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             T-shirt Name
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/raglans/bethebestyou">
                                         <SquareImage
@@ -238,28 +238,28 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $22
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                             </Holder3>
-                            <Paragraph1><Link to="/store/t-shirts">Shop T-Shirts...</Link></Paragraph1>
+                            <P1><Link to="/store/t-shirts">Shop T-Shirts...</Link></P1>
                         </Holder5>
                         <Link to="/store/beanies">
-                            <SecondarySubHeading2
+                            <H42
                                 margin="70px 0 30px 0">
                                 Handmade Beanies
-                            </SecondarySubHeading2>
+                            </H42>
                         </Link>
                         <Holder5>
                             <Holder3>
                                 <Holder6>
                                     <Link to="/store/beanies">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Colorado Flag Beanie
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/beanies">
                                         <SquareImage
@@ -271,17 +271,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $30
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/beanies">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Black Beanie
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/beanies">
                                         <SquareImage
@@ -293,17 +293,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $30
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/beanies">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Home Team Three Beanie
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/beanies">
                                         <SquareImage
@@ -315,17 +315,17 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $30
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <Link to="/store/beanies">
-                                        <SecondarySubHeading2>
+                                        <H42>
                                             Agender Flag Beanie
-                                        </SecondarySubHeading2>
+                                        </H42>
                                     </Link>
                                     <Link to="/store/beanies">
                                         <SquareImage
@@ -337,14 +337,14 @@ export default class StoreMain extends Component {
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
-                                        <Paragraph2>
+                                        <P2>
                                             $30
-                                        </Paragraph2>
+                                        </P2>
                                         <button disabled="true">add to cart</button>
                                     </Holder1>
                                 </Holder6>
                             </Holder3>
-                            <Paragraph1><Link to="/store/beanies">Shop Beanies...</Link></Paragraph1>
+                            <P1><Link to="/store/beanies">Shop Beanies...</Link></P1>
                         </Holder5>
                     </Holder11>
                 </Container1>

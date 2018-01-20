@@ -10,8 +10,8 @@ import {
     Holder8,
     Carousel1,
     Hero1,
-    SubHeading1,
-    SecondarySubHeading2,
+    H31,
+    H42,
     TallRectangleImage,
     SquareImage,
 } from 'react-stylux';
@@ -38,9 +38,9 @@ export default class Home extends Component {
                                 image={`url(${fb})`}>
                             </Hero1>
                         </Carousel1>
-                        <SubHeading1>
+                        <H31>
                             Products
-                        </SubHeading1>
+                        </H31>
                         <Holder2
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
@@ -53,9 +53,9 @@ export default class Home extends Component {
                                     </SquareImage>
                                 </Link>
                                 <Link to="/store/raglans">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         3/4 Sleeve Shirts
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                             </Holder5>
                             <Holder5>
@@ -66,9 +66,9 @@ export default class Home extends Component {
                                     </SquareImage>
                                 </Link>
                                 <Link to="/store/t-shirts">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         T-Shirts
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                             </Holder5>
                             <Holder5>
@@ -79,14 +79,14 @@ export default class Home extends Component {
                                     </SquareImage>
                                 </Link>
                                 <Link to="/store/beanies">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         Handmade Beanies
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                             </Holder5>
                         </Holder2>
                         <Link to="/blog">
-                            <SubHeading1>Blog</SubHeading1>
+                            <H31>Blog</H31>
                         </Link>
                         <Holder2
                             alignBlock1="flex-end"
@@ -99,9 +99,9 @@ export default class Home extends Component {
                                     </SquareImage>
                                 </Link>
                                 <Link to="/blog">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         Blog 1
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                             </Holder5>
                             <Holder5>
@@ -112,9 +112,9 @@ export default class Home extends Component {
                                     </SquareImage>
                                 </Link>
                                 <Link to="/blog">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         Blog 2
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                             </Holder5>
                             <Holder5>
@@ -125,9 +125,9 @@ export default class Home extends Component {
                                     </SquareImage>
                                 </Link>
                                 <Link to="/blog">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         Blog 3
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                             </Holder5>
                         </Holder2>

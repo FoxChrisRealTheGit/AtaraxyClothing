@@ -14,9 +14,9 @@ import {
     SubNavBar1,
     RectangleImage,
     SquareImage,
-    Heading2,
-    SecondarySubHeading2,
-    Paragraph2,
+    H22,
+    H42,
+    P2,
 } from 'react-stylux';
 
 import bp from '../../../Images/SlouchyInFrontOfFlag.jpg';
@@ -43,15 +43,15 @@ export default class BeaniesMain extends Component {
                             size="lg">
                             {bp}
                         </RectangleImage>
-                        <Heading2>
+                        <H22>
                             Handmade Beanies
-                        </Heading2>
+                        </H22>
                         <Holder2>
                             <Holder6>
                                 <Link to="/store/beanies">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         beanie name
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                                 <Link to="/store/beanies">
                                     <SquareImage
@@ -63,16 +63,16 @@ export default class BeaniesMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $30
-                                    </Paragraph2>
+                                    </P2>
                                     <button disabled="true">add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     beanie name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -81,16 +81,16 @@ export default class BeaniesMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $30
-                                    </Paragraph2>
+                                    </P2>
                                     <button disabled="true">add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     beanie name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -99,18 +99,18 @@ export default class BeaniesMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $30
-                                    </Paragraph2>
+                                    </P2>
                                     <button disabled="true">add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     beanie name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -119,16 +119,16 @@ export default class BeaniesMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $30
-                                    </Paragraph2>
+                                    </P2>
                                     <button disabled="true">add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     beanie name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -137,16 +137,16 @@ export default class BeaniesMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $30
-                                    </Paragraph2>
+                                    </P2>
                                     <button disabled="true">add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     beanie name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -155,9 +155,9 @@ export default class BeaniesMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $30
-                                    </Paragraph2>
+                                    </P2>
                                     <button disabled="true">add to cart</button>
                                 </Holder1>
                             </Holder6>

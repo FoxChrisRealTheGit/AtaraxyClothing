@@ -11,11 +11,11 @@ import {
     Holder6,
     Holder7,
     SubNavBar1,
-    Heading2,
+    H22,
     RectangleImage,
     SquareImage,
-    Paragraph2,
-    SecondarySubHeading2,
+    P2,
+    H42,
 } from 'react-stylux';
 
 export default class TShirtsMain extends Component {
@@ -40,15 +40,15 @@ export default class TShirtsMain extends Component {
                             size="lg">
                             {}
                         </RectangleImage>
-                        <Heading2>
+                        <H22>
                             T-Shirts
-                        </Heading2>
+                        </H22>
                         <Holder2>
                             <Holder6>
                                 <Link to="/store/tshirts">
-                                    <SecondarySubHeading2>
+                                    <H42>
                                         shirt name
-                                    </SecondarySubHeading2>
+                                    </H42>
                                 </Link>
                                 <Link to="">
                                     <SquareImage
@@ -60,16 +60,16 @@ export default class TShirtsMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $22
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -78,16 +78,16 @@ export default class TShirtsMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $22
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -96,18 +96,18 @@ export default class TShirtsMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $22
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -116,16 +116,16 @@ export default class TShirtsMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $22
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -134,16 +134,16 @@ export default class TShirtsMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $22
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <SecondarySubHeading2>
+                                <H42>
                                     shirt name
-                                </SecondarySubHeading2>
+                                </H42>
                                 <SquareImage
                                     size="md">
                                     {}
@@ -152,9 +152,9 @@ export default class TShirtsMain extends Component {
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
-                                    <Paragraph2>
+                                    <P2>
                                         $22
-                                    </Paragraph2>
+                                    </P2>
                                     <button>add to cart</button>
                                 </Holder1>
                             </Holder6>

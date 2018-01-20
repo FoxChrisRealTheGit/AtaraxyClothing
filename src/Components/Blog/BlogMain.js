@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import {
     Container1,
     Holder5,
-    Heading2,
+    H22,
 } from 'react-stylux';
 
 
