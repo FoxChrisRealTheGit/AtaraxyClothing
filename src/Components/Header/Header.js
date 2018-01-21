@@ -26,13 +26,14 @@ export default class Header extends Component {
                         block1="0.5"
                         alignBlock1="flex-end"
                         block2="3">
-                        <Brand1 >
+                        <Brand1>
                             {fb}
                         </Brand1>
                         <NavBar1>
                             <Link to="/">Home</Link>
                             <Link to="/about">About</Link>
-                            <DropDownNav1>
+                            <DropDownNav1
+                                background="rgba(255, 255, 255, 0.9)">
                                 <Link to="/store">Store</Link>
                                 <Link to="/store/beanies">Beanies</Link>
                                 <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
