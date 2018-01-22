@@ -12,6 +12,7 @@ import {
     P2,
     P4,
     Carousel4,
+    Modul1,
 } from 'react-stylux';
 
 import Discover from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';
@@ -31,7 +32,7 @@ export default class RaglanPVDiscoverYourself extends Component {
                 <Container1>
                     <Holder6>
                         <H32>
-                           Discover Yourself - 3/4 Sleeve
+                            Discover Yourself - 3/4 Sleeve
                         </H32>
                         <Holder1
                             alignBlock1="flex-end"
@@ -43,7 +44,7 @@ export default class RaglanPVDiscoverYourself extends Component {
                             </SquareImage>
                             <Holder9>
                                 <P3>
-                                $25.00
+                                    $25.00
                                 </P3>
                                 <P2>
                                     Color?
@@ -51,9 +52,10 @@ export default class RaglanPVDiscoverYourself extends Component {
                                 <P2>
                                     Size?
                                 </P2>
-                                <P2>
-                                    Prop?
-                                </P2>
+                                <Modul1
+                                    buttonText="Size Chart">
+                                    Size Chart should be here
+                                </Modul1>
                                 <P4>
                                     Product decription
                                 </P4>

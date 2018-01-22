@@ -12,6 +12,7 @@ import {
     P2,
     P4,
     Carousel4,
+    Modul1,
 } from 'react-stylux';
 
 import IDont from '../../../../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
@@ -51,9 +52,10 @@ export default class RaglanPVIDontBelieve extends Component {
                                 <P2>
                                     Size?
                                 </P2>
-                                <P2>
-                                    Prop?
-                                </P2>
+                                <Modul1
+                                    buttonText="Size Chart">
+                                    Size Chart should be here
+                                </Modul1>
                                 <P4>
                                     Product decription
                                 </P4>

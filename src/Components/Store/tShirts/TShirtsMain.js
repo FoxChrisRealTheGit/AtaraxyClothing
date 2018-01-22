@@ -9,7 +9,7 @@ import {
     Holder2,
     Holder5,
     Holder6,
-    Holder7,
+    Holder9,
     SubNavBar1,
     H22,
     RectangleImage,
@@ -35,7 +35,7 @@ export default class TShirtsMain extends Component {
                     <Link to="/store/beanies">Beanies</Link>
                 </SubNavBar1>
                 <Container1>
-                    <Holder7>
+                    <Holder9>
                         <RectangleImage
                             size="lg">
                             {}
@@ -43,6 +43,134 @@ export default class TShirtsMain extends Component {
                         <H22>
                             T-Shirts
                         </H22>
+                        <Holder2>
+                            <Holder6>
+                                <Link to="/store/t-shirts/idontbelieve">
+                                    <H42>
+                                        I Don't Believe
+                                    </H42>
+                                </Link>
+                                <Link to="/store/t-shirts/idontbelieve">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $22
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/t-shirts/bethebestyou">
+                                    <H42>
+                                        Be The Best You
+                                </H42>
+                                </Link>
+                                <Link to="/store/t-shirts/bethebestyou">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $22
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/t-shirts/gendersmile">
+                                    <H42>
+                                        Gender Smile
+                                    </H42>
+                                </Link>
+                                <Link to="/store/t-shirts/gendersmile">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $22
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                        </Holder2>
+                        <Holder2>
+                            <Holder6>
+                                <Link to="/store/t-shirts/serotonin">
+                                    <H42>
+                                        Serotonin Chemical Structure
+                                </H42>
+                                </Link>
+                                <Link to="/store/t-shirts/serotonin">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $22
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <H42>
+                                    shirt name
+                                </H42>
+                                <SquareImage
+                                    size="md">
+                                    {}
+
+                                </SquareImage>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $22
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <H42>
+                                    shirt name
+                                </H42>
+                                <SquareImage
+                                    size="md">
+                                    {}
+
+                                </SquareImage>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $22
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                        </Holder2>
                         <Holder2>
                             <Holder6>
                                 <Link to="/store/tshirts">
@@ -159,7 +287,7 @@ export default class TShirtsMain extends Component {
                                 </Holder1>
                             </Holder6>
                         </Holder2>
-                    </Holder7>
+                    </Holder9>
                 </Container1>
                 <Footer />
             </section>

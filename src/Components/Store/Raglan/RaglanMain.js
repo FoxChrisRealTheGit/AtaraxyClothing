@@ -8,7 +8,7 @@ import {
     Holder1,
     Holder5,
     Holder6,
-    Holder8,
+    Holder11,
     Holder2,
     SubNavBar1,
     RectangleImage,
@@ -43,7 +43,7 @@ export default class RaglanMain extends Component {
                     <Link to="/store/beanies">Beanies</Link>
                 </SubNavBar1>
                 <Container1>
-                    <Holder8>
+                    <Holder11>
                         <RectangleImage
                             size="lg">
                             {sh}
@@ -100,7 +100,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/gendersmile">
                                     <H42>
                                         Gender Smiley Face
-                                </H42>
+                                    </H42>
                                 </Link>
                                 <Link to="/store/raglans/gendersmile">
                                     <SquareImage
@@ -121,12 +121,12 @@ export default class RaglanMain extends Component {
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/serotonin">
                                     <H42>
-                                        shirt name
-                                </H42>
+                                        Serotonin Chemical Structure
+                                    </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/serotonin">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -143,12 +143,12 @@ export default class RaglanMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/minimalperfection">
                                     <H42>
-                                        shirt name
-                                </H42>
+                                        Minimal Perfection
+                                    </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/minimalperfection">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -165,12 +165,12 @@ export default class RaglanMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/dopamine">
                                     <H42>
-                                        shirt name
-                                </H42>
+                                        Dopamine Chemical Structure
+                                    </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/dopamine">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -189,12 +189,12 @@ export default class RaglanMain extends Component {
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/minimalhouse">
                                     <H42>
-                                        shirt name
-                                </H42>
+                                        Minimal House
+                                    </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/minimalhouse">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -211,12 +211,12 @@ export default class RaglanMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/discoveryourself">
                                     <H42>
-                                        shirt name
-                                </H42>
+                                        Discover Yourself
+                                    </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/discoveryourself">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -233,12 +233,12 @@ export default class RaglanMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/worldsstudent">
                                     <H42>
-                                        shirt name
-                                </H42>
+                                        World's Okayest Student
+                                    </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/worldsstudent">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -255,7 +255,211 @@ export default class RaglanMain extends Component {
                                 </Holder1>
                             </Holder6>
                         </Holder2>
-                    </Holder8>
+                        <Holder2>
+                            <Holder6>
+                                <Link to="/store/raglans/occupymind">
+                                    <H42>
+                                        Occupy Your Mind
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/occupymind">
+                                    <SquareImage
+                                        size="md">
+                                        {BeBestYouRag}
+                                        a 3/4 sleeve
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/raglans/ketamine">
+                                    <H42>
+                                        Ketamine Chemical Structure
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/ketamine">
+                                    <SquareImage
+                                        size="md">
+                                        {IDontBelieve}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/raglans/lsd">
+                                    <H42>
+                                        LSD Chemical Structure
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/lsd">
+                                    <SquareImage
+                                        size="md">
+                                        {GenderSmile}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                        </Holder2>
+                        <Holder2>
+                            <Holder6>
+                                <Link to="/store/raglans/psilocybn">
+                                    <H42>
+                                        Psilocybn Chemical Structure
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/psilocybn">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/raglans/dmt">
+                                    <H42>
+                                        DMT Chemical Structure
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/dmt">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/raglans/mdma">
+                                    <H42>
+                                        MDMA Chemical Structure
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/mdma">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                        </Holder2>
+                        <Holder2>
+                            <Holder6>
+                                <Link to="/store/raglans/thc">
+                                    <H42>
+                                        THC Chemical Structure
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/thc">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/raglans/bethebestyou">
+                                    <H42>
+                                        ??
+                                    </H42>
+                                </Link>
+                                <Link to="/store/raglans/bethebestyou">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                            <Holder6>
+                                <Link to="/store/raglans/bethebestyou">
+                                    <H42>
+                                        Don't Assume
+                                </H42>
+                                </Link>
+                                <Link to="/store/raglans/dontassume">
+                                    <SquareImage
+                                        size="md">
+                                        {}
+                                        a 3/4 sleeve shirt
+                                    </SquareImage>
+                                </Link>
+                                <Holder1
+                                    alignBlock1="flex-end"
+                                    alignBlock2="flex-start">
+                                    <P2>
+                                        $25
+                                    </P2>
+                                    <button>add to cart</button>
+                                </Holder1>
+                            </Holder6>
+                        </Holder2>
+                    </Holder11>
                 </Container1>
                 <Footer />
             </section>

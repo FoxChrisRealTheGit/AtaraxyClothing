@@ -12,6 +12,7 @@ import {
     P2,
     P4,
     Carousel4,
+    Modul1,
 } from 'react-stylux';
 
 import MinimalPerfection from '../../../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';
@@ -43,7 +44,7 @@ export default class RaglanPVMinimalPerfection extends Component {
                             </SquareImage>
                             <Holder9>
                                 <P3>
-                                $25.00
+                                    $25.00
                                 </P3>
                                 <P2>
                                     Color?
@@ -51,9 +52,10 @@ export default class RaglanPVMinimalPerfection extends Component {
                                 <P2>
                                     Size?
                                 </P2>
-                                <P2>
-                                    Prop?
-                                </P2>
+                                <Modul1
+                                    buttonText="Size Chart">
+                                    Size Chart should be here
+                                </Modul1>
                                 <P4>
                                     Product decription
                                 </P4>

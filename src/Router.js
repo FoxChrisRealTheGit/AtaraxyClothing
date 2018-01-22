@@ -18,19 +18,38 @@ import BeanieMain from './Components/Store/Beanies/BeaniesMain';
 
 //import TShirt Components
 import TShirtMain from './Components/Store/tShirts/TShirtsMain';
-
+//import Tshirt product Views
+import IDontBelieveShirt from './Components/Store/tShirts/TShirtsProductViews/Other/TShirtPV-IDontBelieve';
+import DMTShirt from './Components/Store/tShirts/TShirtsProductViews/Drug/TShirtPV-DMTChem';
+import DopamineShirt from './Components/Store/tShirts/TShirtsProductViews/Drug/TShirtPV-DopamineChem';
+import KetamineShirt from './Components/Store/tShirts/TShirtsProductViews/Drug/TShirtPv-KetamineChem';
+import LSDShirt from './Components/Store/tShirts/TShirtsProductViews/Drug/TShirtPV-LSDChem';
+import MDMAShirt from './Components/Store/tShirts/TShirtsProductViews/Drug/TShirtPV-MDMAChem';
+import SerotoninShirt from './Components/Store/tShirts/TShirtsProductViews/Drug/TShirtPV-Serotonin';
+import DontAssumeShirt from './Components/Store/tShirts/TShirtsProductViews/Gender/TShirtPV-DontAssume';
+import GenderSmileShirt from './Components/Store/tShirts/TShirtsProductViews/Gender/TShirtPV-GenderSmile';
+import BeTheBestShirt from './Components/Store/tShirts/TShirtsProductViews/Happiness/TShirtPV-BeTheBest';
 //import 3/4 Sleeve Components
 import RaglanMain from './Components/Store/Raglan/RaglanMain';
 //import raglan product views
 import IDontBelieveRag from './Components/Store/Raglan/RaglanProductViews/Other/RaglanPV-IDontBelieve';
+import OccupyMindRag from './Components/Store/Raglan/RaglanProductViews/Other/RaglanPV-OccupyMind';
+import WorldsPoetRag from './Components/Store/Raglan/RaglanProductViews/Other/RaglanPV-WorldsOkayestPoet';
+import WorldsStudentRag from './Components/Store/Raglan/RaglanProductViews/Other/RaglanPV-WorldsOkayestStudent';
 import DopamineRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-DopamineChem';
 import DMTRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-DMTChemical';
+import KetamineRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-KetamineChem';
+import LSDRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-LSDChem';
+import MDMARag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-MDMAChem';
+import PsilocybnRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-Psilocybn';
+import SerotoninRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-SerotoninChem';
+import THCRag from './Components/Store/Raglan/RaglanProductViews/Drug/RaglanPV-THCChem';
 import GenderSmileRag from './Components/Store/Raglan/RaglanProductViews/Gender/RaglanPV-GenderSmileyFace';
 import DontAssumeRag from './Components/Store/Raglan/RaglanProductViews/Gender/RaglanPV-DontAssume';
 import DiscoverRag from './Components/Store/Raglan/RaglanProductViews/Happiness/RaglanPV-DiscoverYourself';
 import BeTheBestYouRag from './Components/Store/Raglan/RaglanProductViews/Happiness/RaglanPV-BeTheBestYou';
-import MinimalPerfection from './Components/Store/Raglan/RaglanProductViews/Music/RaglanPV-MinimalPerfection';
-import MinimalHouse from './Components/Store/Raglan/RaglanProductViews/Music/RaglanPV-MinimalHouse';
+import MinimalPerfectionRag from './Components/Store/Raglan/RaglanProductViews/Music/RaglanPV-MinimalPerfection';
+import MinimalHouseRag from './Components/Store/Raglan/RaglanProductViews/Music/RaglanPV-MinimalHouse';
 
 //import blog components
 import BlogMain from './Components/Blog/BlogMain';
@@ -53,18 +72,37 @@ export default (
 
         <Route path="/store/beanies" component={BeanieMain} />
 
-        <Route path="/store/t-shirts" component={TShirtMain} />
+        <Route exact path="/store/t-shirts" component={TShirtMain} />
+        <Route path="/store/t-shirts/idontbelieve" component={IDontBelieveShirt} />
+        <Route path="/store/t-shirts/bethebestyou" component={BeTheBestShirt} />
+        <Route path="/store/t-shirts/dontassume" component={DontAssumeShirt} />
+        <Route path="/store/t-shirts/gendersmile" component={GenderSmileShirt} />
+        <Route path="/store/t-shirts/serotonin" component={SerotoninShirt} />
+        <Route path="/store/t-shirts/mdma" component={MDMAShirt} />
+        <Route path="/store/t-shirts/lsd" component={LSDShirt} />
+        <Route path="/store/t-shirts/ketamine" component={KetamineShirt} />
+        <Route path="/store/t-shirts/dopamine" component={DopamineShirt} />
+        <Route path="/store/t-shirts/dmt" component={DMTShirt} />
 
         <Route exact path="/store/raglans" component={RaglanMain} />
         <Route path="/store/raglans/idontbelieve" component={IDontBelieveRag} />
+        <Route path="/store/raglans/occupymind" component={OccupyMindRag} />
+        <Route path="/store/raglans/worldspoet" component={WorldsPoetRag} />
+        <Route path="/store/raglans/worldsstudent" component={WorldsStudentRag} />
         <Route path="/store/raglans/dopamine" component={DopamineRag} />
         <Route path="/store/raglans/dmt" component={DMTRag} />
+        <Route path="/store/raglans/ketamine" component={KetamineRag} />
+        <Route path="/store/raglans/lsd" component={LSDRag} />
+        <Route path="/store/raglans/mdma" component={MDMARag} />
+        <Route path="/store/raglans/psilocybn" component={PsilocybnRag} />
+        <Route path="/store/raglans/serotonin" component={SerotoninRag} />
+        <Route path="/store/raglans/thc" component={THCRag} />
         <Route path="/store/raglans/gendersmile" component={GenderSmileRag} />
         <Route path="/store/raglans/dontassume" component={DontAssumeRag} />
         <Route path="/store/raglans/discoveryourself" component={DiscoverRag} />
         <Route path="/store/raglans/bethebestyou" component={BeTheBestYouRag} />
-        <Route path="/store/raglans/minimalperfection" component={MinimalPerfection} />
-        <Route path="/store/raglans/minimalhouse" component={MinimalHouse} />
+        <Route path="/store/raglans/minimalperfection" component={MinimalPerfectionRag} />
+        <Route path="/store/raglans/minimalhouse" component={MinimalHouseRag} />
 
         <Route exact path="/blog" component={BlogMain} />
 
