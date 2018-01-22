@@ -24,6 +24,20 @@ import sh from "../../../Images/shirtbasic.jpg";
 import BeBestYouRag from '../../../Images/raglans/happiness/beTheBestYou/BeTheBestYou_whiteandBlack_mockup_WhiteBlack.png';
 import IDontBelieve from '../../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
 import GenderSmile from '../../../Images/raglans/gender/gendersmilyface/GenderSmileyFace_mockup_WhiteBlack.png';
+import SerotoninWhite from '../../../Images/raglans/drug/serotonin/Serotonin-Chemical-Structure_mockup_WhiteBlack.png';
+import MinimalPerfectionWhite from '../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';
+import DopamineWhite from '../../../Images/raglans/drug/dopamine/Dopamine-Chemical-Structure_mockup_Heather-BlackBlack.png';
+import MinimalHouseWhite from '../../../Images/raglans/music/minimalhouse/minimal-House_mockup_WhiteBlack.png';
+import Discover from '../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';
+import StudentWhite from '../../../Images/raglans/other/worldsOkayestStudent/Worlds-Okayest-Student_mockup_WhiteBlack.png';
+import OccupyWhite from '../../../Images/raglans/other/occupy/OccupyMind_mockup_WhiteBlack.png';
+import KetamineWhite from '../../../Images/raglans/drug/ketamine/Ketamine-Chemical-Structure_mockup_WhiteBlack.png';
+import LSDWhite from '../../../Images/raglans/drug/lsd/LSDChemicalStructure_mockup_WhiteBlack.png';
+import PsilocybnWhite from '../../../Images/raglans/drug/psilocybn/psilocybn-Chemical-Structure_mockup_WhiteBlack.png';
+import DMT from '../../../Images/raglans/drug/dmtChemical/DMTChemicalStructure_mockup_Heather-BlackBlack.png';
+import MDMAWhite from '../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_WhiteBlack.png';
+import THCWhite from '../../../Images/raglans/drug/thc/THC_mockup_WhiteBlack.png';
+import DontAssume from '../../../Images/raglans/gender/dontassume/DontAssumeBlack_mockup_WhiteBlack.png';
 //import from '';
 
 export default class RaglanMain extends Component {
@@ -129,7 +143,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/serotonin">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {SerotoninWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -151,7 +165,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/minimalperfection">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {MinimalPerfectionWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -173,7 +187,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/dopamine">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {DopamineWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -197,7 +211,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/minimalhouse">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {MinimalHouseWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -219,7 +233,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/discoveryourself">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {Discover}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -241,7 +255,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/worldsstudent">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {StudentWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -265,7 +279,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/occupymind">
                                     <SquareImage
                                         size="md">
-                                        {BeBestYouRag}
+                                        {OccupyWhite}
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </Link>
@@ -287,7 +301,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/ketamine">
                                     <SquareImage
                                         size="md">
-                                        {IDontBelieve}
+                                        {KetamineWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -309,7 +323,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/lsd">
                                     <SquareImage
                                         size="md">
-                                        {GenderSmile}
+                                        {LSDWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -333,7 +347,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/psilocybn">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {PsilocybnWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -355,7 +369,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/dmt">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {DMT}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -377,7 +391,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/mdma">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {MDMAWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -401,7 +415,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/thc">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {THCWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -445,7 +459,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/dontassume">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {DontAssume}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>

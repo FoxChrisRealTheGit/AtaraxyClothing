@@ -15,7 +15,7 @@ import {
     Modul1,
 } from 'react-stylux';
 
-import MinimalHouse from '../../../../../Images/raglans/music/minimalhouse/minimal-House_mockup_WhiteBlack.png';
+import MinimalHouseWhite from '../../../../../Images/raglans/music/minimalhouse/minimal-House_mockup_WhiteBlack.png';
 
 export default class RaglanPVIMinimalHouse extends Component {
     constructor(props) {
@@ -39,7 +39,7 @@ export default class RaglanPVIMinimalHouse extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {MinimalHouse}
+                                {MinimalHouseWhite}
                                 Minimal House 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder9>

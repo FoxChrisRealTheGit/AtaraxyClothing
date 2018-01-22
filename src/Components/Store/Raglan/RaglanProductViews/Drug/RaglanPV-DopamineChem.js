@@ -15,7 +15,7 @@ import {
     Modul1,
 } from 'react-stylux';
 
-import Dopamine from '../../../../../Images/raglans/drug/dopamine/Dopamine-Chemical-Structure_mockup_Heather-BlackBlack.png';
+import DopamineWhite from '../../../../../Images/raglans/drug/dopamine/Dopamine-Chemical-Structure_mockup_Heather-BlackBlack.png';
 
 export default class RaglanPVDopamineChem extends Component {
     constructor(props) {
@@ -39,7 +39,7 @@ export default class RaglanPVDopamineChem extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {Dopamine}
+                                {DopamineWhite}
                                 Dopamine Chemical Structure 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder9>

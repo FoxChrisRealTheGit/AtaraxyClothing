@@ -19,6 +19,7 @@ import {
 import fb from '../../Images/facebookbanner1.jpg';
 
 import IDontBelieve from '../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
+import SerotoninWhite from '../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
 export default class Home extends Component {
     constructor(props) {
@@ -62,7 +63,7 @@ export default class Home extends Component {
                                 <Link to="/store/t-shirts">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {SerotoninWhite}
                                     </SquareImage>
                                 </Link>
                                 <Link to="/store/t-shirts">

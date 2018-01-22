@@ -15,7 +15,7 @@ import {
     Modul1,
 } from 'react-stylux';
 
-import MinimalPerfection from '../../../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';
+import MinimalPerfectionWhite from '../../../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';
 
 export default class RaglanPVMinimalPerfection extends Component {
     constructor(props) {
@@ -39,7 +39,7 @@ export default class RaglanPVMinimalPerfection extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {MinimalPerfection}
+                                {MinimalPerfectionWhite}
                                 Minimal Perfection 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder9>
