@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
+import RaglanSizeChart from '../RaglanSizeChart';
 import {
     Container1,
     Holder1,
@@ -52,10 +53,7 @@ export default class RaglanPVTHCChem extends Component {
                                 <P2>
                                     Size?
                                 </P2>
-                                <Modul1
-                                    buttonText="Size Chart">
-                                    Size Chart should be here
-                                </Modul1>
+                                <RaglanSizeChart />
                                 <P4>
                                     Product decription
                                 </P4>

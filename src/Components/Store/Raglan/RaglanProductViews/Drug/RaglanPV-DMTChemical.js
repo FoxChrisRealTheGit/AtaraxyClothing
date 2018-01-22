@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
+import RaglanSizeChart from '../RaglanSizeChart';
 import {
     Container1,
     Holder1,
@@ -12,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import DMT from '../../../../../Images/raglans/drug/dmtChemical/DMTChemicalStructure_mockup_Heather-BlackBlack.png';
@@ -52,10 +52,7 @@ export default class RaglanPVIDontBelieve extends Component {
                                 <P2>
                                     Size?
                                 </P2>
-                                <Modul1
-                                    buttonText="Size Chart">
-                                    Size Chart should be here
-                                </Modul1>
+                                <RaglanSizeChart />
                                 <P4>
                                     Product decription
                                 </P4>
