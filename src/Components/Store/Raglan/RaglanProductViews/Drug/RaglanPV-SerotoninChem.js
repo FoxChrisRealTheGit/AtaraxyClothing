@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import SerotoninWhite from '../../../../../Images/raglans/drug/serotonin/Serotonin-Chemical-Structure_mockup_WhiteBlack.png';

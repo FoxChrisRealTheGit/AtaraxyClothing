@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import StudentWhite from '../../../../../Images/raglans/other/worldsOkayestStudent/Worlds-Okayest-Student_mockup_WhiteBlack.png';

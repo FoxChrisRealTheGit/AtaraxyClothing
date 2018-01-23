@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import BestYou from '../../../../../Images/raglans/happiness/beTheBestYou/BeTheBestYou_whiteandBlack_mockup_WhiteBlack.png';

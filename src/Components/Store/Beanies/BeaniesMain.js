@@ -8,7 +8,6 @@ import {
     Container1,
     Holder1,
     Holder2,
-    Holder5,
     Holder6,
     Holder7,
     SubNavBar1,

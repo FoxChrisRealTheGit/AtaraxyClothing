@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import KetamineWhite from '../../../../../Images/tshirts/drug/ketamine/Ketamine-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';

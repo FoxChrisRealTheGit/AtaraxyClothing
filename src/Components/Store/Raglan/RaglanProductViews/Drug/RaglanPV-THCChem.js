@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import THCWhite from '../../../../../Images/raglans/drug/thc/THC_mockup_WhiteBlack.png';

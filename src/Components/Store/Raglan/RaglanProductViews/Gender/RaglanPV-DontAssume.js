@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import DontAssume from '../../../../../Images/raglans/gender/dontassume/DontAssumeBlack_mockup_WhiteBlack.png';

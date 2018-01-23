@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import IDont from '../../../../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';

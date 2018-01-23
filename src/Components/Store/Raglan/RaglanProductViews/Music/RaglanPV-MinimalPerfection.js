@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import MinimalPerfectionWhite from '../../../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';

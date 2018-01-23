@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import MDMAWhite from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_WhiteBlack.png';

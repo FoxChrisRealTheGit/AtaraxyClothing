@@ -12,7 +12,6 @@ import {
     Hero1,
     H31,
     H42,
-    TallRectangleImage,
     SquareImage,
 } from 'react-stylux';
 

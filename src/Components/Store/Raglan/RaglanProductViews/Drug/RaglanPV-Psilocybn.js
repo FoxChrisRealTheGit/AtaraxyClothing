@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import PsilocybnWhite from '../../../../../Images/raglans/drug/psilocybn/psilocybn-Chemical-Structure_mockup_WhiteBlack.png';

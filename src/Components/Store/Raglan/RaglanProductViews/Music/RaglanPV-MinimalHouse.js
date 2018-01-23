@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import MinimalHouseWhite from '../../../../../Images/raglans/music/minimalhouse/minimal-House_mockup_WhiteBlack.png';

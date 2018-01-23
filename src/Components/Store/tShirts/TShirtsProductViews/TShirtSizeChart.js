@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     Holder5,
-    P2,
     P4,
     Modul1,
     Table1,

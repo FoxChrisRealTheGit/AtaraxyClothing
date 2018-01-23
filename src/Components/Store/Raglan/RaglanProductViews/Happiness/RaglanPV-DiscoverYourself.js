@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import Discover from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';

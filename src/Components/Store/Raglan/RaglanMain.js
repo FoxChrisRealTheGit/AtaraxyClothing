@@ -6,7 +6,6 @@ import Footer from '../../Footer/Footer';
 import {
     Container1,
     Holder1,
-    Holder5,
     Holder6,
     Holder11,
     Holder2,

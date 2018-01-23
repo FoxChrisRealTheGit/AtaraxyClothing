@@ -14,7 +14,6 @@ import {
     P1,
     P2,
     Carousel4,
-    TallRectangleImage,
     SquareImage,
 } from 'react-stylux';
 

@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import OccupyWhite from '../../../../../Images/raglans/other/occupy/OccupyMind_mockup_WhiteBlack.png';

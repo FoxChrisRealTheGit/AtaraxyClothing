@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import LSDWhite from '../../../../../Images/raglans/drug/lsd/LSDChemicalStructure_mockup_WhiteBlack.png';

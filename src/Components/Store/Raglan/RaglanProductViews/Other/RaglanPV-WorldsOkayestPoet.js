@@ -13,7 +13,6 @@ import {
     P2,
     P4,
     Carousel4,
-    Modul1,
 } from 'react-stylux';
 
 import PoetWhite from '../../../../../Images/raglans/other/worldOkayestPoet/Worlds-Okayest-Poet_mockup_WhiteBlack.png';
