@@ -37,6 +37,7 @@ import DMT from '../../../Images/raglans/drug/dmtChemical/DMTChemicalStructure_m
 import MDMAWhite from '../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_WhiteBlack.png';
 import THCWhite from '../../../Images/raglans/drug/thc/THC_mockup_WhiteBlack.png';
 import DontAssume from '../../../Images/raglans/gender/dontassume/DontAssumeBlack_mockup_WhiteBlack.png';
+import PoetWhite from '../../../Images/raglans/other/worldOkayestPoet/Worlds-Okayest-Poet_mockup_WhiteBlack.png';
 //import from '';
 
 export default class RaglanMain extends Component {
@@ -428,15 +429,15 @@ export default class RaglanMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/worldspoet">
                                     <H42>
-                                        ??
+                                        World's Okayest Poet
                                     </H42>
                                 </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                <Link to="/store/raglans/worldspoet">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {PoetWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </Link>
@@ -453,7 +454,7 @@ export default class RaglanMain extends Component {
                                 <Link to="/store/raglans/bethebestyou">
                                     <H42>
                                         Don't Assume
-                                </H42>
+                                    </H42>
                                 </Link>
                                 <Link to="/store/raglans/dontassume">
                                     <SquareImage

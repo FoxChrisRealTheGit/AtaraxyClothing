@@ -6,26 +6,52 @@ import {
     Container1,
     Holder1,
     Holder6,
-    Holder9,
     H32,
     SquareImage,
     P3,
-    P2,
     P4,
     Carousel4,
 } from 'react-stylux';
 
+import MDMABlack from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_BlackBlack.png';
 import MDMAWhite from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_WhiteBlack.png';
+import MDMAHeather from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_Heather-BlackBlack.png';
+import MDMABlue from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_WhiteHeather-Lake-Blue.png';
 
 export default class RaglanPVMDMAChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            cur: MDMAWhite,
+            price: '$25.00'
         }
+        this.imageWhite = this.imageWhite.bind(this)
+        this.imageBlack = this.imageBlack.bind(this)
+        this.imageHeather = this.imageHeather.bind(this)
+        this.imageBlue = this.imageBlue.bind(this)
+    }
+
+    imageWhite() {
+        return this.setState({ cur: MDMAWhite })
+    }
+    imageBlack() {
+        return this.setState({ cur: MDMABlack })
+    }
+    imageHeather() {
+        return this.setState({ cur: MDMAHeather })
+    }
+    imageBlue() {
+        return this.setState({ cur: MDMABlue })
     }
 
     render() {
+        const FORMSTYLE = {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            height: '200px',
+        }
         return (
             <section>
                 <Header />
@@ -39,25 +65,69 @@ export default class RaglanPVMDMAChem extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {MDMAWhite}
+                                {this.state.cur}
                                 MDMA Chemical Structure 3/4 Sleeve Shirt
                             </SquareImage>
-                            <Holder9>
+                            <Holder6>
                                 <P3>
-                                    $25.00
+                                    {this.state.price}
                                 </P3>
-                                <P2>
-                                    Color?
-                                </P2>
-                                <P2>
-                                    Size?
-                                </P2>
-                                <RaglanSizeChart />
+                                <form style={FORMSTYLE}>
+                                    <div>
+                                        <label>
+                                            White
+                                            <input type="radio" value="white" name="color"
+                                                onClick={() => this.imageWhite()} />
+                                        </label>
+                                        <label>
+                                            Black
+                                            <input type="radio" value="black" name="color"
+                                                onChange={() => this.imageBlack()} />
+                                        </label>
+                                        <label>
+                                            Heather Black
+                                            <input type="radio" value="heather" name="color"
+                                                onClick={() => this.imageHeather()} />
+                                        </label>
+                                        <label>
+                                            Lake Blue
+                                            <input type="radio" value="blue" name="color"
+                                                onClick={() => this.imageBlue()} />
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            XSM
+                                            <input type="radio" value="xsm" name="size" />
+                                        </label>
+                                        <label>
+                                            SM
+                                            <input type="radio" value="sm" name="size" />
+                                        </label>
+                                        <label>
+                                            MD
+                                            <input type="radio" value="md" name="size" />
+                                        </label>
+                                        <label>
+                                            LG
+                                            <input type="radio" value="lg" name="size" />
+                                        </label>
+                                        <label>
+                                            XL
+                                            <input type="radio" value="xl" name="size" />
+                                        </label>
+                                        <label>
+                                            2XL
+                                            <input type="radio" value="2xl" name="size" />
+                                        </label>
+                                    </div>
+                                    <RaglanSizeChart />
+                                    <button>Add To Cart</button>
+                                </form>
                                 <P4>
                                     Product decription
                                 </P4>
-                                <button>Add To Cart</button>
-                            </Holder9>
+                            </Holder6>
                         </Holder1>
                         <Carousel4>
                         </Carousel4>

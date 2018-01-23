@@ -6,7 +6,6 @@ import {
     Container1,
     Holder1,
     Holder6,
-    Holder9,
     H32,
     SquareImage,
     P3,
@@ -22,25 +21,21 @@ export default class RaglanPVGenderSmileyFace extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cur: GenderSmileBlack,
+            cur: GenderSmileWhite,
         }
-        this.imageChange = this.imageChange.bind(this)
+        this.imageWhite = this.imageWhite.bind(this)
+        this.imageBlack = this.imageBlack.bind(this)
+        this.imageHeather = this.imageHeather.bind(this)
     }
 
-    imageChange(v) {
-        if ( v === 'black') {
-            return(
-                this.setState({cur:GenderSmileBlack})
-            )
-        } else if ( v === 'heather') {
-            return(
-                this.setState({cur:GenderSmileHeather})
-            )
-        } else if(v=== 'white'){
-            return(
-                this.setState({cur:GenderSmileWhite})
-            )
-        }
+    imageWhite() {
+        return this.setState({ cur: GenderSmileWhite })
+    }
+    imageBlack() {
+        return this.setState({ cur: GenderSmileBlack })
+    }
+    imageHeather() {
+        return this.setState({ cur: GenderSmileHeather })
     }
 
     render() {
@@ -53,9 +48,9 @@ export default class RaglanPVGenderSmileyFace extends Component {
         }
         return (
             <section>
-            <Header />
-            <Container1>
-                <Holder6>
+                <Header />
+                <Container1>
+                    <Holder6>
                         <H32>
                             Gender Smiley Face - 3/4 Sleeve
                         </H32>
@@ -67,7 +62,7 @@ export default class RaglanPVGenderSmileyFace extends Component {
                                 {this.state.cur}
                                 alt="Gender Smiley 3/4 Sleeve Shirt"
                             </SquareImage>
-                            <Holder9>
+                            <Holder6>
                                 <P3>
                                     $25.00
                                 </P3>
@@ -75,18 +70,18 @@ export default class RaglanPVGenderSmileyFace extends Component {
                                     <div>
                                         <label>
                                             White
-                                            <button value="white"
-                                           onClick={this.imageChange(this.value) }/>
+                                            <input type="radio" value="white" name ="color"
+                                                onClick={() => this.imageWhite()} />
                                         </label>
                                         <label>
                                             Black
                                             <input type="radio" value="black" name="color"
-                                            checked={this.imageChange(this.value) }/>
+                                                onChange={() => this.imageBlack()} />
                                         </label>
                                         <label>
                                             Heather Black
                                             <input type="radio" value="heather" name="color"
-                                            checked={this.imageChange(this.value) }/>
+                                                onClick={() => this.imageHeather()} />
                                         </label>
                                     </div>
                                     <div>
@@ -121,14 +116,13 @@ export default class RaglanPVGenderSmileyFace extends Component {
                                 <P4>
                                     Product decription
                                 </P4>
-                            
-                                </Holder9>
-                                </Holder1>
-                                <Carousel4>
-                                </Carousel4>
                             </Holder6>
-                        </Container1>
-                        <Footer />
+                        </Holder1>
+                        <Carousel4>
+                        </Carousel4>
+                    </Holder6>
+                </Container1>
+                <Footer />
             </section>
         )
     }

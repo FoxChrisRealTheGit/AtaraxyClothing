@@ -6,26 +6,42 @@ import {
     Container1,
     Holder1,
     Holder6,
-    Holder9,
     H32,
     SquareImage,
     P3,
-    P2,
     P4,
     Carousel4,
 } from 'react-stylux';
 
 import PsilocybnWhite from '../../../../../Images/raglans/drug/psilocybn/psilocybn-Chemical-Structure_mockup_WhiteBlack.png';
+import PsilocybnBlue from '../../../../../Images/raglans/drug/psilocybn/psilocybn-Chemical-Structure_mockup_WhiteHeather-Lake-Blue.png'
 
 export default class RaglanPVPsilocybnChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            cur: PsilocybnWhite,
+            price: '$25.00'
         }
+        this.imageWhite = this.imageWhite.bind(this)
+        this.imageBlue = this.imageBlue.bind(this)
+    }
+
+    imageWhite() {
+        return this.setState({ cur: PsilocybnWhite })
+    }
+    imageBlue() {
+        return this.setState({ cur: PsilocybnBlue })
     }
 
     render() {
+        const FORMSTYLE = {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            height: '200px',
+        }
         return (
             <section>
                 <Header />
@@ -39,25 +55,59 @@ export default class RaglanPVPsilocybnChem extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {PsilocybnWhite}
+                                {this.state.cur}
                                 Psilocybn Chemical Structure 3/4 Sleeve Shirt
                             </SquareImage>
-                            <Holder9>
+                            <Holder6>
                                 <P3>
-                                    $25.00
+                                    {this.state.price}
                                 </P3>
-                                <P2>
-                                    Color?
-                                </P2>
-                                <P2>
-                                    Size?
-                                </P2>
-                                <RaglanSizeChart />
+                                <form style={FORMSTYLE}>
+                                    <div>
+                                        <label>
+                                            White
+                                            <input type="radio" value="white" name="color"
+                                                onClick={() => this.imageWhite()} />
+                                        </label>
+                                        <label>
+                                            Lake Blue
+                                            <input type="radio" value="blue" name="color"
+                                                onClick={() => this.imageBlue()} />
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            XSM
+                                            <input type="radio" value="xsm" name="size" />
+                                        </label>
+                                        <label>
+                                            SM
+                                            <input type="radio" value="sm" name="size" />
+                                        </label>
+                                        <label>
+                                            MD
+                                            <input type="radio" value="md" name="size" />
+                                        </label>
+                                        <label>
+                                            LG
+                                            <input type="radio" value="lg" name="size" />
+                                        </label>
+                                        <label>
+                                            XL
+                                            <input type="radio" value="xl" name="size" />
+                                        </label>
+                                        <label>
+                                            2XL
+                                            <input type="radio" value="2xl" name="size" />
+                                        </label>
+                                    </div>
+                                    <RaglanSizeChart />
+                                    <button>Add To Cart</button>
+                                </form>
                                 <P4>
                                     Product decription
                                 </P4>
-                                <button>Add To Cart</button>
-                            </Holder9>
+                            </Holder6>
                         </Holder1>
                         <Carousel4>
                         </Carousel4>

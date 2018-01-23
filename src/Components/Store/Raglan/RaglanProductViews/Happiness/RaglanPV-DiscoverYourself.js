@@ -6,26 +6,47 @@ import {
     Container1,
     Holder1,
     Holder6,
-    Holder9,
     H32,
     SquareImage,
     P3,
-    P2,
     P4,
     Carousel4,
 } from 'react-stylux';
 
-import Discover from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';
+import DiscoverWhite from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteBlack.png';
+import DiscoverBlack from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_BlackBlack.png';
+import DiscoverBlue from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';
 
 export default class RaglanPVDiscoverYourself extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            cur: DiscoverBlue,
+            price: '$25.00'
         }
+        this.imageWhite = this.imageWhite.bind(this)
+        this.imageBlack = this.imageBlack.bind(this)
+        this.imageBlue = this.imageBlue.bind(this)
+    }
+
+    imageWhite() {
+        return this.setState({ cur: DiscoverWhite })
+    }
+    imageBlack() {
+        return this.setState({ cur: DiscoverBlack })
+    }
+    imageBlue() {
+        return this.setState({ cur: DiscoverBlue })
     }
 
     render() {
+        const FORMSTYLE = {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            height: '200px',
+        }
         return (
             <section>
                 <Header />
@@ -39,32 +60,71 @@ export default class RaglanPVDiscoverYourself extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {Discover}
+                                {this.state.cur}
                                 Discover Yourself 3/4 Sleeve Shirt
                             </SquareImage>
-                            <Holder9>
+                            <Holder6>
                                 <P3>
-                                    $25.00
+                                    {this.state.price}
                                 </P3>
-                                <P2>
-                                    Color?
-                                </P2>
-                                <P2>
-                                    Size?
-                                </P2>
-                                <RaglanSizeChart />
+                                <form style={FORMSTYLE}>
+                                    <div>
+                                        <label>
+                                            White
+                                            <input type="radio" value="white" name="color"
+                                                onClick={() => this.imageWhite()} />
+                                        </label>
+                                        <label>
+                                            Black
+                                            <input type="radio" value="black" name="color"
+                                                onChange={() => this.imageBlack()} />
+                                        </label>
+                                        <label>
+                                            Lake Blue
+                                            <input type="radio" value="blue" name="color"
+                                                onClick={() => this.imageBlue()} />
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            XSM
+                                            <input type="radio" value="xsm" name="size" />
+                                        </label>
+                                        <label>
+                                            SM
+                                            <input type="radio" value="sm" name="size" />
+                                        </label>
+                                        <label>
+                                            MD
+                                            <input type="radio" value="md" name="size" />
+                                        </label>
+                                        <label>
+                                            LG
+                                            <input type="radio" value="lg" name="size" />
+                                        </label>
+                                        <label>
+                                            XL
+                                            <input type="radio" value="xl" name="size" />
+                                        </label>
+                                        <label>
+                                            2XL
+                                            <input type="radio" value="2xl" name="size" />
+                                        </label>
+                                    </div>
+                                    <RaglanSizeChart />
+                                    <button>Add To Cart</button>
+                                </form>
                                 <P4>
                                     Product decription
                                 </P4>
-                                <button>Add To Cart</button>
-                            </Holder9>
+                            </Holder6>
                         </Holder1>
                         <Carousel4>
                         </Carousel4>
                     </Holder6>
                 </Container1>
                 <Footer />
-            </section>
+            </section >
         )
     }
 
