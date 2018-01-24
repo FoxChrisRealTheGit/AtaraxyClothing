@@ -27,6 +27,8 @@ export default class RaglanPVTHCChem extends Component {
         this.imageWhite = this.imageWhite.bind(this)
         this.imageBlack = this.imageBlack.bind(this)
         this.imageHeather = this.imageHeather.bind(this)
+        this.justPrice = this.justPrice.bind(this)
+        this.priceAdd150 = this.priceAdd150.bind(this)
     }
 
     imageWhite() {
@@ -38,7 +40,14 @@ export default class RaglanPVTHCChem extends Component {
     imageHeather() {
         return this.setState({ cur: THCHeather })
     }
-
+    justPrice() {
+        if (this.state.price !== '$25.00') {
+            return this.setState({ price: '$25.00' })
+        }
+    }
+    priceAdd150() {
+        return this.setState({ price: '$26.50' })
+    }
     render() {
         const FORMSTYLE = {
             display: 'flex',
@@ -88,27 +97,33 @@ export default class RaglanPVTHCChem extends Component {
                                     <div>
                                         <label>
                                             XSM
-                                            <input type="radio" value="xsm" name="size" />
+                                    <input type="radio" value="xsm" name="size"
+                                                onClick={() => this.justPrice()} />
                                         </label>
                                         <label>
                                             SM
-                                            <input type="radio" value="sm" name="size" />
+                                    <input type="radio" value="sm" name="size"
+                                                onClick={() => this.justPrice()} />
                                         </label>
                                         <label>
                                             MD
-                                            <input type="radio" value="md" name="size" />
+                                    <input type="radio" value="md" name="size"
+                                                onClick={() => this.justPrice()} />
                                         </label>
                                         <label>
                                             LG
-                                            <input type="radio" value="lg" name="size" />
+                                    <input type="radio" value="lg" name="size"
+                                                onClick={() => this.justPrice()} />
                                         </label>
                                         <label>
                                             XL
-                                            <input type="radio" value="xl" name="size" />
+                                    <input type="radio" value="xl" name="size"
+                                                onClick={() => this.justPrice()} />
                                         </label>
                                         <label>
                                             2XL
-                                            <input type="radio" value="2xl" name="size" />
+                                    <input type="radio" value="2xl" name="size"
+                                                onClick={() => this.priceAdd150()} />
                                         </label>
                                     </div>
                                     <RaglanSizeChart />

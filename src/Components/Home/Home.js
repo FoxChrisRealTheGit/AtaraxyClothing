@@ -7,7 +7,7 @@ import {
     Container1,
     Holder2,
     Holder5,
-    Holder8,
+    Holder10,
     Carousel1,
     Hero1,
     H31,
@@ -16,6 +16,7 @@ import {
 } from 'react-stylux';
 
 import fb from '../../Images/facebookbanner1.jpg';
+import gutair from '../../Images/home/gutair.jpg';
 
 import IDontBelieve from '../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
 import SerotoninWhite from '../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
@@ -32,15 +33,17 @@ export default class Home extends Component {
             <section>
                 <Header />
                 <Container1>
-                    <Holder8>
+                    <Holder10>
                         <Carousel1>
                             <Hero1
                                 image={`url(${fb})`}>
                             </Hero1>
                         </Carousel1>
-                        <H31>
-                            Products
-                        </H31>
+                        <Link to="/store">
+                            <H31>
+                                Products
+                            </H31>
+                        </Link>
                         <Holder2
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
@@ -85,8 +88,12 @@ export default class Home extends Component {
                                 </Link>
                             </Holder5>
                         </Holder2>
+                        <Hero1
+                            height="500px"
+                            image={`url(${gutair})`}>
+                        </Hero1>
                         <Link to="/blog">
-                            <H31>Blog</H31>
+                            <H31>The Written Word</H31>
                         </Link>
                         <Holder2
                             alignBlock1="flex-end"
@@ -131,7 +138,7 @@ export default class Home extends Component {
                                 </Link>
                             </Holder5>
                         </Holder2>
-                    </Holder8>
+                    </Holder10>
                 </Container1>
                 <Footer />
             </section>

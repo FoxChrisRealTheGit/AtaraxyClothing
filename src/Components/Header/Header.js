@@ -26,24 +26,26 @@ export default class Header extends Component {
                         block1="0.5"
                         alignBlock1="flex-end"
                         block2="3">
-                        <Brand1>
-                            {fb}
-                        </Brand1>
+                        <Link to='/'>
+                            <Brand1>
+                                {fb}
+                            </Brand1>
+                        </Link>
                         <NavBar1>
                             <Link to="/">Home</Link>
                             <Link to="/about">About</Link>
                             <DropDownNav1
                                 background="rgba(255, 255, 255, 0.9)">
                                 <Link to="/store">Store</Link>
-                                <Link to="/store/beanies">Beanies</Link>
                                 <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
                                 <Link to="/store/t-shirts">T-Shirts</Link>
+                                <Link to="/store/beanies">Beanies</Link>
                             </DropDownNav1>
                             <Link to="/contact">Contact</Link>
                         </NavBar1>
                         <NavBar1
                             navbarWidth="70%"
-                            >
+                        >
                             <p>Login/Register</p>
                             <Toggler2
                                 buttonText="Cart"

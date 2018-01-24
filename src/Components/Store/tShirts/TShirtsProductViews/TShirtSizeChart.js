@@ -19,7 +19,7 @@ export default function TShirtSizeChart() {
                 </P4>
                 <Table1
                     rows="3"
-                    columns="8"
+                    columns="7"
                     >
                     XS\
                     S\
@@ -28,7 +28,6 @@ export default function TShirtSizeChart() {
                     XL\
                     2XL\
                     3XL\
-                    4XL\
                     27\
                     28\
                     29\
@@ -36,7 +35,6 @@ export default function TShirtSizeChart() {
                     31\
                     32\
                     33\
-                    34\
                     16 1/2\
                     18\
                     20\
@@ -44,7 +42,6 @@ export default function TShirtSizeChart() {
                     24\
                     26\
                     28\
-                    30\
                 </Table1>
             </Holder5>
         </Modul1>

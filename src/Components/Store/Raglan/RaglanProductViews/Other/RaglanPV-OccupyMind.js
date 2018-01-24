@@ -23,10 +23,20 @@ export default class RaglanPVOccupyYourMind extends Component {
             price: '$25.00'
         }
         this.imageWhite = this.imageWhite.bind(this)
+        this.justPrice = this.justPrice.bind(this)
+        this.priceAdd150 = this.priceAdd150.bind(this)
     }
 
     imageWhite() {
         return this.setState({ cur: OccupyWhite })
+    }
+    justPrice() {
+        if (this.state.price !== '$25.00') {
+            return this.setState({ price: '$25.00' })
+        }
+    }
+    priceAdd150() {
+        return this.setState({ price: '$26.50' })
     }
 
     render() {
@@ -66,30 +76,36 @@ export default class RaglanPVOccupyYourMind extends Component {
                                         </label>
                                     </div>
                                     <div>
-                                        <label>
-                                            XSM
-                                            <input type="radio" value="xsm" name="size" />
-                                        </label>
-                                        <label>
-                                            SM
-                                            <input type="radio" value="sm" name="size" />
-                                        </label>
-                                        <label>
-                                            MD
-                                            <input type="radio" value="md" name="size" />
-                                        </label>
-                                        <label>
-                                            LG
-                                            <input type="radio" value="lg" name="size" />
-                                        </label>
-                                        <label>
-                                            XL
-                                            <input type="radio" value="xl" name="size" />
-                                        </label>
-                                        <label>
-                                            2XL
-                                            <input type="radio" value="2xl" name="size" />
-                                        </label>
+                                    <label>
+                                    XSM
+                                    <input type="radio" value="xsm" name="size"
+                                        onClick={() => this.justPrice()} />
+                                </label>
+                                <label>
+                                    SM
+                                    <input type="radio" value="sm" name="size"
+                                        onClick={() => this.justPrice()} />
+                                </label>
+                                <label>
+                                    MD
+                                    <input type="radio" value="md" name="size"
+                                        onClick={() => this.justPrice()} />
+                                </label>
+                                <label>
+                                    LG
+                                    <input type="radio" value="lg" name="size"
+                                        onClick={() => this.justPrice()} />
+                                </label>
+                                <label>
+                                    XL
+                                    <input type="radio" value="xl" name="size"
+                                        onClick={() => this.justPrice()} />
+                                </label>
+                                <label>
+                                    2XL
+                                    <input type="radio" value="2xl" name="size"
+                                        onClick={() => this.priceAdd150()} />
+                                </label>
                                     </div>
                                     <RaglanSizeChart />
                                     <button>Add To Cart</button>
