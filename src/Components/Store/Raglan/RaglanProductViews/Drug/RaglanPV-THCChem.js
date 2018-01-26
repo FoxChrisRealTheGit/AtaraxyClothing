@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -17,7 +19,7 @@ import THCWhite from '../../../../../Images/raglans/drug/thc/THC_mockup_WhiteBla
 import THCBlack from '../../../../../Images/raglans/drug/thc/THC_mockup_BlackBlack.png';
 import THCHeather from '../../../../../Images/raglans/drug/thc/THC_mockup_Heather-BlackBlack.png';
 
-export default class RaglanPVTHCChem extends Component {
+class RaglanPVTHCChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -142,5 +144,9 @@ export default class RaglanPVTHCChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVTHCChem)

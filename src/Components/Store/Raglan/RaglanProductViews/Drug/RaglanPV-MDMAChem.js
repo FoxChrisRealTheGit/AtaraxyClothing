@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -18,7 +20,7 @@ import MDMAWhite from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Str
 import MDMAHeather from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_Heather-BlackBlack.png';
 import MDMABlue from '../../../../../Images/raglans/drug/mdma/MDMA-Chemical-Structure_mockup_WhiteHeather-Lake-Blue.png';
 
-export default class RaglanPVMDMAChem extends Component {
+class RaglanPVMDMAChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -152,5 +154,9 @@ export default class RaglanPVMDMAChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVMDMAChem)

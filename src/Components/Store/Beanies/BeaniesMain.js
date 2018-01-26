@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../ducks/reducer';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
@@ -20,7 +22,7 @@ import {
 
 import bp from '../../../Images/SlouchyInFrontOfFlag.jpg';
 
-export default class BeaniesMain extends Component {
+class BeaniesMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -168,3 +170,8 @@ export default class BeaniesMain extends Component {
         )
     }
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(BeaniesMain)

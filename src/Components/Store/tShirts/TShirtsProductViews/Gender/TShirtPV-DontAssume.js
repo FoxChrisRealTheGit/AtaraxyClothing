@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
@@ -21,7 +23,7 @@ import DontGrey from '../../../../../Images/tshirts/gender/dontassume/DontAssume
 import DontRed from '../../../../../Images/tshirts/gender/dontassume/DontAssumeBlack_mockup_Wrinkle-Front_Red-Triblend.png';
 import DontWhite from '../../../../../Images/tshirts/gender/dontassume/DontAssumeBlack_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class TShirtPVDontAssume extends Component {
+class TShirtPVDontAssume extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -190,5 +192,9 @@ export default class TShirtPVDontAssume extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(TShirtPVDontAssume)

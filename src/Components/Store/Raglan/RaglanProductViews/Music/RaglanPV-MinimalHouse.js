@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -15,7 +17,7 @@ import {
 
 import MinimalHouseWhite from '../../../../../Images/raglans/music/minimalhouse/minimal-House_mockup_WhiteBlack.png';
 
-export default class RaglanPVIMinimalHouse extends Component {
+class RaglanPVIMinimalHouse extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -122,5 +124,9 @@ export default class RaglanPVIMinimalHouse extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVIMinimalHouse)

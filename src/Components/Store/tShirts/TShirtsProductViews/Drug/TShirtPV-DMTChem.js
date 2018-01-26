@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
@@ -21,7 +23,7 @@ import DMTGrey from '../../../../../Images/tshirts/drug/dmt/DMTChemicalStructure
 import DMTRed from '../../../../../Images/tshirts/drug/dmt/DMTChemicalStructure_mockup_Wrinkle-Front_Red-Triblend.png';
 import DMTWhite from '../../../../../Images/tshirts/drug/dmt/DMTChemicalStructure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class TShirtPVDMTChem extends Component {
+class TShirtPVDMTChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -190,5 +192,9 @@ export default class TShirtPVDMTChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(TShirtPVDMTChem)

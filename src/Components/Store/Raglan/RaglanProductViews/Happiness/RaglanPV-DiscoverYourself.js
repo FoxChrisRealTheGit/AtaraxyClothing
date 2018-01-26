@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -17,7 +19,7 @@ import DiscoverWhite from '../../../../../Images/raglans/happiness/discoveryours
 import DiscoverBlack from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_BlackBlack.png';
 import DiscoverBlue from '../../../../../Images/raglans/happiness/discoveryourself/DiscoverYourself_mockup_WhiteHeather-Lake-Blue.png';
 
-export default class RaglanPVDiscoverYourself extends Component {
+class RaglanPVDiscoverYourself extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -143,5 +145,9 @@ export default class RaglanPVDiscoverYourself extends Component {
             </section >
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVDiscoverYourself)

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../ducks/reducer';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -8,7 +10,7 @@ import {
     H22,
 } from 'react-stylux';
 
-export default class FAQ extends Component {
+class FAQ extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,3 +33,8 @@ export default class FAQ extends Component {
         )
     }
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(FAQ)

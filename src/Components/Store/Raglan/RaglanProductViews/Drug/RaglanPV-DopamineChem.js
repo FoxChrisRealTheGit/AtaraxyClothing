@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -17,7 +19,7 @@ import DopamineWhite from '../../../../../Images/raglans/drug/dopamine/Dopamine-
 import DopamineBlack from '../../../../../Images/raglans/drug/dopamine/Dopamine-Chemical-Structure_mockup_BlackBlack.png';
 import DopamineHeather from '../../../../../Images/raglans/drug/dopamine/Dopamine-Chemical-Structure_mockup_Heather-BlackBlack.png';
 
-export default class RaglanPVDopamineChem extends Component {
+class RaglanPVDopamineChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -141,5 +143,9 @@ export default class RaglanPVDopamineChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVDopamineChem)

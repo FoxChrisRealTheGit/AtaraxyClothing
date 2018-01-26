@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
@@ -21,7 +23,7 @@ import SmileGrey from '../../../../../Images/tshirts/gender/gendersmile/GenderSm
 import SmileRed from '../../../../../Images/tshirts/gender/gendersmile/GenderSmileyFace_mockup_Wrinkle-Front_Red-Triblend.png';
 import SmileWhite from '../../../../../Images/tshirts/gender/gendersmile/GenderSmileyFace_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class TShirtPVGenderSmile extends Component {
+class TShirtPVGenderSmile extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -190,5 +192,9 @@ export default class TShirtPVGenderSmile extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(TShirtPVGenderSmile)

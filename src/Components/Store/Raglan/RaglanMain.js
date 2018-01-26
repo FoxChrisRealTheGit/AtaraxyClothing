@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../ducks/reducer';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
@@ -40,7 +42,7 @@ import DontAssume from '../../../Images/raglans/gender/dontassume/DontAssumeBlac
 import PoetWhite from '../../../Images/raglans/other/worldOkayestPoet/Worlds-Okayest-Poet_mockup_WhiteBlack.png';
 //import from '';
 
-export default class RaglanMain extends Component {
+class RaglanMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -480,3 +482,8 @@ export default class RaglanMain extends Component {
         )
     }
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanMain)

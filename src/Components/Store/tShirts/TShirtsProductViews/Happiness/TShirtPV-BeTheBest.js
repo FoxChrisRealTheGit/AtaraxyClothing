@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
@@ -21,7 +23,7 @@ import BeBestGrey from '../../../../../Images/tshirts/happiness/bethebest/BeTheB
 import BeBestRed from '../../../../../Images/tshirts/happiness/bethebest/BeTheBestYou_whiteandBlack_printfile_front_mockup_Wrinkle-Front_Red-Triblend.png';
 import BeBestWhite from '../../../../../Images/tshirts/happiness/bethebest/BeTheBestYou_whiteandBlack_printfile_front_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class TShirtPVBeTheBestYou extends Component {
+class TShirtPVBeTheBestYou extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -190,5 +192,9 @@ export default class TShirtPVBeTheBestYou extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(TShirtPVBeTheBestYou)

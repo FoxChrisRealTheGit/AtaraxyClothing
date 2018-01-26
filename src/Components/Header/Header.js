@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addToCart} from '../../ducks/reducer';
 import {
     Container1,
     Holder2,
@@ -11,13 +14,21 @@ import {
 
 import fb from '../../Images/facebookbanner1.jpg';
 
-export default class Header extends Component {
+class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            cart: props.cart.name || ''
         }
     }
+    // componentWillMount(){
+    //    axios.get('http://localhost:4000/api/cartgrab')
+    //     .then((res)=>{
+    //         this.setState({cart: res.data[0].cart})
+    //     }).catch(function (err){
+    //         console.log(err)
+    //     })
+    // }
     render() {
         return (
             <header>
@@ -54,7 +65,7 @@ export default class Header extends Component {
                                 offset="-5"
                                 width="150px"
                                 height="200px">
-                                Your cart is empty...
+                                {this.state.cart}
                             </Toggler2>
                         </NavBar1>
                     </Holder2>
@@ -63,3 +74,8 @@ export default class Header extends Component {
         )
     }
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(Header)

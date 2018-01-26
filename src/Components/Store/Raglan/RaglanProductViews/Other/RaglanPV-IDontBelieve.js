@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
+import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -15,16 +18,18 @@ import {
 
 import IDont from '../../../../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
 
-export default class RaglanPVIDontBelieve extends Component {
+class RaglanPVIDontBelieve extends Component {
     constructor(props) {
         super(props);
         this.state = {
             cur: IDont,
-            price: '$25.00'
+            price: '$25.00',
+            number: 1
         }
-        this.imageWhite = this.imageWhite.bind(this)
-        this.justPrice = this.justPrice.bind(this)
-        this.priceAdd150 = this.priceAdd150.bind(this)
+        this.imageWhite = this.imageWhite.bind(this);
+        this.justPrice = this.justPrice.bind(this);
+        this.priceAdd150 = this.priceAdd150.bind(this);
+        this.addToCart = this.addToCart.bind(this);
     }
 
     imageWhite() {
@@ -39,6 +44,19 @@ export default class RaglanPVIDontBelieve extends Component {
         return this.setState({ price: '$26.50' })
     }
 
+    //add this item to users cart
+    //should add to session if no user is logged in
+    addToCart() {
+       axios.put('http://localhost:4000/api/cartadd', {
+           item: this.state.number, 
+           userName: 'User1'})
+       .then((res)=>{
+           console.log(res)
+       })
+       .catch((err)=>{
+            console.log(err)
+       })
+    }
     render() {
         const FORMSTYLE = {
             display: 'flex',
@@ -108,7 +126,7 @@ export default class RaglanPVIDontBelieve extends Component {
                                         </label>
                                     </div>
                                     <RaglanSizeChart />
-                                    <button>Add To Cart</button>
+                                    <button onClick={() => this.addToCart()}>Add To Cart</button>
                                 </form>
                                 <P4>
                                     Product decription
@@ -123,5 +141,9 @@ export default class RaglanPVIDontBelieve extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVIDontBelieve)

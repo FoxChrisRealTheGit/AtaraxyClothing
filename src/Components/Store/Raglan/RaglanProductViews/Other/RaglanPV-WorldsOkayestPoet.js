@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -16,7 +18,7 @@ import {
 import PoetWhite from '../../../../../Images/raglans/other/worldOkayestPoet/Worlds-Okayest-Poet_mockup_WhiteBlack.png';
 import PoetHeather from '../../../../../Images/raglans/other/worldOkayestPoet/Worlds-Okayest-Poet_mockup_Heather-BlackBlack.png';
 
-export default class RaglanPVWorldsOkayestPoet extends Component {
+class RaglanPVWorldsOkayestPoet extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -132,5 +134,9 @@ export default class RaglanPVWorldsOkayestPoet extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVWorldsOkayestPoet)

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
@@ -21,7 +23,7 @@ import LSDGrey from '../../../../../Images/tshirts/drug/lsd/LSDChemicalStructure
 import LSDRed from '../../../../../Images/tshirts/drug/lsd/LSDChemicalStructure_mockup_Wrinkle-Front_Red-Triblend.png';
 import LSDWhite from '../../../../../Images/tshirts/drug/lsd/LSDChemicalStructure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class TShirtPVLSDChem extends Component {
+class TShirtPVLSDChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -190,5 +192,9 @@ export default class TShirtPVLSDChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(TShirtPVLSDChem)

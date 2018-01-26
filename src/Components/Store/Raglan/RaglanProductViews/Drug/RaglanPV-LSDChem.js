@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -18,7 +20,7 @@ import LSDBlack from '../../../../../Images/raglans/drug/lsd/LSDChemicalStructur
 import LSDHeather from '../../../../../Images/raglans/drug/lsd/LSDChemicalStructure_mockup_Heather-BlackBlack.png';
 import LSDBlue from '../../../../../Images/raglans/drug/lsd/LSDChemicalStructure_mockup_WhiteHeather-Lake-Blue.png';
 
-export default class RaglanPVLSDChem extends Component {
+class RaglanPVLSDChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -152,5 +154,9 @@ export default class RaglanPVLSDChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVLSDChem)

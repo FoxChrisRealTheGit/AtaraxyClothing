@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../ducks/reducer';
 import { Link } from 'react-router-dom';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
@@ -32,7 +34,7 @@ import BlackBeanie from '../../../Images/beanies/BlackPanther.jpg';
 import AgenderFlag from "../../../Images/beanies/AgenderFull.png";
 import HomeTeamThree from "../../../Images/beanies/HomeTeamThreeFull.png";
 
-export default class StoreMain extends Component {
+class StoreMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -352,3 +354,8 @@ export default class StoreMain extends Component {
         )
     }
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(StoreMain)

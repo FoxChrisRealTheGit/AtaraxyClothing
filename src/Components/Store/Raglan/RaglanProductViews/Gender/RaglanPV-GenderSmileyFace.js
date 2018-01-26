@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -17,7 +19,7 @@ import GenderSmileWhite from '../../../../../Images/raglans/gender/gendersmilyfa
 import GenderSmileBlack from '../../../../../Images/raglans/gender/gendersmilyface/GenderSmileyFace_GenderSmileyFaceWhite_mockup_BlackBlack.png';
 import GenderSmileHeather from '../../../../../Images/raglans/gender/gendersmilyface/GenderSmileyFace_mockup_Heather-BlackBlack.png';
 
-export default class RaglanPVGenderSmileyFace extends Component {
+class RaglanPVGenderSmileyFace extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -141,5 +143,9 @@ export default class RaglanPVGenderSmileyFace extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVGenderSmileyFace)

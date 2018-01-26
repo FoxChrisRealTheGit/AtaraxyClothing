@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -15,7 +17,7 @@ import {
 
 import DontAssume from '../../../../../Images/raglans/gender/dontassume/DontAssumeBlack_mockup_WhiteBlack.png';
 
-export default class RaglanPVDontAssume extends Component {
+class RaglanPVDontAssume extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -122,5 +124,9 @@ export default class RaglanPVDontAssume extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVDontAssume)

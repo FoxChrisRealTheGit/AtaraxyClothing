@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -15,7 +17,7 @@ import {
 
 import MinimalPerfectionWhite from '../../../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';
 
-export default class RaglanPVMinimalPerfection extends Component {
+class RaglanPVMinimalPerfection extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -122,5 +124,9 @@ export default class RaglanPVMinimalPerfection extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVMinimalPerfection)

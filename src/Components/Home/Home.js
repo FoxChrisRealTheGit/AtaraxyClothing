@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addToCart} from '../../ducks/reducer';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -21,7 +23,7 @@ import gutair from '../../Images/home/gutair.jpg';
 import IDontBelieve from '../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
 import SerotoninWhite from '../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class Home extends Component {
+class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,6 +31,7 @@ export default class Home extends Component {
         }
     }
     render() {
+            const {addToCart} = this.props;
         return (
             <section>
                 <Header />
@@ -145,3 +148,9 @@ export default class Home extends Component {
         )
     }
 }
+
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(Home)

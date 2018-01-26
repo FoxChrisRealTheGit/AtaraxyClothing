@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
+import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -17,18 +20,20 @@ import BestYouWhite from '../../../../../Images/raglans/happiness/beTheBestYou/B
 import BestYouBlack from '../../../../../Images/raglans/happiness/beTheBestYou/BeTheBestYouWhite_mockup_BlackBlack.png';
 import BestYouHeather from '../../../../../Images/raglans/happiness/beTheBestYou/BeTheBestYouWhite_mockup_Heather-BlackBlack.png';
 
-export default class RaglanPVBeTheBestYou extends Component {
+class RaglanPVBeTheBestYou extends Component {
     constructor(props) {
         super(props);
         this.state = {
             cur: BestYouWhite,
-            price: '$25.00'
+            price: '$25.00',
+            number: 2
         }
         this.imageWhite = this.imageWhite.bind(this)
         this.imageBlack = this.imageBlack.bind(this)
         this.imageHeather = this.imageHeather.bind(this)
         this.justPrice = this.justPrice.bind(this)
         this.priceAdd150 = this.priceAdd150.bind(this)
+        this.addToCart = this.addToCart.bind(this);
     }
 
     imageWhite() {
@@ -48,6 +53,17 @@ export default class RaglanPVBeTheBestYou extends Component {
     priceAdd150() {
         return this.setState({ price: '$26.50' })
     }
+    addToCart() {
+        axios.put('http://localhost:4000/api/cartadd', {
+            item: this.state.number, 
+            userName: 'User1'})
+        .then((res)=>{
+            console.log(res)
+        })
+        .catch((err)=>{
+             console.log(err)
+        })
+     }
     render() {
         const FORMSTYLE = {
             display: 'flex',
@@ -127,7 +143,7 @@ export default class RaglanPVBeTheBestYou extends Component {
                                 </label>
                                     </div>
                                     <RaglanSizeChart />
-                                    <button>Add To Cart</button>
+                                    <button onClick={() => this.addToCart()}>Add To Cart</button>
                                 </form>
                                 <P4>
                                     Product decription
@@ -142,5 +158,9 @@ export default class RaglanPVBeTheBestYou extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVBeTheBestYou)

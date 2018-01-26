@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -16,7 +18,7 @@ import {
 import PsilocybnWhite from '../../../../../Images/raglans/drug/psilocybn/psilocybn-Chemical-Structure_mockup_WhiteBlack.png';
 import PsilocybnBlue from '../../../../../Images/raglans/drug/psilocybn/psilocybn-Chemical-Structure_mockup_WhiteHeather-Lake-Blue.png'
 
-export default class RaglanPVPsilocybnChem extends Component {
+class RaglanPVPsilocybnChem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -132,5 +134,9 @@ export default class RaglanPVPsilocybnChem extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVPsilocybnChem)

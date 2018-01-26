@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../ducks/reducer';
+
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
@@ -22,7 +25,7 @@ import BeBestWhite from '../../../Images/tshirts/happiness/bethebest/BeTheBestYo
 import SmileWhite from '../../../Images/tshirts/gender/gendersmile/GenderSmileyFace_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 import SerotoninWhite from '../../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-export default class TShirtsMain extends Component {
+class TShirtsMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -177,12 +180,12 @@ export default class TShirtsMain extends Component {
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/tshirts">
+                                <Link to="/store/t-shirts">
                                     <H42>
                                         shirt name
                                     </H42>
                                 </Link>
-                                <Link to="">
+                                <Link to="/store/t-shirts">
                                     <SquareImage
                                         size="md">
                                         {}
@@ -298,3 +301,9 @@ export default class TShirtsMain extends Component {
         )
     }
 }
+
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(TShirtsMain)

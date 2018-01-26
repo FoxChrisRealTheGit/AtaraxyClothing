@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../../../ducks/reducer';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
@@ -18,7 +20,7 @@ import DMTWhite from '../../../../../Images/raglans/drug/dmtChemical/DMTChemical
 import DMTBlack from '../../../../../Images/raglans/drug/dmtChemical/DMTChemicalStructure_mockup_BlackBlack.png';
 import DMTBlue from '../../../../../Images/raglans/drug/dmtChemical/DMTChemicalStructure_mockup_WhiteHeather-Lake-Blue.png';
 
-export default class RaglanPVIDontBelieve extends Component {
+class RaglanPVIDontBelieve extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -151,5 +153,9 @@ export default class RaglanPVIDontBelieve extends Component {
             </section>
         )
     }
-
 }
+function mapStateToProps(state){
+    return state;
+}
+
+export default connect(mapStateToProps, {addToCart})(RaglanPVIDontBelieve)
