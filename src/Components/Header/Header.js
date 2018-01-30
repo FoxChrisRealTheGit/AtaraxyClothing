@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { connect } from 'react-redux';
 import { addToCart } from '../../ducks/reducer';
 import {
@@ -19,14 +19,14 @@ class Header extends Component {
             cart: "It seems there is nothign here...",
         }
     }
-    componentWillMount() {
-        axios.get('/api/cartgrab')
-            .then((res) => {
-                this.setState({ cart: res.cart })
-            }).catch(function (err) {
-                console.log(err)
-            })
-    }
+    // componentWillMount() {
+    //     axios.get('/api/cartgrab')
+    //         .then((res) => {
+    //             this.setState({ cart: res.cart })
+    //         }).catch(function (err) {
+    //             console.log(err)
+    //         })
+    // }
     render() {
         return (
             <header>

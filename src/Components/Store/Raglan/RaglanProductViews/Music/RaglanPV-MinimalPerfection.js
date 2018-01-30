@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
+import productVariant from '../RaglanProductVariant';
 import {
     Container1,
     Holder1,
@@ -39,22 +40,24 @@ export default class RaglanPVMinimalPerfection extends Component {
     }
     justPrice(size) {
         if (this.state.price !== '25.00') {
-            return this.setState({ price: '25.00' , size: size })
-        }else {
+            return this.setState({ price: '25.00', size: size })
+        } else {
             return this.setState({ size: size })
         }
     }
     priceAdd150(size) {
-        return this.setState({ price: '26.50' , size: size })
+        return this.setState({ price: '26.50', size: size })
     }
     addToCart() {
         if ((this.state.color === '') || (this.state.size === '')) {
             return console.log('error, please pick color and size')
         } else {
+            let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
                 cart: {
-                    item: this.state.number,
+                    item: variant,
                     name: this.state.name,
+                    price: this.state.price,
                     color: this.state.color,
                     size: this.state.size,
                     quantity: 1,
@@ -88,9 +91,9 @@ export default class RaglanPVMinimalPerfection extends Component {
                                 Minimal Perfection 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder10>
-                            <P3>
-                                {'$'+this.state.price}
-                            </P3>
+                                <P3>
+                                    {'$' + this.state.price}
+                                </P3>
                                 <div>
                                     <label>
                                         White
@@ -99,43 +102,43 @@ export default class RaglanPVMinimalPerfection extends Component {
                                     </label>
                                 </div>
                                 <div>
-                                <label>
-                                XSM
+                                    <label>
+                                        XSM
                                 <input type="radio" value="xsm" name="size"
-                                    onClick={() => this.justPrice('xsm')} />
-                            </label>
-                            <label>
-                                SM
+                                            onClick={() => this.justPrice('xsm')} />
+                                    </label>
+                                    <label>
+                                        SM
                                 <input type="radio" value="sm" name="size"
-                                    onClick={() => this.justPrice('sm')} />
-                            </label>
-                            <label>
-                                MD
+                                            onClick={() => this.justPrice('sm')} />
+                                    </label>
+                                    <label>
+                                        MD
                                 <input type="radio" value="md" name="size"
-                                    onClick={() => this.justPrice('md')} />
-                            </label>
-                            <label>
-                                LG
+                                            onClick={() => this.justPrice('md')} />
+                                    </label>
+                                    <label>
+                                        LG
                                 <input type="radio" value="lg" name="size"
-                                    onClick={() => this.justPrice('lg')} />
-                            </label>
-                            <label>
-                                XL
+                                            onClick={() => this.justPrice('lg')} />
+                                    </label>
+                                    <label>
+                                        XL
                                 <input type="radio" value="xl" name="size"
-                                    onClick={() => this.justPrice('xl')} />
-                            </label>
-                            <label>
-                                2XL
+                                            onClick={() => this.justPrice('xl')} />
+                                    </label>
+                                    <label>
+                                        2XL
                                 <input type="radio" value="2xl" name="size"
-                                    onClick={() => this.priceAdd150('2xl')} />
-                            </label>
+                                            onClick={() => this.priceAdd150('2xl')} />
+                                    </label>
                                 </div>
                                 <RaglanSizeChart />
                                 <button onClick={() => this.addToCart()}>Add To Cart</button>
-                            <P4>
-                                Product decription
+                                <P4>
+                                    Product decription
                             </P4>
-                        </Holder10>
+                            </Holder10>
                         </Holder1>
                         <Carousel4>
                         </Carousel4>

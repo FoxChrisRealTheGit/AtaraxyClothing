@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
+import productVariant from '../RaglanProductVariant';
 import {
     Container1,
     Holder1,
@@ -56,10 +57,12 @@ export default class RaglanPVWorldsOkayestPoet extends Component {
         if ((this.state.color === '') || (this.state.size === '')) {
             return console.log('error, please pick color and size')
         } else {
+            let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
                 cart: {
-                    item: this.state.number,
+                    item: variant,
                     name: this.state.name,
+                    price: this.state.price,
                     color: this.state.color,
                     size: this.state.size,
                     quantity: 1,
@@ -75,6 +78,7 @@ export default class RaglanPVWorldsOkayestPoet extends Component {
                 })
         }
     }
+
     render() {
         return (
             <section>
@@ -89,12 +93,12 @@ export default class RaglanPVWorldsOkayestPoet extends Component {
                             alignBlock2="flex-start">
                             <SquareImage
                                 size="md">
-                                {'$' + this.state.cur}
+                                {this.state.cur}
                                 Worlds Okayest Poet 3/4 Sleeve Shirt
                             </SquareImage>
                             <Holder10>
                                 <P3>
-                                    {this.state.price}
+                                    {'$' + this.state.price}
                                 </P3>
                                 <div>
                                     <label>

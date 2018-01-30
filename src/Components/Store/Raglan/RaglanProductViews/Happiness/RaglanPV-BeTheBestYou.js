@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
+import productVariant from '../RaglanProductVariant';
 import {
     Container1,
     Holder1,
@@ -42,29 +43,31 @@ export default class RaglanPVBeTheBestYou extends Component {
         return this.setState({ cur: BestYouWhite, color: 'white' })
     }
     imageBlack() {
-        return this.setState({ cur: BestYouBlack , color: 'black'})
+        return this.setState({ cur: BestYouBlack, color: 'black' })
     }
     imageHeather() {
         return this.setState({ cur: BestYouHeather, color: 'heather' })
     }
     justPrice(size) {
         if (this.state.price !== '25.00') {
-            return this.setState({ price: '25.00' , size: size })
-        }else {
+            return this.setState({ price: '25.00', size: size })
+        } else {
             return this.setState({ size: size })
         }
     }
     priceAdd150(size) {
-        return this.setState({ price: '26.50' , size: size })
+        return this.setState({ price: '26.50', size: size })
     }
     addToCart() {
         if ((this.state.color === '') || (this.state.size === '')) {
             return console.log('error, please pick color and size')
         } else {
+            let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
                 cart: {
-                    item: this.state.number,
+                    item: variant,
                     name: this.state.name,
+                    price: this.state.price,
                     color: this.state.color,
                     size: this.state.size,
                     quantity: 1,
@@ -99,59 +102,59 @@ export default class RaglanPVBeTheBestYou extends Component {
                             </SquareImage>
                             <Holder10>
                                 <P3>
-                                    {'$'+this.state.price}
+                                    {'$' + this.state.price}
                                 </P3>
-                                    <div>
-                                        <label>
-                                            White
-                                            <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageWhite()} />
-                                        </label>
-                                        <label>
-                                            Black
-                                            <input type="radio" value="black" name="color"
-                                                onChange={() => this.imageBlack()} />
-                                        </label>
-                                        <label>
-                                            Heather Black
-                                            <input type="radio" value="heather" name="color"
-                                                onClick={() => this.imageHeather()} />
-                                        </label>
-                                    </div>
-                                    <div>
+                                <div>
                                     <label>
-                                    XSM
+                                        White
+                                            <input type="radio" value="white" name="color"
+                                            onClick={() => this.imageWhite()} />
+                                    </label>
+                                    <label>
+                                        Black
+                                            <input type="radio" value="black" name="color"
+                                            onChange={() => this.imageBlack()} />
+                                    </label>
+                                    <label>
+                                        Heather Black
+                                            <input type="radio" value="heather" name="color"
+                                            onClick={() => this.imageHeather()} />
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        XSM
                                     <input type="radio" value="xsm" name="size"
-                                        onClick={() => this.justPrice('xsm')} />
-                                </label>
-                                <label>
-                                    SM
+                                            onClick={() => this.justPrice('xsm')} />
+                                    </label>
+                                    <label>
+                                        SM
                                     <input type="radio" value="sm" name="size"
-                                        onClick={() => this.justPrice('sm')} />
-                                </label>
-                                <label>
-                                    MD
+                                            onClick={() => this.justPrice('sm')} />
+                                    </label>
+                                    <label>
+                                        MD
                                     <input type="radio" value="md" name="size"
-                                        onClick={() => this.justPrice('md')} />
-                                </label>
-                                <label>
-                                    LG
+                                            onClick={() => this.justPrice('md')} />
+                                    </label>
+                                    <label>
+                                        LG
                                     <input type="radio" value="lg" name="size"
-                                        onClick={() => this.justPrice('lg')} />
-                                </label>
-                                <label>
-                                    XL
+                                            onClick={() => this.justPrice('lg')} />
+                                    </label>
+                                    <label>
+                                        XL
                                     <input type="radio" value="xl" name="size"
-                                        onClick={() => this.justPrice('xl')} />
-                                </label>
-                                <label>
-                                    2XL
+                                            onClick={() => this.justPrice('xl')} />
+                                    </label>
+                                    <label>
+                                        2XL
                                     <input type="radio" value="2xl" name="size"
-                                        onClick={() => this.priceAdd150('2xl')} />
-                                </label>
-                                    </div>
-                                    <RaglanSizeChart />
-                                    <button onClick={() => this.addToCart()}>Add To Cart</button>
+                                            onClick={() => this.priceAdd150('2xl')} />
+                                    </label>
+                                </div>
+                                <RaglanSizeChart />
+                                <button onClick={() => this.addToCart()}>Add To Cart</button>
                                 <P4>
                                     Product decription
                                 </P4>

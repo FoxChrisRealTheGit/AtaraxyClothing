@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
+import productVariant from '../RaglanProductVariant';
 import {
     Container1,
     Holder1,
@@ -48,23 +49,25 @@ export default class RaglanPVDopamineChem extends Component {
         return this.setState({ cur: DopamineHeather, color: 'heather' })
     }
     justPrice(size) {
-        if (this.state.price !== '$25.00') {
-            return this.setState({ price: '$25.00', size: size })
+        if (this.state.price !== '25.00') {
+            return this.setState({ price: '25.00', size: size })
         } else {
             return this.setState({ size: size })
         }
     }
     priceAdd150(size) {
-        return this.setState({ price: '$26.50', size: size })
+        return this.setState({ price: '26.50', size: size })
     }
     addToCart() {
         if ((this.state.color === '') || (this.state.size === '')) {
             return console.log('error, please pick color and size')
         } else {
+            let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
                 cart: {
-                    item: this.state.number,
+                    item: variant,
                     name: this.state.name,
+                    price: this.state.price,
                     color: this.state.color,
                     size: this.state.size,
                     quantity: 1,

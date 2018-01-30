@@ -5,7 +5,7 @@ import Footer from '../../Footer/Footer';
 import {
     Container1,
     Holder1,
-    Holder3,
+    Holder4,
     Holder6,
     H42,
 } from 'react-stylux';
@@ -23,12 +23,13 @@ export default class Checkout extends Component {
         }).then((res) => {
             let tempcart = res.data.cart.map((x, i) => {
                 return (<section key={i}>
-                    <Holder3 >
+                    <Holder4 >
                         {x.name}
                         {x.color}
                         {x.size}
                         {x.quantity}
-                    </Holder3>
+                        {x.price}
+                    </Holder4>
                 </section>
                 )
             })
@@ -44,8 +45,8 @@ export default class Checkout extends Component {
                 <Header />
                 <Container1>
                     <Holder6>
-                    <H42>
-                        Checkout
+                        <H42>
+                            Checkout
                     </H42>
                         <div>
                             {this.state.cart}

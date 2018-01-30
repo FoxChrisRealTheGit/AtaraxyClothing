@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
+import productVariant from '../TShirtProductVariant';
 import {
     Container1,
     Holder1,
@@ -70,7 +71,7 @@ export default class TShirtPVDopamineChem extends Component {
     justPrice(size) {
         if (this.state.price !== '22.00') {
             return this.setState({ price: '22.00', size: size })
-        }else{
+        } else {
             return this.setState({ size: size })
         }
     }
@@ -84,10 +85,12 @@ export default class TShirtPVDopamineChem extends Component {
         if ((this.state.color === '') || (this.state.size === '')) {
             return console.log('error, please pick color and size')
         } else {
+            let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
                 cart: {
-                    item: this.state.number,
+                    item: variant,
                     name: this.state.name,
+                    price: this.state.price,
                     color: this.state.color,
                     size: this.state.size,
                     quantity: 1,
@@ -103,6 +106,7 @@ export default class TShirtPVDopamineChem extends Component {
                 })
         }
     }
+
     render() {
         return (
             <section>
