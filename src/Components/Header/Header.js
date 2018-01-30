@@ -8,7 +8,6 @@ import {
     NavBar1,
     Brand1,
     DropDownNav1,
-    Toggler2,
 } from 'react-stylux';
 
 import fb from '../../Images/facebookbanner1.jpg';

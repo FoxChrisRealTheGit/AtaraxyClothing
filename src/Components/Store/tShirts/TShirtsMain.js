@@ -21,6 +21,12 @@ import IDontWhite from '../../../Images/tshirts/other/idontbelieve/I-Dont-Believ
 import BeBestWhite from '../../../Images/tshirts/happiness/bethebest/BeTheBestYou_whiteandBlack_printfile_front_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 import SmileWhite from '../../../Images/tshirts/gender/gendersmile/GenderSmileyFace_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 import SerotoninWhite from '../../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import DontAssume from '../../../Images/tshirts/gender/dontassume/DontAssumeBlack_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import DMTChem from '../../../Images/tshirts/drug/dmt/DMTChemicalStructure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import DopamineChem from '../../../Images/tshirts/drug/dopamine/Dopamine-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import KetamineChem from '../../../Images/tshirts/drug/ketamine/Ketamine-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import LSDChem from '../../../Images/tshirts/drug/lsd/LSDChemicalStructure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import MDMAChemi from '../../../Images/tshirts/drug/mdma/MDMA-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
 export default class TShirtsMain extends Component {
     constructor(props) {
@@ -139,14 +145,18 @@ export default class TShirtsMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <H42>
-                                    shirt name
+                                <a href="/store/t-shirts/dopamine">
+                                    <H42>
+                                        Dopamine Chemical Structure
                                 </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
+                                </a>
+                                <a href="/store/t-shirts/dopamine">
+                                    <SquareImage
+                                        size="md">
+                                        {DopamineChem}
 
-                                </SquareImage>
+                                    </SquareImage>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
@@ -157,14 +167,18 @@ export default class TShirtsMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <H42>
-                                    shirt name
+                                <a href="/store/t-shirts/dontassume">
+                                    <H42>
+                                        Don't Assume
                                 </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
+                                </a>
+                                <a href="/store/t-shirts/dontassume">
+                                    <SquareImage
+                                        size="md">
+                                        {DontAssume}
 
-                                </SquareImage>
+                                    </SquareImage>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
@@ -177,15 +191,15 @@ export default class TShirtsMain extends Component {
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <a href="/store/t-shirts">
+                                <a href="/store/t-shirts/dmt">
                                     <H42>
-                                        shirt name
+                                        DMT Chemical Structure
                                     </H42>
                                 </a>
-                                <a href="/store/t-shirts">
+                                <a href="/store/t-shirts/dmt">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {DMTChem}
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
@@ -199,14 +213,18 @@ export default class TShirtsMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <H42>
-                                    shirt name
+                                <a href="/store/t-shirts/lsd">
+                                    <H42>
+                                        LSD Chemical Structure
                                 </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
+                                </a>
+                                <a href="/store/t-shirts/lsd">
+                                    <SquareImage
+                                        size="md">
+                                        {LSDChem}
 
-                                </SquareImage>
+                                    </SquareImage>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
@@ -217,14 +235,18 @@ export default class TShirtsMain extends Component {
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <H42>
-                                    shirt name
+                                <a href="/store/t-shirts/mdma">
+                                    <H42>
+                                        MDMA Chemical Structure
                                 </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
+                                </a>
+                                <a href="/store/t-shirts/mdma">
+                                    <SquareImage
+                                        size="md">
+                                        {MDMAChemi}
 
-                                </SquareImage>
+                                    </SquareImage>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
@@ -237,50 +259,18 @@ export default class TShirtsMain extends Component {
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <H42>
-                                    shirt name
+                                <a href="/store/t-shirts/ketamine">
+                                    <H42>
+                                        Ketamine Chemical Structure
                                 </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
+                                </a>
+                                <a href="/store/t-shirts/ketamine">
+                                    <SquareImage
+                                        size="md">
+                                        {KetamineChem}
 
-                                </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
-                            </Holder6>
-                            <Holder6>
-                                <H42>
-                                    shirt name
-                                </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
-
-                                </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
-                            </Holder6>
-                            <Holder6>
-                                <H42>
-                                    shirt name
-                                </H42>
-                                <SquareImage
-                                    size="md">
-                                    {}
-
-                                </SquareImage>
+                                    </SquareImage>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">

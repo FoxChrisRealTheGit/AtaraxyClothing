@@ -8,8 +8,6 @@ import {
     Holder3,
     Holder6,
     H42,
-    Carousel4,
-    SquareImage,
 } from 'react-stylux';
 
 export default class Checkout extends Component {
@@ -46,6 +44,9 @@ export default class Checkout extends Component {
                 <Header />
                 <Container1>
                     <Holder6>
+                    <H42>
+                        Checkout
+                    </H42>
                         <div>
                             {this.state.cart}
                         </div>
@@ -53,7 +54,7 @@ export default class Checkout extends Component {
                             alignBlock1='flex-end'
                             alignBlock2="flex-start"
                             margin="20px">
-                            {'Total: ' + '$' + this.state.total}
+                            {'Total: $' + this.state.total}
                             <a href="/"><button onClick={() => this.submitOrder}>Submit</button></a>
                         </Holder1>
                     </Holder6>
