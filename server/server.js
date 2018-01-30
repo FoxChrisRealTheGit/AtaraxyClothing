@@ -21,7 +21,7 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-app.use((req, res, next)=>checkForSession(req, res, next))
+app.use((req, res, next) => checkForSession(req, res, next))
 //grabbing database connection
 massive(process.env.CONNECTION_STRING).then((db) => {
     app.set('db', db);
@@ -34,25 +34,25 @@ massive(process.env.CONNECTION_STRING).then((db) => {
 //     callbackURL: process.env.AUTH_CALLBACK_URL,
 //     scope: "openid profile"
 // }, function (accessToken, refreshToken, extraParams, profile, done) {
-    //not grabbing right information
-    // let { displayName, user_id, picture } = profile;
-    // const db = app.get('db');
+//not grabbing right information
+// let { displayName, user_id, picture } = profile;
+// const db = app.get('db');
 
-    // //needs to be changed
-    // db.find_user([user_id]).then(function (users) {
-    //     if (!users[0]) {
-    //         db.create_user([
-    //             displayName,
-    //             'test@test.com',
-    //             picture,
-    //             user_id
-    //         ]).then(user => {
-    //             return done(null, user[0].id)
-    //         })
-    //     } else {
-    //         return done(null, users[0].id)
-    //     }
-    // })
+// //needs to be changed
+// db.find_user([user_id]).then(function (users) {
+//     if (!users[0]) {
+//         db.create_user([
+//             displayName,
+//             'test@test.com',
+//             picture,
+//             user_id
+//         ]).then(user => {
+//             return done(null, user[0].id)
+//         })
+//     } else {
+//         return done(null, users[0].id)
+//     }
+// })
 //     return done(null, profile)
 // }))
 
@@ -92,27 +92,23 @@ app.get('/api/cartgrab', OrdersCon.getCart)
 app.put('/api/cartadd', OrdersCon.addToCart)
 
 // remove from cart - delete
-app.delete('/api/cartRemove', function(req, res){
-    const db = app.get('db');
-    let userName = 'User1'
-    db.emptyCart([userName])
-    res.status(200).send('removed from cart')
-})
+app.delete('/api/cartremove', OrdersCon.removeItem)
 //edit quanitity of cart - put
-app.put('/api/cartEdit', function(req, res){
-    const db = app.get('db');
-    res.status(200).send('cart edited')
-})
+app.put('/api/cartupdatequantity', OrdersCon.updateQuantity)
+//
+app.post('https://api.printful.com/shipping/rates', OrdersCon.updateShippingRate)
 // move to favourites - put
-app.put('/api/movetofavorites', function(req, res){
+app.put('/api/movetofavorites', function (req, res) {
     const db = app.get('db');
     res.status(200).send('moved to favorites')
 })
 /* end cart endpoints */
 /* start order endpoints */
+//payment endpoint
+app.post('/api/payment', OrdersCon.payment)
 
 // send order - post
-app.post('/api/sendorder', function(req, res){
+app.post('/api/sendorder', function (req, res) {
     const db = app.get('db');
     res.status(200).send('sent order')
 })
@@ -120,39 +116,39 @@ app.post('/api/sendorder', function(req, res){
 /* start account specific endpoints */
 
 // make comment endpoint - post
-app.post('/api/makecomment', function(req, res){
+app.post('/api/makecomment', function (req, res) {
     const db = app.get('db');
 
 })
 // edit comment  - put
-app.put('/api/editcomment',function(req, res){
+app.put('/api/editcomment', function (req, res) {
     const db = app.get('db');
 
 })
 // delete comment - delete
-app.delete('/api/deletecomment', function(req, res){
+app.delete('/api/deletecomment', function (req, res) {
     const db = app.get('db');
 
 })
 // get comments - get
-app.get('/api/getcomments', function(req, res){
+app.get('/api/getcomments', function (req, res) {
     const db = app.get('db');
 
 })
 // get order history - get
-app.get('/api/getcomments', function(req, res){
+app.get('/api/getcomments', function (req, res) {
     const db = app.get('db');
-    
+
 })
 // update account - put
-app.put('/api/updateaccount', function(req, res){
+app.put('/api/updateaccount', function (req, res) {
     const db = app.get('db');
 
 })
 // delete account - delete
-app.delete('/api/deleteaccount', function(req, res){
+app.delete('/api/deleteaccount', function (req, res) {
     const db = app.get('db');
-    
+
 })
 /* end account specific endpoints*/
 
