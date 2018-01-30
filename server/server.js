@@ -7,6 +7,9 @@ const massive = require('massive');
 const passport = require('passport');
 const Auth0 = require('passport-auth0');
 
+const OrdersCon = require('./controllers/OrdersController');
+const checkForSession = require('./middlewares/CheckForSession');
+
 const app = express();
 app.use(bodyparser.json());
 app.use(cors());
@@ -15,9 +18,10 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
 }));
+
 app.use(passport.initialize());
 app.use(passport.session());
-
+app.use((req, res, next)=>checkForSession(req, res, next))
 //grabbing database connection
 massive(process.env.CONNECTION_STRING).then((db) => {
     app.set('db', db);
@@ -83,23 +87,10 @@ massive(process.env.CONNECTION_STRING).then((db) => {
 /* start cart endpoints */
 
 //get cart - get
-app.get('/api/cartgrab', (req, res)=>{
-    const db = req.app.get('db');
-    let username='User1'
-    db.grabCurCart(username).then(cart=>{
-        res.send(cart)
-    })
-})
-
+app.get('/api/cartgrab', OrdersCon.getCart)
 // add to cart - put
-app.put('/api/cartadd', function(req, res, next)
-    {
-    const db = app.get('db');
-    let userName = req.body.userName
-    let item = req.body.item
-    db.addToCart(item, userName)
-    res.status(200).send('added to cart')
-})
+app.put('/api/cartadd', OrdersCon.addToCart)
+
 // remove from cart - delete
 app.delete('/api/cartRemove', function(req, res){
     const db = app.get('db');

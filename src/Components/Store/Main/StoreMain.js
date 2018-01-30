@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import {addToCart} from '../../../ducks/reducer';
-import { Link } from 'react-router-dom';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
@@ -28,13 +25,17 @@ import BeTheBestRag from '../../../Images/raglans/happiness/beTheBestYou/BeTheBe
 import MinimalPerfectionRag from '../../../Images/raglans/music/minimalperfection/minimal-perfection_mockup_WhiteBlack.png';
 import GenderSmileyRag from '../../../Images/raglans/gender/gendersmilyface/GenderSmileyFace_mockup_WhiteBlack.png';
 //tshirtimages
+import IDontBelieveTShirt from '../../../Images/tshirts/other/idontbelieve/I-Dont-Believe_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import SerotoninTShirt from '../../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import BeTheBestTshirt from '../../../Images/tshirts/happiness/bethebest/BeTheBestYou_whiteandBlack_printfile_front_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import GenderSmileyTShirt from '../../../Images/tshirts/gender/gendersmile/GenderSmileyFace_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 //beanieimages
 import ColoradoFlagBeanie from '../../../Images/beanies/ColoradoFlagHatFull.jpg';
 import BlackBeanie from '../../../Images/beanies/BlackPanther.jpg';
 import AgenderFlag from "../../../Images/beanies/AgenderFull.png";
 import HomeTeamThree from "../../../Images/beanies/HomeTeamThreeFull.png";
 
-class StoreMain extends Component {
+export default class StoreMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -52,27 +53,27 @@ class StoreMain extends Component {
                         </H42>
                         <Carousel4>
                         </Carousel4>
-                        <Link to="/store/raglans">
+                        <a href="/store/raglans">
                             <H42
                                 margin="70px 0 30px 0">
                                 3/4 Sleeve Shirts
                             </H42>
-                        </Link>
+                        </a>
                         <Holder5>
                             <Holder3>
                                 <Holder6>
-                                    <Link to="/store/raglans/idontbelieve">
+                                    <a href="/store/raglans/idontbelieve">
                                         <H42>
                                             I Don't Believe
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/idontbelieve">
+                                    </a>
+                                    <a href="/store/raglans/idontbelieve">
                                         <SquareImage
                                             size="sm">
                                             {IDontBelieveRag}
                                             I Don't Believe in Humans 3/4 Sleeve Shirt
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -83,18 +84,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    <a href="/store/raglans/bethebestyou">
                                         <H42>
                                             Be The Best You
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    </a>
+                                    <a href="/store/raglans/bethebestyou">
                                         <SquareImage
                                             size="sm">
                                             {BeTheBestRag}
                                             a 3/4 sleeve shirt
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -105,18 +106,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    <a href="/store/raglans/minimalperfection">
                                         <H42>
                                             Minimal Perfection
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    </a>
+                                    <a href="/store/raglans/minimalperfection">
                                         <SquareImage
                                             size="sm">
                                             {MinimalPerfectionRag}
                                             a 3/4 sleeve shirt
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -127,18 +128,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/raglans/gendersmile">
+                                    <a href="/store/raglans/gendersmile">
                                         <H42>
-                                            Gender Smiley Face
+                                        Gender Smile
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/gendersmile">
+                                    </a>
+                                    <a href="/store/raglans/gendersmile">
                                         <SquareImage
                                             size="sm">
                                             {GenderSmileyRag}
-                                            Gender Smiley Face 3/4 Sleeve Shirt
+                                            Gender Smile 3/4 Sleeve Shirt
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -149,7 +150,7 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                             </Holder3>
-                            <P1><Link to="/store/raglans">Shop 3/4 Sleeve Shirts...</Link></P1>
+                            <P1><a href="/store/raglans">Shop 3/4 Sleeve Shirts...</a></P1>
                         </Holder5>
                         <H42
                             margin="70px 0 30px 0">
@@ -158,18 +159,18 @@ class StoreMain extends Component {
                         <Holder5>
                             <Holder3>
                                 <Holder6>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    <a href="/store/t-shirts/idontbelieve">
                                         <H42>
-                                            t-shirt Name
+                                            I Dont Believe
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    </a>
+                                    <a href="/store/t-shirts/idontbelieve">
                                         <SquareImage
                                             size="sm">
-                                            {fb}
+                                            {IDontBelieveTShirt}
                                             a 3/4 sleeve
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -180,18 +181,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    <a href="/store/t-shirts/serotonin">
                                         <H42>
-                                            T-shirt Name
+                                           Serotonin Chemical
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    </a>
+                                    <a href="/store/t-shirts/serotonin">
                                         <SquareImage
                                             size="sm">
-                                            {fb}
+                                            {SerotoninTShirt}
                                             a 3/4 sleeve
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -202,18 +203,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    <a href="/store/t-shirts/gendersmile">
                                         <H42>
-                                            T-shirt Name
+                                        Gender Smile
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    </a>
+                                    <a href="/store/t-shirts/gendersmile">
                                         <SquareImage
                                             size="sm">
-                                            {fb}
+                                            {GenderSmileyTShirt}
                                             a 3/4 sleeve
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -224,18 +225,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    <a href="/store/t-shirts/bethebestyou">
                                         <H42>
-                                            T-shirt Name
+                                            Be The Best You
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/raglans/bethebestyou">
+                                    </a>
+                                    <a href="/store/t-shirts/bethebestyou">
                                         <SquareImage
                                             size="sm">
-                                            {fb}
+                                            {BeTheBestTshirt}
                                             a 3/4 sleeve
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -246,29 +247,29 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                             </Holder3>
-                            <P1><Link to="/store/t-shirts">Shop T-Shirts...</Link></P1>
+                            <P1><a href="/store/t-shirts">Shop T-Shirts...</a></P1>
                         </Holder5>
-                        <Link to="/store/beanies">
+                        <a href="/store/beanies">
                             <H42
                                 margin="70px 0 30px 0">
                                 Handmade Beanies
                             </H42>
-                        </Link>
+                        </a>
                         <Holder5>
                             <Holder3>
                                 <Holder6>
-                                    <Link to="/store/beanies">
+                                    <a href="/store/beanies">
                                         <H42>
                                             Colorado Flag Beanie
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/beanies">
+                                    </a>
+                                    <a href="/store/beanies">
                                         <SquareImage
                                             size="sm">
                                             {ColoradoFlagBeanie}
                                             Handmade Colorado Flag Beanie
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -279,18 +280,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/beanies">
+                                    <a href="/store/beanies">
                                         <H42>
                                             Black Beanie
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/beanies">
+                                    </a>
+                                    <a href="/store/beanies">
                                         <SquareImage
                                             size="sm">
                                             {BlackBeanie}
                                             A Handmade Black Beanie
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -301,18 +302,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/beanies">
+                                    <a href="/store/beanies">
                                         <H42>
                                             Home Team Three Beanie
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/beanies">
+                                    </a>
+                                    <a href="/store/beanies">
                                         <SquareImage
                                             size="sm">
                                             {HomeTeamThree}
                                             A Handmade Beanie
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -323,18 +324,18 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                                 <Holder6>
-                                    <Link to="/store/beanies">
+                                    <a href="/store/beanies">
                                         <H42>
                                             Agender Flag Beanie
                                         </H42>
-                                    </Link>
-                                    <Link to="/store/beanies">
+                                    </a>
+                                    <a href="/store/beanies">
                                         <SquareImage
                                             size="sm">
                                             {AgenderFlag}
                                             Handmade Agender Flag Beanie
                                         </SquareImage>
-                                    </Link>
+                                    </a>
                                     <Holder1
                                         alignBlock1="flex-end"
                                         alignBlock2="flex-start">
@@ -345,7 +346,7 @@ class StoreMain extends Component {
                                     </Holder1>
                                 </Holder6>
                             </Holder3>
-                            <P1><Link to="/store/beanies">Shop Beanies...</Link></P1>
+                            <P1><a href="/store/beanies">Shop Beanies...</a></P1>
                         </Holder5>
                     </Holder11>
                 </Container1>
@@ -354,8 +355,3 @@ class StoreMain extends Component {
         )
     }
 }
-function mapStateToProps(state){
-    return state;
-}
-
-export default connect(mapStateToProps, {addToCart})(StoreMain)

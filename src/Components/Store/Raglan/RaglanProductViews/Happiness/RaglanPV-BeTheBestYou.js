@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import {addToCart} from '../../../../../ducks/reducer';
 import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
@@ -9,6 +7,7 @@ import {
     Container1,
     Holder1,
     Holder6,
+    Holder10,
     H32,
     SquareImage,
     P3,
@@ -20,13 +19,16 @@ import BestYouWhite from '../../../../../Images/raglans/happiness/beTheBestYou/B
 import BestYouBlack from '../../../../../Images/raglans/happiness/beTheBestYou/BeTheBestYouWhite_mockup_BlackBlack.png';
 import BestYouHeather from '../../../../../Images/raglans/happiness/beTheBestYou/BeTheBestYouWhite_mockup_Heather-BlackBlack.png';
 
-class RaglanPVBeTheBestYou extends Component {
+export default class RaglanPVBeTheBestYou extends Component {
     constructor(props) {
         super(props);
         this.state = {
             cur: BestYouWhite,
-            price: '$25.00',
-            number: 2
+            price: '25.00',
+            number: 1,
+            color: '',
+            size: '',
+            name: 'Be The Best You - 3/4 Sleeve',
         }
         this.imageWhite = this.imageWhite.bind(this)
         this.imageBlack = this.imageBlack.bind(this)
@@ -37,48 +39,55 @@ class RaglanPVBeTheBestYou extends Component {
     }
 
     imageWhite() {
-        return this.setState({ cur: BestYouWhite })
+        return this.setState({ cur: BestYouWhite, color: 'white' })
     }
     imageBlack() {
-        return this.setState({ cur: BestYouBlack })
+        return this.setState({ cur: BestYouBlack , color: 'black'})
     }
     imageHeather() {
-        return this.setState({ cur: BestYouHeather })
+        return this.setState({ cur: BestYouHeather, color: 'heather' })
     }
-    justPrice() {
-        if (this.state.price !== '$25.00') {
-            return this.setState({ price: '$25.00' })
+    justPrice(size) {
+        if (this.state.price !== '25.00') {
+            return this.setState({ price: '25.00' , size: size })
+        }else {
+            return this.setState({ size: size })
         }
     }
-    priceAdd150() {
-        return this.setState({ price: '$26.50' })
+    priceAdd150(size) {
+        return this.setState({ price: '26.50' , size: size })
     }
     addToCart() {
-        axios.put('http://localhost:4000/api/cartadd', {
-            item: this.state.number, 
-            userName: 'User1'})
-        .then((res)=>{
-            console.log(res)
-        })
-        .catch((err)=>{
-             console.log(err)
-        })
-     }
-    render() {
-        const FORMSTYLE = {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'space-around',
-            height: '200px',
+        if ((this.state.color === '') || (this.state.size === '')) {
+            return console.log('error, please pick color and size')
+        } else {
+            axios.put('/api/cartadd', {
+                cart: {
+                    item: this.state.number,
+                    name: this.state.name,
+                    color: this.state.color,
+                    size: this.state.size,
+                    quantity: 1,
+                },
+                price: this.state.price
+
+            })
+                .then((res) => {
+                    console.log(res)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
         }
+    }
+    render() {
         return (
             <section>
                 <Header />
                 <Container1>
                     <Holder6>
                         <H32>
-                            Be The Best You - 3/4 Sleeve
+                            {this.state.name}
                         </H32>
                         <Holder1
                             alignBlock1="flex-end"
@@ -88,11 +97,10 @@ class RaglanPVBeTheBestYou extends Component {
                                 {this.state.cur}
                                 Be The Best You 3/4 Sleeve Shirt
                             </SquareImage>
-                            <Holder6>
+                            <Holder10>
                                 <P3>
-                                    {this.state.price}
+                                    {'$'+this.state.price}
                                 </P3>
-                                <form style={FORMSTYLE}>
                                     <div>
                                         <label>
                                             White
@@ -114,41 +122,40 @@ class RaglanPVBeTheBestYou extends Component {
                                     <label>
                                     XSM
                                     <input type="radio" value="xsm" name="size"
-                                        onClick={() => this.justPrice()} />
+                                        onClick={() => this.justPrice('xsm')} />
                                 </label>
                                 <label>
                                     SM
                                     <input type="radio" value="sm" name="size"
-                                        onClick={() => this.justPrice()} />
+                                        onClick={() => this.justPrice('sm')} />
                                 </label>
                                 <label>
                                     MD
                                     <input type="radio" value="md" name="size"
-                                        onClick={() => this.justPrice()} />
+                                        onClick={() => this.justPrice('md')} />
                                 </label>
                                 <label>
                                     LG
                                     <input type="radio" value="lg" name="size"
-                                        onClick={() => this.justPrice()} />
+                                        onClick={() => this.justPrice('lg')} />
                                 </label>
                                 <label>
                                     XL
                                     <input type="radio" value="xl" name="size"
-                                        onClick={() => this.justPrice()} />
+                                        onClick={() => this.justPrice('xl')} />
                                 </label>
                                 <label>
                                     2XL
                                     <input type="radio" value="2xl" name="size"
-                                        onClick={() => this.priceAdd150()} />
+                                        onClick={() => this.priceAdd150('2xl')} />
                                 </label>
                                     </div>
                                     <RaglanSizeChart />
                                     <button onClick={() => this.addToCart()}>Add To Cart</button>
-                                </form>
                                 <P4>
                                     Product decription
                                 </P4>
-                            </Holder6>
+                            </Holder10>
                         </Holder1>
                         <Carousel4>
                         </Carousel4>
@@ -159,8 +166,3 @@ class RaglanPVBeTheBestYou extends Component {
         )
     }
 }
-function mapStateToProps(state){
-    return state;
-}
-
-export default connect(mapStateToProps, {addToCart})(RaglanPVBeTheBestYou)

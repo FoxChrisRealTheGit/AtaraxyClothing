@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
-import {addToCart} from '../../ducks/reducer';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -31,7 +29,6 @@ class Home extends Component {
         }
     }
     render() {
-            const {addToCart} = this.props;
         return (
             <section>
                 <Header />
@@ -42,103 +39,103 @@ class Home extends Component {
                                 image={`url(${fb})`}>
                             </Hero1>
                         </Carousel1>
-                        <Link to="/store">
+                        <a href="/store">
                             <H31>
                                 Products
                             </H31>
-                        </Link>
+                        </a>
                         <Holder2
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
 
                             <Holder5>
-                                <Link to="/store/raglans">
+                                <a href="/store/raglans">
                                     <SquareImage
                                         size="md">
                                         {IDontBelieve}
                                     </SquareImage>
-                                </Link>
-                                <Link to="/store/raglans">
+                                </a>
+                                <a href="/store/raglans">
                                     <H42>
                                         3/4 Sleeve Shirts
                                     </H42>
-                                </Link>
+                                </a>
                             </Holder5>
                             <Holder5>
-                                <Link to="/store/t-shirts">
+                                <a href="/store/t-shirts">
                                     <SquareImage
                                         size="md">
                                         {SerotoninWhite}
                                     </SquareImage>
-                                </Link>
-                                <Link to="/store/t-shirts">
+                                </a>
+                                <a href="/store/t-shirts">
                                     <H42>
                                         T-Shirts
                                     </H42>
-                                </Link>
+                                </a>
                             </Holder5>
                             <Holder5>
-                                <Link to="/store/beanies">
+                                <a href="/store/beanies">
                                     <SquareImage
                                         size="md">
                                         {}
                                     </SquareImage>
-                                </Link>
-                                <Link to="/store/beanies">
+                                </a>
+                                <a href="/store/beanies">
                                     <H42>
                                         Handmade Beanies
                                     </H42>
-                                </Link>
+                                </a>
                             </Holder5>
                         </Holder2>
                         <Hero1
                             height="500px"
                             image={`url(${gutair})`}>
                         </Hero1>
-                        <Link to="/blog">
+                        <a href="/blog">
                             <H31>The Written Word</H31>
-                        </Link>
+                        </a>
                         <Holder2
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
                             <Holder5>
-                                <Link to="/blog">
+                                <a href="/blog">
                                     <SquareImage
                                         size="md">
                                         {fb}
                                     </SquareImage>
-                                </Link>
-                                <Link to="/blog">
+                                </a>
+                                <a href="/blog">
                                     <H42>
                                         Blog 1
                                     </H42>
-                                </Link>
+                                </a>
                             </Holder5>
                             <Holder5>
-                                <Link to="/blog">
+                                <a href="/blog">
                                     <SquareImage
                                         size="md">
                                         {fb}
                                     </SquareImage>
-                                </Link>
-                                <Link to="/blog">
+                                </a>
+                                <a href="/blog">
                                     <H42>
                                         Blog 2
                                     </H42>
-                                </Link>
+                                </a>
                             </Holder5>
                             <Holder5>
-                                <Link to="/blog">
+                                <a href="/blog">
                                     <SquareImage
                                         size="md">
                                         {fb}
                                     </SquareImage>
-                                </Link>
-                                <Link to="/blog">
+                                </a>
+                                <a href="/blog">
                                     <H42>
                                         Blog 3
                                     </H42>
-                                </Link>
+                                </a>
                             </Holder5>
                         </Holder2>
                     </Holder10>
@@ -153,4 +150,4 @@ function mapStateToProps(state){
     return state;
 }
 
-export default connect(mapStateToProps, {addToCart})(Home)
+export default connect(mapStateToProps)(Home)

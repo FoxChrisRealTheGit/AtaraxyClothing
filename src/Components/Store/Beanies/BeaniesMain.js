@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import {connect} from 'react-redux';
 import {addToCart} from '../../../ducks/reducer';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
@@ -22,7 +20,7 @@ import {
 
 import bp from '../../../Images/SlouchyInFrontOfFlag.jpg';
 
-class BeaniesMain extends Component {
+export default class BeaniesMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,9 +32,9 @@ class BeaniesMain extends Component {
             <section>
                 <Header />
                 <SubNavBar1>
-                    <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
-                    <Link to="/store/t-shirts">T-Shirts</Link>
-                    <Link to="/store/beanies">Beanies</Link>
+                    <a href="/store/raglans">3/4 Sleeve Shirts</a>
+                    <a href="/store/t-shirts">T-Shirts</a>
+                    <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
                 <Container1>
                     <Holder7>
@@ -49,18 +47,18 @@ class BeaniesMain extends Component {
                         </H22>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/beanies">
+                                <a href="/store/beanies">
                                     <H42>
                                         beanie name
                                     </H42>
-                                </Link>
-                                <Link to="/store/beanies">
+                                </a>
+                                <a href="/store/beanies">
                                     <SquareImage
                                         size="md">
                                         {}
                                         a handmade beanie
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
@@ -170,8 +168,3 @@ class BeaniesMain extends Component {
         )
     }
 }
-function mapStateToProps(state){
-    return state;
-}
-
-export default connect(mapStateToProps, {addToCart})(BeaniesMain)

@@ -10,7 +10,7 @@ import Contact from './Components/Contact/Contact';
 import FAQ from './Components/FAQ/FAQ';
 import Policies from './Components/Policies/Disclaimers';
 import ReturnPolicy from './Components/Policies/ReturnPolicy';
-
+import Checkout from './Components/Store/checkout/checkout';
 //import store components
 import StoreMain from './Components/Store/Main/StoreMain';
 //import Beanie componetns
@@ -69,7 +69,7 @@ export default (
         <Route path="/return-policy" component={ReturnPolicy} />
 
         <Route exact path="/store" component={StoreMain} />
-
+        <Route path="/store/checkout" component={Checkout} />
         <Route path="/store/beanies" component={BeanieMain} />
 
         <Route exact path="/store/t-shirts" component={TShirtMain} />

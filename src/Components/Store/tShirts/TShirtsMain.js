@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import {connect} from 'react-redux';
-import {addToCart} from '../../../ducks/reducer';
 
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
@@ -25,7 +22,7 @@ import BeBestWhite from '../../../Images/tshirts/happiness/bethebest/BeTheBestYo
 import SmileWhite from '../../../Images/tshirts/gender/gendersmile/GenderSmileyFace_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 import SerotoninWhite from '../../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-class TShirtsMain extends Component {
+export default class TShirtsMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,9 +34,9 @@ class TShirtsMain extends Component {
             <section>
                 <Header />
                 <SubNavBar1>
-                    <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
-                    <Link to="/store/t-shirts">T-Shirts</Link>
-                    <Link to="/store/beanies">Beanies</Link>
+                    <a href="/store/raglans">3/4 Sleeve Shirts</a>
+                    <a href="/store/t-shirts">T-Shirts</a>
+                    <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
                 <Container1>
                     <Holder9>
@@ -52,93 +49,93 @@ class TShirtsMain extends Component {
                         </H22>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/t-shirts/idontbelieve">
+                                <a href="/store/t-shirts/idontbelieve">
                                     <H42>
                                         I Don't Believe
                                     </H42>
-                                </Link>
-                                <Link to="/store/t-shirts/idontbelieve">
+                                </a>
+                                <a href="/store/t-shirts/idontbelieve">
                                     <SquareImage
                                         size="md">
                                         {IDontWhite}
                                         a 3/4 sleeve
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/t-shirts/bethebestyou">
+                                <a href="/store/t-shirts/bethebestyou">
                                     <H42>
                                         Be The Best You
                                 </H42>
-                                </Link>
-                                <Link to="/store/t-shirts/bethebestyou">
+                                </a>
+                                <a href="/store/t-shirts/bethebestyou">
                                     <SquareImage
                                         size="md">
                                         {BeBestWhite}
 
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/t-shirts/gendersmile">
+                                <a href="/store/t-shirts/gendersmile">
                                     <H42>
                                         Gender Smile
                                     </H42>
-                                </Link>
-                                <Link to="/store/t-shirts/gendersmile">
+                                </a>
+                                <a href="/store/t-shirts/gendersmile">
                                     <SquareImage
                                         size="md">
                                         {SmileWhite}
 
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/t-shirts/serotonin">
+                                <a href="/store/t-shirts/serotonin">
                                     <H42>
                                         Serotonin Chemical Structure
                                 </H42>
-                                </Link>
-                                <Link to="/store/t-shirts/serotonin">
+                                </a>
+                                <a href="/store/t-shirts/serotonin">
                                     <SquareImage
                                         size="md">
                                         {SerotoninWhite}
 
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
@@ -156,7 +153,7 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
@@ -174,31 +171,31 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/t-shirts">
+                                <a href="/store/t-shirts">
                                     <H42>
                                         shirt name
                                     </H42>
-                                </Link>
-                                <Link to="/store/t-shirts">
+                                </a>
+                                <a href="/store/t-shirts">
                                     <SquareImage
                                         size="md">
                                         {}
                                         a 3/4 sleeve
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
@@ -216,7 +213,7 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
@@ -234,7 +231,7 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
@@ -254,7 +251,7 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
@@ -272,7 +269,7 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
@@ -290,7 +287,7 @@ class TShirtsMain extends Component {
                                     <P2>
                                         $22
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
@@ -301,9 +298,3 @@ class TShirtsMain extends Component {
         )
     }
 }
-
-function mapStateToProps(state){
-    return state;
-}
-
-export default connect(mapStateToProps, {addToCart})(TShirtsMain)

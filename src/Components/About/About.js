@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { a } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -34,7 +34,7 @@ export default class About extends Component {
                             Our mission is to promote a life style of happiness and tranquility. Presently, we sell Handmade Hats, 3/4 Sleeve Shirts, and T-shirts. It is the owner's belief that through business you can promote goodness and well being. Ataraxy has been set as a personal goal for all employees that we hope to bring into the world.
                         </P4>
                         <P1>
-                            <Link to="/about/fullstory">Read The Full Story...</Link>
+                            <a href="/about/fullstory">Read The Full Story...</a>
                         </P1>
                     </Holder7>
 

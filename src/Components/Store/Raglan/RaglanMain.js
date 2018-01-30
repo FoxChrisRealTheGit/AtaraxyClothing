@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import {connect} from 'react-redux';
-import {addToCart} from '../../../ducks/reducer';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
@@ -42,7 +39,7 @@ import DontAssume from '../../../Images/raglans/gender/dontassume/DontAssumeBlac
 import PoetWhite from '../../../Images/raglans/other/worldOkayestPoet/Worlds-Okayest-Poet_mockup_WhiteBlack.png';
 //import from '';
 
-class RaglanMain extends Component {
+export default class RaglanMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -54,9 +51,9 @@ class RaglanMain extends Component {
             <section>
                 <Header />
                 <SubNavBar1>
-                    <Link to="/store/raglans">3/4 Sleeve Shirts</Link>
-                    <Link to="/store/t-shirts">T-Shirts</Link>
-                    <Link to="/store/beanies">Beanies</Link>
+                    <a href="/store/raglans">3/4 Sleeve Shirts</a>
+                    <a href="/store/t-shirts">T-Shirts</a>
+                    <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
                 <Container1>
                     <Holder11>
@@ -69,409 +66,409 @@ class RaglanMain extends Component {
                         </H22>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <a href="/store/raglans/bethebestyou">
                                     <H42>
                                         Be The Best You
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/bethebestyou">
+                                </a>
+                                <a href="/store/raglans/bethebestyou">
                                     <SquareImage
                                         size="md">
                                         {BeBestYouRag}
                                         a 3/4 sleeve
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/idontbelieve">
+                                <a href="/store/raglans/idontbelieve">
                                     <H42>
                                         I Dont Believe
                                 </H42>
-                                </Link>
-                                <Link to="/store/raglans/idontbelieve">
+                                </a>
+                                <a href="/store/raglans/idontbelieve">
                                     <SquareImage
                                         size="md">
                                         {IDontBelieve}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/gendersmile">
+                                <a href="/store/raglans/gendersmile">
                                     <H42>
                                         Gender Smiley Face
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/gendersmile">
+                                </a>
+                                <a href="/store/raglans/gendersmile">
                                     <SquareImage
                                         size="md">
                                         {GenderSmile}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/serotonin">
+                                <a href="/store/raglans/serotonin">
                                     <H42>
                                         Serotonin Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/serotonin">
+                                </a>
+                                <a href="/store/raglans/serotonin">
                                     <SquareImage
                                         size="md">
                                         {SerotoninWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/minimalperfection">
+                                <a href="/store/raglans/minimalperfection">
                                     <H42>
                                         Minimal Perfection
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/minimalperfection">
+                                </a>
+                                <a href="/store/raglans/minimalperfection">
                                     <SquareImage
                                         size="md">
                                         {MinimalPerfectionWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/dopamine">
+                                <a href="/store/raglans/dopamine">
                                     <H42>
                                         Dopamine Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/dopamine">
+                                </a>
+                                <a href="/store/raglans/dopamine">
                                     <SquareImage
                                         size="md">
                                         {DopamineWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/minimalhouse">
+                                <a href="/store/raglans/minimalhouse">
                                     <H42>
                                         Minimal House
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/minimalhouse">
+                                </a>
+                                <a href="/store/raglans/minimalhouse">
                                     <SquareImage
                                         size="md">
                                         {MinimalHouseWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/discoveryourself">
+                                <a href="/store/raglans/discoveryourself">
                                     <H42>
                                         Discover Yourself
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/discoveryourself">
+                                </a>
+                                <a href="/store/raglans/discoveryourself">
                                     <SquareImage
                                         size="md">
                                         {Discover}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/worldsstudent">
+                                <a href="/store/raglans/worldsstudent">
                                     <H42>
                                         World's Okayest Student
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/worldsstudent">
+                                </a>
+                                <a href="/store/raglans/worldsstudent">
                                     <SquareImage
                                         size="md">
                                         {StudentWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/occupymind">
+                                <a href="/store/raglans/occupymind">
                                     <H42>
                                         Occupy Your Mind
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/occupymind">
+                                </a>
+                                <a href="/store/raglans/occupymind">
                                     <SquareImage
                                         size="md">
                                         {OccupyWhite}
                                         a 3/4 sleeve
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/ketamine">
+                                <a href="/store/raglans/ketamine">
                                     <H42>
                                         Ketamine Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/ketamine">
+                                </a>
+                                <a href="/store/raglans/ketamine">
                                     <SquareImage
                                         size="md">
                                         {KetamineWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/lsd">
+                                <a href="/store/raglans/lsd">
                                     <H42>
                                         LSD Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/lsd">
+                                </a>
+                                <a href="/store/raglans/lsd">
                                     <SquareImage
                                         size="md">
                                         {LSDWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/psilocybn">
+                                <a href="/store/raglans/psilocybn">
                                     <H42>
                                         Psilocybn Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/psilocybn">
+                                </a>
+                                <a href="/store/raglans/psilocybn">
                                     <SquareImage
                                         size="md">
                                         {PsilocybnWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/dmt">
+                                <a href="/store/raglans/dmt">
                                     <H42>
                                         DMT Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/dmt">
+                                </a>
+                                <a href="/store/raglans/dmt">
                                     <SquareImage
                                         size="md">
                                         {DMT}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/mdma">
+                                <a href="/store/raglans/mdma">
                                     <H42>
                                         MDMA Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/mdma">
+                                </a>
+                                <a href="/store/raglans/mdma">
                                     <SquareImage
                                         size="md">
                                         {MDMAWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
                             <Holder6>
-                                <Link to="/store/raglans/thc">
+                                <a href="/store/raglans/thc">
                                     <H42>
                                         THC Chemical Structure
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/thc">
+                                </a>
+                                <a href="/store/raglans/thc">
                                     <SquareImage
                                         size="md">
                                         {THCWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/worldspoet">
+                                <a href="/store/raglans/worldspoet">
                                     <H42>
                                         World's Okayest Poet
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/worldspoet">
+                                </a>
+                                <a href="/store/raglans/worldspoet">
                                     <SquareImage
                                         size="md">
                                         {PoetWhite}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                             <Holder6>
-                                <Link to="/store/raglans/bethebestyou">
+                                <a href="/store/raglans/bethebestyou">
                                     <H42>
                                         Don't Assume
                                     </H42>
-                                </Link>
-                                <Link to="/store/raglans/dontassume">
+                                </a>
+                                <a href="/store/raglans/dontassume">
                                     <SquareImage
                                         size="md">
                                         {DontAssume}
                                         a 3/4 sleeve shirt
                                     </SquareImage>
-                                </Link>
+                                </a>
                                 <Holder1
                                     alignBlock1="flex-end"
                                     alignBlock2="flex-start">
                                     <P2>
                                         $25
                                     </P2>
-                                    <button>add to cart</button>
+                                    <button disabled='true'>add to cart</button>
                                 </Holder1>
                             </Holder6>
                         </Holder2>
@@ -482,8 +479,3 @@ class RaglanMain extends Component {
         )
     }
 }
-function mapStateToProps(state){
-    return state;
-}
-
-export default connect(mapStateToProps, {addToCart})(RaglanMain)

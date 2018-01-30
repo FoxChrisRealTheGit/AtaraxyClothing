@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import {addToCart} from '../../../../../ducks/reducer';
+import axios from 'axios';
 import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import TShirtSizeChart from '../TShirtSizeChart';
@@ -8,6 +7,7 @@ import {
     Container1,
     Holder1,
     Holder6,
+    Holder10,
     H32,
     SquareImage,
     P3,
@@ -23,12 +23,16 @@ import IDontGrey from '../../../../../Images/tshirts/other/idontbelieve/I-Dont-B
 import IDontRed from '../../../../../Images/tshirts/other/idontbelieve/I-Dont-Believe_mockup_Wrinkle-Front_Red-Triblend.png';
 import IDontWhite from '../../../../../Images/tshirts/other/idontbelieve/I-Dont-Believe_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
 
-class TShirtPVIDontBelieve extends Component {
+export default class TShirtPVIDontBelieve extends Component {
     constructor(props) {
         super(props);
         this.state = {
             cur: IDontWhite,
-            price: '$22.00'
+            price: '22.00',
+            number: 1,
+            color: '',
+            size: '',
+            name: 'I Dont Believe - T-Shirt',
         }
         this.imageWhite = this.imageWhite.bind(this)
         this.imageBerry = this.imageBerry.bind(this)
@@ -39,55 +43,74 @@ class TShirtPVIDontBelieve extends Component {
         this.imageRed = this.imageRed.bind(this)
         this.justPrice = this.justPrice.bind(this)
         this.priceAdd150 = this.priceAdd150.bind(this)
+        this.addToCart = this.addToCart.bind(this)
     }
 
     imageWhite() {
-        return this.setState({ cur: IDontWhite })
+        return this.setState({ cur: IDontWhite, color: 'white' })
     }
     imageBerry() {
-        return this.setState({ cur: IDontBerry })
+        return this.setState({ cur: IDontBerry, color: 'berry' })
     }
     imageBlue() {
-        return this.setState({ cur: IDontBlue })
+        return this.setState({ cur: IDontBlue, color: 'blue' })
     }
     imageBlack() {
-        return this.setState({ cur: IDontBlack })
+        return this.setState({ cur: IDontBlack, color: 'black' })
     }
     imageGreen() {
-        return this.setState({ cur: IDontGreen })
+        return this.setState({ cur: IDontGreen, color: 'green' })
     }
     imageGrey() {
-        return this.setState({ cur: IDontGrey })
+        return this.setState({ cur: IDontGrey, color: 'grey' })
     }
     imageRed() {
-        return this.setState({ cur: IDontRed })
+        return this.setState({ cur: IDontRed, color: 'red' })
     }
-    justPrice() {
-        if (this.state.price !== '$22.00') {
-            return this.setState({ price: '$22.00' })
+    justPrice(size) {
+        if (this.state.price !== '22.00') {
+            return this.setState({ price: '22.00', size: size })
+        } else {
+            return this.setState({ size: size })
         }
     }
-    priceAdd150() {
-        return this.setState({ price: '$23.50' })
+    priceAdd150(size) {
+        return this.setState({ price: '23.50', size: size })
     }
-    priceAdd300() {
-        return this.setState({ price: '$25.00' })
+    priceAdd300(size) {
+        return this.setState({ price: '25.00', size: size })
+    }
+    addToCart() {
+        if ((this.state.color === '') || (this.state.size === '')) {
+            return console.log('error, please pick color and size')
+        } else {
+            axios.put('/api/cartadd', {
+                cart: {
+                    item: this.state.number,
+                    name: this.state.name,
+                    color: this.state.color,
+                    size: this.state.size,
+                    quantity: 1,
+                },
+                price: this.state.price
+
+            })
+                .then((res) => {
+                    console.log(res)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+        }
     }
     render() {
-        const FORMSTYLE = {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'space-around',
-            height: '200px',
-        }
         return (
             <section>
                 <Header />
                 <Container1>
                     <Holder6>
                         <H32>
-                            I Dont Believe - T-Shirt
+                            {this.state.name}
                         </H32>
                         <Holder1
                             alignBlock1="flex-end"
@@ -97,92 +120,90 @@ class TShirtPVIDontBelieve extends Component {
                                 {this.state.cur}
                                 I Dont Believe in Humans T-Shirt
                             </SquareImage>
-                            <Holder6>
+                            <Holder10>
                                 <P3>
-                                    {this.state.price}
+                                    {'$' + this.state.price}
                                 </P3>
-                                <form style={FORMSTYLE}>
-                                    <div>
-                                        <label>
-                                            Berry
+                                <div>
+                                    <label>
+                                        Berry
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageBerry()} />
-                                        </label>
-                                        <label>
-                                            Blue
+                                            onClick={() => this.imageBerry()} />
+                                    </label>
+                                    <label>
+                                        Blue
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageBlue()} />
-                                        </label>
-                                        <label>
-                                            Black
+                                            onClick={() => this.imageBlue()} />
+                                    </label>
+                                    <label>
+                                        Black
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageBlack()} />
-                                        </label>
-                                        <label>
-                                            Green
+                                            onClick={() => this.imageBlack()} />
+                                    </label>
+                                    <label>
+                                        Green
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageGreen()} />
-                                        </label>
-                                        <label>
-                                            Grey
+                                            onClick={() => this.imageGreen()} />
+                                    </label>
+                                    <label>
+                                        Grey
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageGrey()} />
-                                        </label>
-                                        <label>
-                                            Red
+                                            onClick={() => this.imageGrey()} />
+                                    </label>
+                                    <label>
+                                        Red
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageRed()} />
-                                        </label>
-                                        <label>
-                                            White
+                                            onClick={() => this.imageRed()} />
+                                    </label>
+                                    <label>
+                                        White
                                             <input type="radio" value="white" name="color"
-                                                onClick={() => this.imageWhite()} />
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label>
-                                            XSM
+                                            onClick={() => this.imageWhite()} />
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        XSM
                                             <input type="radio" value="xsm" name="size"
-                                                onClick={() => this.justPrice()} />
-                                        </label>
-                                        <label>
-                                            SM
+                                            onClick={() => this.justPrice('xsm')} />
+                                    </label>
+                                    <label>
+                                        SM
                                             <input type="radio" value="sm" name="size"
-                                                onClick={() => this.justPrice()} />
-                                        </label>
-                                        <label>
-                                            MD
+                                            onClick={() => this.justPrice('sm')} />
+                                    </label>
+                                    <label>
+                                        MD
                                             <input type="radio" value="md" name="size"
-                                                onClick={() => this.justPrice()} />
-                                        </label>
-                                        <label>
-                                            LG
+                                            onClick={() => this.justPrice('md')} />
+                                    </label>
+                                    <label>
+                                        LG
                                             <input type="radio" value="lg" name="size"
-                                                onClick={() => this.justPrice()} />
-                                        </label>
-                                        <label>
-                                            XL
+                                            onClick={() => this.justPrice('lg')} />
+                                    </label>
+                                    <label>
+                                        XL
                                             <input type="radio" value="xl" name="size"
-                                                onClick={() => this.justPrice()} />
-                                        </label>
-                                        <label>
-                                            2XL
+                                            onClick={() => this.justPrice('xl')} />
+                                    </label>
+                                    <label>
+                                        2XL
                                             <input type="radio" value="2xl" name="size"
-                                                onClick={() => this.priceAdd150()} />
-                                        </label>
-                                        <label>
-                                            3XL
+                                            onClick={() => this.priceAdd150('2xl')} />
+                                    </label>
+                                    <label>
+                                        3XL
                                             <input type="radio" value="3xl" name="size"
-                                                onClick={() => this.priceAdd300()} />
-                                        </label>
-                                    </div>
-                                    <TShirtSizeChart />
-                                    <button>Add To Cart</button>
-                                </form>
+                                            onClick={() => this.priceAdd300('3xl')} />
+                                    </label>
+                                </div>
+                                <TShirtSizeChart />
+                                <button onClick={() => this.addToCart()}>Add To Cart</button>
                                 <P4>
                                     Product decription
                                 </P4>
-                            </Holder6>
+                            </Holder10>
                         </Holder1>
                         <Carousel4>
                         </Carousel4>
@@ -193,8 +214,3 @@ class TShirtPVIDontBelieve extends Component {
         )
     }
 }
-function mapStateToProps(state){
-    return state;
-}
-
-export default connect(mapStateToProps, {addToCart})(TShirtPVIDontBelieve)
