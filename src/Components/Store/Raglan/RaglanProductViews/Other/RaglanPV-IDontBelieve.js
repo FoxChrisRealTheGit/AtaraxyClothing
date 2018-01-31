@@ -69,7 +69,7 @@ export default class RaglanPVIDontBelieve extends Component {
 
             })
                 .then((res) => {
-                    console.log(res)
+                    window.alert('Added to cart')
                 })
                 .catch((err) => {
                     console.log(err)

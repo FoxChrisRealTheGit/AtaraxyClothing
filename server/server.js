@@ -7,18 +7,21 @@ const massive = require('massive');
 const passport = require('passport');
 const Auth0 = require('passport-auth0');
 
+var PrintfulClient = require('./middlewares/printfulClient');
+var key = process.env.PRINTFUL
+var pf = new PrintfulClient(key);
+
 const OrdersCon = require('./controllers/OrdersController');
 const checkForSession = require('./middlewares/CheckForSession');
 
 const app = express();
 app.use(bodyparser.json());
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
 }));
-
 app.use(passport.initialize());
 app.use(passport.session());
 app.use((req, res, next) => checkForSession(req, res, next))
@@ -96,7 +99,11 @@ app.delete('/api/cartremove', OrdersCon.removeItem)
 //edit quanitity of cart - put
 app.put('/api/cartupdatequantity', OrdersCon.updateQuantity)
 //
-app.post('https://api.printful.com/shipping/rates', OrdersCon.updateShippingRate)
+app.post('/api/shippingrate', (req, res) => {
+   
+
+    res.status(200).send()
+})
 // move to favourites - put
 app.put('/api/movetofavorites', function (req, res) {
     const db = app.get('db');

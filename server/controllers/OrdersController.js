@@ -17,9 +17,6 @@ module.exports = {
         req.session.user.cart.splice(+req.query.item, 1)
         res.status(200).send(req.session.user)
     },
-    updateShippingRate: (req, res)=>{
-
-    },
     payment: (req, res, next) => {
         //convert amount to pennies
         const amountArray = req.body.amount.toString().split('');

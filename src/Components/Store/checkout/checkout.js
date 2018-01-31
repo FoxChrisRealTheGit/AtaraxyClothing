@@ -9,7 +9,6 @@ import {
     Holder1,
     Holder4,
     Holder5,
-    Holder6,
     Holder7,
     Holder8,
     H42,
@@ -34,6 +33,7 @@ export default class Checkout extends Component {
         this.submitOrder = this.submitOrder.bind(this)
         this.removeItem = this.removeItem.bind(this)
         this.updateTotal = this.updateTotal.bind(this)
+        this.onToken = this.onToken.bind(this)
         // this.updateQuantity = this.updateQuantity.bind(this)
     }
     componentDidMount() {
@@ -98,20 +98,34 @@ export default class Checkout extends Component {
     //     })
     // }
     updateTotal() {
-        this.setState({disabled: false})
-        // axios.put('', (req, res) => {
+        axios.post('/api/shippingrate', {
+            // Authorization:process.env.PRINTFUL,
+            // recipient: {
+            //     address1: this.state.saddress,
+            //     city: this.state.city,
+            //     country_code: 'US',
+            //     "state_code": this.state.state,
+            //     "zip": 91311
+            // },
+            // items: [{
+            //     "quantity": 1,
+            //     "variant_id": 8243
+            // }, {
+            //     "quantity": 5,
+            //     "variant_id": 8245
+            // }]
 
-        // }).then((res) => {
-        //     this.setState({
-        //         total: this.state.total + res.data.shipping + res.data.tax,
-        //         fname: '',
-        //         lname: '',
-        //         saddress: '',
-        //         city: '',
-        //         state: '',
-        //         zip: '',
-        //     })
-        // })
+        }).then((res) => {
+            this.setState({
+                fname: '',
+                lname: '',
+                saddress: '',
+                city: '',
+                state: '',
+                zip: '',
+                disabled: false
+            })
+        })
     }
     submitOrder() {
 
@@ -130,6 +144,13 @@ export default class Checkout extends Component {
         } else if (e === 'zip') {
             return this.setState({ zip: c.target.value })
         }
+    }
+    onToken = (token) => {
+        token.card = void 0;
+        console.log('token', token);
+        axios.post('/api/payment', { token, amount: 100 }).then(response => {
+            alert('Payment recieved, order sent')
+        });
     }
     render() {
         const secStyle = {
@@ -191,7 +212,9 @@ export default class Checkout extends Component {
                                 alignBlock1="flex-start"
                                 alignBlock2="flex-start">
                                 <button onClick={() => this.updateTotal()}>Update Total</button>
-                                <StripeCheckout 
+                                <StripeCheckout
+                                    stripeKey={pubKey.pubKey}
+                                    token={this.onToken}
                                     disabled={this.state.disabled}
                                 />
                             </Holder5>

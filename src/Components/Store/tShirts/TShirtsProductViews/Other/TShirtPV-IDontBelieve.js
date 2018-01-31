@@ -99,7 +99,7 @@ export default class TShirtPVIDontBelieve extends Component {
 
             })
                 .then((res) => {
-                    console.log(res)
+                    window.alert('Added to cart')
                 })
                 .catch((err) => {
                     console.log(err)
