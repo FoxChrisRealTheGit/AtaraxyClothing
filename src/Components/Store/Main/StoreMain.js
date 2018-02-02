@@ -127,7 +127,7 @@ export default class StoreMain extends Component {
                                 <Holder6>
                                     <a href="/store/raglans/gendersmile">
                                         <H42>
-                                        Gender Smile
+                                            Gender Smile
                                         </H42>
                                     </a>
                                     <a href="/store/raglans/gendersmile">
@@ -149,10 +149,12 @@ export default class StoreMain extends Component {
                             </Holder3>
                             <P1><a href="/store/raglans">Shop 3/4 Sleeve Shirts...</a></P1>
                         </Holder5>
-                        <H42
-                            margin="70px 0 30px 0">
-                            T-Shirts
+                        <a href="/store/t-shirts">
+                            <H42
+                                margin="70px 0 30px 0">
+                                T-Shirts
                         </H42>
+                        </a>
                         <Holder5>
                             <Holder3>
                                 <Holder6>
@@ -180,7 +182,7 @@ export default class StoreMain extends Component {
                                 <Holder6>
                                     <a href="/store/t-shirts/serotonin">
                                         <H42>
-                                           Serotonin Chemical
+                                            Serotonin Chemical
                                         </H42>
                                     </a>
                                     <a href="/store/t-shirts/serotonin">
@@ -202,7 +204,7 @@ export default class StoreMain extends Component {
                                 <Holder6>
                                     <a href="/store/t-shirts/gendersmile">
                                         <H42>
-                                        Gender Smile
+                                            Gender Smile
                                         </H42>
                                     </a>
                                     <a href="/store/t-shirts/gendersmile">

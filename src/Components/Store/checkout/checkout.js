@@ -154,7 +154,9 @@ export default class Checkout extends Component {
     }
     render() {
         const secStyle = {
-            width: '60%',
+            width: '65%',
+            border: '2px solid black',
+            padding: '10px'
         }
         return (
             <div>
@@ -199,18 +201,22 @@ export default class Checkout extends Component {
                         </div>
                         <Holder1
                             alignBlock2="flex-start"
-                            margin="20px">
+                            margin="20px"
+                            width='60%'
+                            border="2px solid black">
                             <Holder7
                                 alignBlock1='flex-end'
                                 alignBlock2='flex-end'
-                                alignBlock3='flex-end'>
+                                alignBlock3='flex-end' 
+                                >
                                 {'Tax: $' + this.state.tax}
                                 {'Shipping: $' + this.state.shipping}
                                 {'Total: $' + this.state.total}
                             </Holder7>
                             <Holder5
                                 alignBlock1="flex-start"
-                                alignBlock2="flex-start">
+                                alignBlock2="flex-start"
+                               >
                                 <button onClick={() => this.updateTotal()}>Update Total</button>
                                 <StripeCheckout
                                     stripeKey={pubKey.pubKey}

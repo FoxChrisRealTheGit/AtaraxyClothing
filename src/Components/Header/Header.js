@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import { connect } from 'react-redux';
 import { addToCart } from '../../ducks/reducer';
 import {
@@ -18,15 +18,20 @@ class Header extends Component {
         this.state = {
             cart: "It seems there is nothign here...",
         }
+        this.login = this.login.bind(this);
     }
-    // componentWillMount() {
-    //     axios.get('/api/cartgrab')
-    //         .then((res) => {
-    //             this.setState({ cart: res.cart })
-    //         }).catch(function (err) {
-    //             console.log(err)
-    //         })
-    // }
+    componentWillMount() {
+        // axios.get('/api/cartgrab')
+        //     .then((res) => {
+        //         this.setState({ cart: res.cart })
+        //     }).catch(function (err) {
+        //         console.log(err)
+        //     })
+
+    }
+    login() {
+        axios.get('/auth')
+    }
     render() {
         return (
             <header>
@@ -40,7 +45,8 @@ class Header extends Component {
                                 {fb}
                             </Brand1>
                         </a>
-                        <NavBar1>
+                        <NavBar1
+                            smDis='none'>
                             <a href="/">Home</a>
                             <a href="/about">About</a>
                             <DropDownNav1
@@ -54,8 +60,16 @@ class Header extends Component {
                         </NavBar1>
                         <NavBar1
                             navbarWidth="70%"
+                            count='2'
+                            hamMDDis='none'
                         >
+                            <a href={process.env.REACT_APP_LOGIN}>Login/Register</a>
+                            <a href="/store/checkout">Checkout</a>
                             <p>Login/Register</p>
+                            <a href="/">Home</a>
+                            <a href="/about">About</a>
+                            <a href="/store">Store</a>
+                            <a href="/contact">Contact</a>
                             <a href="/store/checkout">Checkout</a>
                         </NavBar1>
                     </Holder2>

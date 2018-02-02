@@ -4,6 +4,7 @@ import Header from '../../../../Header/Header';
 import Footer from '../../../../Footer/Footer';
 import RaglanSizeChart from '../RaglanSizeChart';
 import productVariant from '../RaglanProductVariant';
+import '../../../../../css/colorPicker.css';
 import {
     Container1,
     Holder1,
@@ -109,60 +110,30 @@ export default class RaglanPVMDMAChem extends Component {
                                 <P3>
                                     {'$' + this.state.price}
                                 </P3>
-                                <div>
-                                    <label>
-                                        White
-                                            <input type="radio" value="white" name="color"
-                                            onClick={() => this.imageWhite()} />
-                                    </label>
-                                    <label>
-                                        Black
-                                            <input type="radio" value="black" name="color"
-                                            onChange={() => this.imageBlack()} />
-                                    </label>
-                                    <label>
-                                        Heather Black
-                                            <input type="radio" value="heather" name="color"
-                                            onClick={() => this.imageHeather()} />
-                                    </label>
-                                    <label>
-                                        Lake Blue
-                                            <input type="radio" value="blue" name="color"
-                                            onClick={() => this.imageBlue()} />
-                                    </label>
-                                </div>
-                                <div>
-                                    <label>
-                                        XSM
-                                    <input type="radio" value="xsm" name="size"
-                                            onClick={() => this.justPrice('xsm')} />
-                                    </label>
-                                    <label>
-                                        SM
-                                    <input type="radio" value="sm" name="size"
-                                            onClick={() => this.justPrice('sm')} />
-                                    </label>
-                                    <label>
-                                        MD
-                                    <input type="radio" value="md" name="size"
-                                            onClick={() => this.justPrice('md')} />
-                                    </label>
-                                    <label>
-                                        LG
-                                    <input type="radio" value="lg" name="size"
-                                            onClick={() => this.justPrice('lg')} />
-                                    </label>
-                                    <label>
-                                        XL
-                                    <input type="radio" value="xl" name="size"
-                                            onClick={() => this.justPrice('xl')} />
-                                    </label>
-                                    <label>
-                                        2XL
-                                    <input type="radio" value="2xl" name="size"
-                                            onClick={() => this.priceAdd150('2xl')} />
-                                    </label>
-                                </div>
+                                <section className='colorboxHolder'>
+                                    <div className='colorbox'
+                                        onClick={() => this.imageWhite()} >White</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.imageBlack()}>Black</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.imageHeather()}>Heather</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.imageBlue()}>Blue</div>
+                                </section>
+                                <section className='colorboxHolder'>
+                                    <div className='colorbox'
+                                        onClick={() => this.justPrice('xsm')}>XSM</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.justPrice('sm')}>SM</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.justPrice('md')}>MD</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.justPrice('lg')}>LG</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.justPrice('xl')}>XL</div>
+                                    <div className='colorbox'
+                                        onClick={() => this.priceAdd150('2xl')}>2XL</div>
+                                </section>
                                 <RaglanSizeChart />
                                 <button onClick={() => this.addToCart()}>Add To Cart</button>
                                 <P4>
