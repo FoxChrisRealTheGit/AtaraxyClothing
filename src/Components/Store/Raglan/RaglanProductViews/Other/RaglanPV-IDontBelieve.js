@@ -100,9 +100,10 @@ export default class RaglanPVIDontBelieve extends Component {
                                     {"$" + this.state.price}
                                 </P3>
                                 <section className='colorboxHolder'>
-                                <div className='colorbox'
-                                    onClick={() => this.imageWhite()} >White</div>
-                            </section>
+
+                                    <div className='colorbox'
+                                        onClick={() => this.imageWhite()} >White</div>
+                                </section>
                                 <section className='colorboxHolder'>
                                     <div className='colorbox'
                                         onClick={() => this.justPrice('xsm')}>XSM</div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -16,10 +16,13 @@ import {
 } from 'react-stylux';
 
 import fb from '../../Images/facebookbanner1.jpg';
+import model2 from '../../Images/home/_DSC1885.jpg';
+import model3 from '../../Images/home/_DSC1999.jpg';
 import gutair from '../../Images/home/gutair.jpg';
 
 import IDontBelieve from '../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
 import SerotoninWhite from '../../Images/tshirts/drug/serotonin/Serotonin-Chemical-Structure_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
+import coloradoFlag from '../../Images/beanies/ColoradoFlagHatFull.jpg';
 
 class Home extends Component {
     constructor(props) {
@@ -37,6 +40,12 @@ class Home extends Component {
                         <Carousel1>
                             <Hero1
                                 image={`url(${fb})`}>
+                            </Hero1>
+                            <Hero1
+                                image={`url(${model2})`}>
+                            </Hero1>
+                            <Hero1
+                                image={`url(${model3})`}>
                             </Hero1>
                         </Carousel1>
                         <a href="/store">
@@ -78,7 +87,7 @@ class Home extends Component {
                                 <a href="/store/beanies">
                                     <SquareImage
                                         size="md">
-                                        {}
+                                        {coloradoFlag}
                                     </SquareImage>
                                 </a>
                                 <a href="/store/beanies">
@@ -146,7 +155,7 @@ class Home extends Component {
     }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return state;
 }
 

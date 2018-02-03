@@ -217,7 +217,7 @@ export default class Checkout extends Component {
                                 alignBlock1="flex-start"
                                 alignBlock2="flex-start"
                                >
-                                <button onClick={() => this.updateTotal()}>Update Total</button>
+                                <button onClick={() => this.updateTotal()}>I dont know yet</button>
                                 <StripeCheckout
                                     stripeKey={pubKey.pubKey}
                                     token={this.onToken}

@@ -38,18 +38,16 @@ passport.use(new Auth0({
     callbackURL: process.env.AUTH_CALLBACK_URL,
     scope: "openid profile"
 }, function (accessToken, refreshToken, extraParams, profile, done) {
-// not grabbing right information
-let { displayName, user_id, picture } = profile;
-const db = app.get('db');
-
-    //needs to be changed
+    let { nickname, user_id, picture, displayName } = profile;
+    const db = app.get('db');
     db.find_user([user_id]).then(function (users) {
         if (!users[0]) {
             db.create_user([
+                nickname,
+                user_id,
+                picture,
                 displayName,
                 'test@test.com',
-                picture,
-                user_id
             ]).then(user => {
                 return done(null, user[0].id)
             })
@@ -57,17 +55,16 @@ const db = app.get('db');
             return done(null, users[0].id)
         }
     })
-        return done(null, profile)
-    }))
+}))
 
-    passport.serializeUser((id, done) => {
-        done(null, id);
+passport.serializeUser((id, done) => {
+
+    done(null, id);
+})
+passport.deserializeUser((id, done) => {
+    app.get('db').find_session_user([id]).then(function (user) {
+        return done(null, user[0]);
     })
-    passport.deserializeUser((id, done) => {
-        app.get('db').find_session_user([id]).then(function(user){
-            return done(null, user[0]);
-        })
-
 })
 
 
@@ -75,17 +72,17 @@ const db = app.get('db');
 app.get('/auth', passport.authenticate("auth0"))
 app.get('/auth/callback', passport.authenticate("auth0", {
     successRedirect: "http://localhost:3000/",
-    failureRedirect: "http://localhost:3000/"
+    failureRedirect: "/auth"
 }))
 
-app.get('/api/auth/authenticated', (req, res)=>{
-    if(!req.user){
+app.get('/auth/me', (req, res) => {
+    if (!req.user) {
         res.status(404).send('User not found.')
-    }else{
+    } else {
         res.status(200).send(req.user);
     }
 })
-app.get('/api/auth/logout', function(req, res){
+app.get('/auth/logout', function (req, res) {
     req.logOut();
     res.redirect('http://localhost:3000/')
 })

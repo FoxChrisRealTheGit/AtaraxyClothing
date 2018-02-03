@@ -11,6 +11,7 @@ import FAQ from './Components/FAQ/FAQ';
 import Policies from './Components/Policies/Disclaimers';
 import ReturnPolicy from './Components/Policies/ReturnPolicy';
 import Checkout from './Components/Store/checkout/checkout';
+import UserProfilePage from './Components/User/UserProfilePage';
 //import store components
 import StoreMain from './Components/Store/Main/StoreMain';
 //import Beanie componetns
@@ -53,6 +54,7 @@ import MinimalHouseRag from './Components/Store/Raglan/RaglanProductViews/Music/
 
 //import blog components
 import BlogMain from './Components/Blog/BlogMain';
+
 //import Blog Posts
 
   
@@ -68,6 +70,7 @@ export default (
         <Route path="/faq" component={FAQ} />
         <Route path="/disclaimers-policies" component={Policies} />
         <Route path="/return-policy" component={ReturnPolicy} />
+        <Route path="/profile-page" component={UserProfilePage} />
 
         <Route exact path="/store" component={StoreMain} />
         <Route path="/store/checkout" component={Checkout} />

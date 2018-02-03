@@ -6,27 +6,30 @@ import {
     Container1,
     Holder2,
     NavBar1,
-    Brand1,
+    Brand2,
     DropDownNav1,
 } from 'react-stylux';
 
-import fb from '../../Images/facebookbanner1.jpg';
+import logo from '../../Images/AtaraxyLogoLongAttemptOne.svg';
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
             cart: "It seems there is nothign here...",
+            displayName: '',
+            loggedin: false,
         }
         this.login = this.login.bind(this);
     }
-    componentWillMount() {
-        // axios.get('/api/cartgrab')
-        //     .then((res) => {
-        //         this.setState({ cart: res.cart })
-        //     }).catch(function (err) {
-        //         console.log(err)
-        //     })
+    componentDidMount() {
+        axios.get('/auth/me', (req, res) => {
+        }).then((res) => {
+            if (res.status !== 404) {
+                this.setState({ displayName: res.data.first_name, loggedin: true })
+            }
+            this.forceUpdate()
+        })
 
     }
     login() {
@@ -41,9 +44,9 @@ class Header extends Component {
                         alignBlock1="flex-end"
                         block2="3">
                         <a href='/'>
-                            <Brand1>
-                                {fb}
-                            </Brand1>
+                            <Brand2>
+                                {logo}
+                            </Brand2>
                         </a>
                         <NavBar1
                             smDis='none'>
@@ -63,14 +66,24 @@ class Header extends Component {
                             count='2'
                             hamMDDis='none'
                         >
-                            <a href={process.env.REACT_APP_LOGIN}>Login/Register</a>
+                            {!this.state.loggedin ?
+                                <a href={process.env.REACT_APP_LOGIN}>Login/Register</a> :
+                                <DropDownNav1
+                                    background="rgba(255, 255, 255, 0.9)">
+                                    {`Welcome! ` + this.state.displayName}
+                                    <a href='/profile-page'>Profile</a>
+                                    <a href='http://localhost:4000/auth/logout'>Logout</a>
+                                </DropDownNav1>}
                             <a href="/store/checkout">Checkout</a>
-                            <p>Login/Register</p>
+                            {!this.state.loggedin ?
+                                <a href={process.env.REACT_APP_LOGIN}>Login/Register</a> :
+                                <a href='/profile-page'>{`Welcome! ` + this.state.displayName}</a>}
                             <a href="/">Home</a>
                             <a href="/about">About</a>
                             <a href="/store">Store</a>
                             <a href="/contact">Contact</a>
                             <a href="/store/checkout">Checkout</a>
+                            <a href="http://localhost:4000/auth/logout">Logout</a>
                         </NavBar1>
                     </Holder2>
                 </Container1>
