@@ -4,7 +4,6 @@ import Footer from '../../Footer/Footer';
 
 import {
     Container1,
-    Holder1,
     Holder6,
     Holder11,
     Holder2,
@@ -12,7 +11,6 @@ import {
     RectangleImage,
     H22,
     SquareImage,
-    P2,
     H42,
 } from 'react-stylux';
 
@@ -78,14 +76,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/idontbelieve">
@@ -100,14 +90,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/gendersmile">
@@ -122,14 +104,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -146,14 +120,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/minimalperfection">
@@ -168,14 +134,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/dopamine">
@@ -190,14 +148,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -214,14 +164,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/discoveryourself">
@@ -236,14 +178,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/worldsstudent">
@@ -258,14 +192,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -282,14 +208,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/ketamine">
@@ -304,14 +222,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/lsd">
@@ -326,14 +236,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -350,14 +252,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/dmt">
@@ -372,14 +266,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/mdma">
@@ -394,14 +280,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -418,14 +296,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/worldspoet">
@@ -440,14 +310,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/raglans/bethebestyou">
@@ -462,14 +324,6 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $25
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                     </Holder11>

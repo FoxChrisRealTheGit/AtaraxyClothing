@@ -15,6 +15,7 @@ import {
     P3,
     P4,
     Carousel4,
+    FlatButton1,
 } from 'react-stylux';
 
 import IDont from '../../../../../Images/raglans/other/I-Dont-Believe_mockup_WhiteBlack.png';
@@ -53,7 +54,7 @@ export default class RaglanPVIDontBelieve extends Component {
     //should add to session if no user is logged in
     addToCart() {
         if ((this.state.color === '') || (this.state.size === '')) {
-            return console.log('error, please pick color and size')
+            return window.alert('error, please pick color and size')
         } else {
             let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
@@ -119,7 +120,7 @@ export default class RaglanPVIDontBelieve extends Component {
                                         onClick={() => this.priceAdd150('2xl')}>2XL</div>
                                 </section>
                                 <RaglanSizeChart />
-                                <button onClick={() => this.addToCart()}>Add To Cart</button>
+                                <FlatButton1 onClick={() => this.addToCart()}>Add To Cart</FlatButton1>
 
                                 <P4>
                                     Product decription

@@ -15,6 +15,7 @@ import {
     P3,
     P4,
     Carousel4,
+    FlatButton1,
 } from 'react-stylux';
 
 import OccupyWhite from '../../../../../Images/raglans/other/occupy/OccupyMind_mockup_WhiteBlack.png';
@@ -51,7 +52,7 @@ export default class RaglanPVOccupyYourMind extends Component {
     }
     addToCart() {
         if ((this.state.color === '') || (this.state.size === '')) {
-            return console.log('error, please pick color and size')
+            return window.alert('error, please pick color and size')
         } else {
             let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
@@ -67,7 +68,7 @@ export default class RaglanPVOccupyYourMind extends Component {
 
             })
                 .then((res) => {
-                    console.log(res)
+                    window.alert('Added to cart')
                 })
                 .catch((err) => {
                     console.log(err)
@@ -115,7 +116,7 @@ export default class RaglanPVOccupyYourMind extends Component {
                                         onClick={() => this.priceAdd150('2xl')}>2XL</div>
                                 </section>
                                 <RaglanSizeChart />
-                                <button onClick={() => this.addToCart()}>Add To Cart</button>
+                                <FlatButton1 onClick={() => this.addToCart()}>Add To Cart</FlatButton1>
                                 <P4>
                                     Product decription
                                 </P4>

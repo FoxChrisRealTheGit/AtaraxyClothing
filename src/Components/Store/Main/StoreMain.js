@@ -71,14 +71,6 @@ export default class StoreMain extends Component {
                                             I Don't Believe in Humans 3/4 Sleeve Shirt
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $25
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/raglans/bethebestyou">
@@ -93,14 +85,6 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve shirt
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $25
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/raglans/minimalperfection">
@@ -115,14 +99,6 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve shirt
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $25
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/raglans/gendersmile">
@@ -137,14 +113,6 @@ export default class StoreMain extends Component {
                                             Gender Smile 3/4 Sleeve Shirt
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $25
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                             </Holder3>
                             <P1><a href="/store/raglans">Shop 3/4 Sleeve Shirts...</a></P1>
@@ -170,14 +138,6 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $22
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/t-shirts/serotonin">
@@ -192,14 +152,6 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $22
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/t-shirts/gendersmile">
@@ -214,14 +166,6 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $22
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/t-shirts/bethebestyou">
@@ -236,14 +180,6 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $22
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                             </Holder3>
                             <P1><a href="/store/t-shirts">Shop T-Shirts...</a></P1>
@@ -269,14 +205,6 @@ export default class StoreMain extends Component {
                                             Handmade Colorado Flag Beanie
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $30
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/beanies">
@@ -291,14 +219,6 @@ export default class StoreMain extends Component {
                                             A Handmade Black Beanie
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $30
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/beanies">
@@ -313,14 +233,6 @@ export default class StoreMain extends Component {
                                             A Handmade Beanie
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $30
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                                 <Holder6>
                                     <a href="/store/beanies">
@@ -335,14 +247,6 @@ export default class StoreMain extends Component {
                                             Handmade Agender Flag Beanie
                                         </SquareImage>
                                     </a>
-                                    <Holder1
-                                        alignBlock1="flex-end"
-                                        alignBlock2="flex-start">
-                                        <P2>
-                                            $30
-                                        </P2>
-                                        <button disabled="true">add to cart</button>
-                                    </Holder1>
                                 </Holder6>
                             </Holder3>
                             <P1><a href="/store/beanies">Shop Beanies...</a></P1>

@@ -5,7 +5,6 @@ import Footer from '../../Footer/Footer';
 
 import {
     Container1,
-    Holder1,
     Holder2,
     Holder6,
     Holder7,
@@ -14,7 +13,6 @@ import {
     SquareImage,
     H22,
     H42,
-    P2,
 } from 'react-stylux';
 
 import bp from '../../../Images/SlouchyInFrontOfFlag.jpg';
@@ -58,14 +56,6 @@ export default class BeaniesMain extends Component {
                                         a handmade beanie
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $30
-                                    </P2>
-                                    <button disabled="true">add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <H42>
@@ -76,14 +66,6 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $30
-                                    </P2>
-                                    <button disabled="true">add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <H42>
@@ -94,14 +76,6 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $30
-                                    </P2>
-                                    <button disabled="true">add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -114,14 +88,6 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $30
-                                    </P2>
-                                    <button disabled="true">add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <H42>
@@ -132,14 +98,6 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $30
-                                    </P2>
-                                    <button disabled="true">add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <H42>
@@ -150,14 +108,6 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $30
-                                    </P2>
-                                    <button disabled="true">add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                     </Holder7>

@@ -1,5 +1,6 @@
 .mainHolder{
     border: 1px solid black;
+    
 }
 
 .colorbox{
@@ -10,7 +11,14 @@
     padding: 5px;
     border-radius: 5px;
 }
+.colorbox:hover{
+    color: white;
+    background: black;
+}
 .colorboxHolder{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }

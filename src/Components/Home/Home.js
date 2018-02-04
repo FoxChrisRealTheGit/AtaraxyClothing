@@ -37,7 +37,9 @@ class Home extends Component {
                 <Header />
                 <Container1>
                     <Holder10>
-                        <Carousel1>
+                        <Carousel1
+                            background='white'
+                            arrowColor = 'black'>
                             <Hero1
                                 image={`url(${fb})`}>
                             </Hero1>

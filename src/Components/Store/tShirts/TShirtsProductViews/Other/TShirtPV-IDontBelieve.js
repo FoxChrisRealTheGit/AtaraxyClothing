@@ -15,6 +15,7 @@ import {
     P3,
     P4,
     Carousel4,
+    FlatButton1,
 } from 'react-stylux';
 
 import IDontBerry from '../../../../../Images/tshirts/other/idontbelieve/I-Dont-Believe_mockup_Wrinkle-Front_Berry-Triblend.png';
@@ -84,7 +85,7 @@ export default class TShirtPVIDontBelieve extends Component {
     }
     addToCart() {
         if ((this.state.color === '') || (this.state.size === '')) {
-            return console.log('error, please pick color and size')
+            return window.alert('error, please pick color and size')
         } else {
             let variant = productVariant(this.state.color, this.state.size)
             axios.put('/api/cartadd', {
@@ -161,7 +162,7 @@ export default class TShirtPVIDontBelieve extends Component {
                                         onClick={() => this.priceAdd300('3xl')}>3XL</div>
                                 </section>
                                 <TShirtSizeChart />
-                                <button onClick={() => this.addToCart()}>Add To Cart</button>
+                                <FlatButton1 onClick={() => this.addToCart()}>Add To Cart</FlatButton1>
                                 <P4>
                                     Product decription
                                 </P4>

@@ -5,7 +5,6 @@ import Footer from '../../Footer/Footer';
 
 import {
     Container1,
-    Holder1,
     Holder2,
     Holder6,
     Holder9,
@@ -13,9 +12,10 @@ import {
     H22,
     RectangleImage,
     SquareImage,
-    P2,
     H42,
 } from 'react-stylux';
+
+import Model2 from '../../../Images/shirtbasic.jpg';
 
 import IDontWhite from '../../../Images/tshirts/other/idontbelieve/I-Dont-Believe_mockup_Wrinkle-Front_White-Fleck-Triblend.png'
 import BeBestWhite from '../../../Images/tshirts/happiness/bethebest/BeTheBestYou_whiteandBlack_printfile_front_mockup_Wrinkle-Front_White-Fleck-Triblend.png';
@@ -48,7 +48,7 @@ export default class TShirtsMain extends Component {
                     <Holder9>
                         <RectangleImage
                             size="lg">
-                            {}
+                            {Model2}
                         </RectangleImage>
                         <H22>
                             T-Shirts
@@ -67,14 +67,6 @@ export default class TShirtsMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/t-shirts/bethebestyou">
@@ -89,14 +81,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/t-shirts/gendersmile">
@@ -111,14 +95,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -135,14 +111,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/t-shirts/dopamine">
@@ -157,14 +125,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/t-shirts/dontassume">
@@ -179,14 +139,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -203,14 +155,6 @@ export default class TShirtsMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/t-shirts/lsd">
@@ -225,14 +169,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                             <Holder6>
                                 <a href="/store/t-shirts/mdma">
@@ -247,14 +183,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                         <Holder2>
@@ -271,14 +199,6 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                                <Holder1
-                                    alignBlock1="flex-end"
-                                    alignBlock2="flex-start">
-                                    <P2>
-                                        $22
-                                    </P2>
-                                    <button disabled='true'>add to cart</button>
-                                </Holder1>
                             </Holder6>
                         </Holder2>
                     </Holder9>
