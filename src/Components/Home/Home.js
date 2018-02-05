@@ -36,7 +36,8 @@ class Home extends Component {
             <section>
                 <Header />
                 <Container1>
-                    <Holder10>
+                    <Holder10
+                        block1smdis='none'>
                         <Carousel1
                             background='white'
                             arrowColor = 'black'>
@@ -103,52 +104,6 @@ class Home extends Component {
                             height="500px"
                             image={`url(${gutair})`}>
                         </Hero1>
-                        <a href="/blog">
-                            <H31>The Written Word</H31>
-                        </a>
-                        <Holder2
-                            alignBlock1="flex-end"
-                            alignBlock3="flex-start">
-                            <Holder5>
-                                <a href="/blog">
-                                    <SquareImage
-                                        size="md">
-                                        {fb}
-                                    </SquareImage>
-                                </a>
-                                <a href="/blog">
-                                    <H42>
-                                        Blog 1
-                                    </H42>
-                                </a>
-                            </Holder5>
-                            <Holder5>
-                                <a href="/blog">
-                                    <SquareImage
-                                        size="md">
-                                        {fb}
-                                    </SquareImage>
-                                </a>
-                                <a href="/blog">
-                                    <H42>
-                                        Blog 2
-                                    </H42>
-                                </a>
-                            </Holder5>
-                            <Holder5>
-                                <a href="/blog">
-                                    <SquareImage
-                                        size="md">
-                                        {fb}
-                                    </SquareImage>
-                                </a>
-                                <a href="/blog">
-                                    <H42>
-                                        Blog 3
-                                    </H42>
-                                </a>
-                            </Holder5>
-                        </Holder2>
                     </Holder10>
                 </Container1>
                 <Footer />

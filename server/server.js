@@ -7,6 +7,8 @@ const massive = require('massive');
 const passport = require('passport');
 const Auth0 = require('passport-auth0');
 
+const request = require('request');
+
 var PrintfulClient = require('./middlewares/printfulClient');
 var key = process.env.PRINTFUL
 var pf = new PrintfulClient(key);
@@ -38,7 +40,7 @@ passport.use(new Auth0({
     callbackURL: process.env.AUTH_CALLBACK_URL,
     scope: "openid profile"
 }, function (accessToken, refreshToken, extraParams, profile, done) {
-    let { nickname, user_id, picture, displayName } = profile;
+    let { nickname, user_id, picture, name } = profile;
     const db = app.get('db');
     db.find_user([user_id]).then(function (users) {
         if (!users[0]) {
@@ -46,7 +48,8 @@ passport.use(new Auth0({
                 nickname,
                 user_id,
                 picture,
-                displayName,
+                name.givenName,
+                name.familyName,
                 'test@test.com',
             ]).then(user => {
                 return done(null, user[0].id)
@@ -58,7 +61,6 @@ passport.use(new Auth0({
 }))
 
 passport.serializeUser((id, done) => {
-
     done(null, id);
 })
 passport.deserializeUser((id, done) => {
@@ -66,7 +68,6 @@ passport.deserializeUser((id, done) => {
         return done(null, user[0]);
     })
 })
-
 
 /* start auth end points */
 app.get('/auth', passport.authenticate("auth0"))
@@ -99,8 +100,14 @@ app.delete('/api/cartremove', OrdersCon.removeItem)
 //edit quanitity of cart - put
 app.put('/api/cartupdatequantity', OrdersCon.updateQuantity)
 //
-app.post('/api/shippingrate', (req, res) => {
+app.get('/api/getshippinginfo', (req, res) => {
+    const db = app.get('db');
+    // db.find_session_user(req.session.passport.user)
+    db.grab_shippinginfo().then(user=>res.send(user))
+})
 
+app.post('/api/shippingrate', (req, res) => {
+    const db = app.get('db');
 
     res.status(200).send()
 })

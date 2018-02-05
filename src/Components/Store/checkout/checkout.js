@@ -21,11 +21,17 @@ export default class Checkout extends Component {
         this.state = {
             cart: '',
             fname: '',
+            fName: '',
             lname: '',
+            lName: '',
             saddress: '',
+            sAddress: '',
             city: '',
+            City: '',
             state: '',
+            State: '',
             zip: '',
+            Zip: '',
             total: 0,
             tax: 0,
             shipping: 0,
@@ -38,9 +44,10 @@ export default class Checkout extends Component {
         this.onToken = this.onToken.bind(this)
         // this.updateQuantity = this.updateQuantity.bind(this)
         this.addShipping = this.addShipping.bind(this)
-        this.calculateFinal = this.calculateFinal.bind(this)
+        // this.calculateFinal = this.calculateFinal.bind(this)
         this.cancelStuff = this.cancelStuff.bind(this)
     }
+
     componentDidMount() {
         const btnStyle = {
             borderRadius: '50%',
@@ -104,21 +111,21 @@ export default class Checkout extends Component {
     // }
     updateTotal() {
         axios.post('/api/shippingrate', {
-            // Authorization:process.env.PRINTFUL,
-            // recipient: {
-            //     address1: this.state.saddress,
-            //     city: this.state.city,
-            //     country_code: 'US',
-            //     "state_code": this.state.state,
-            //     "zip": 91311
-            // },
-            // items: [{
-            //     "quantity": 1,
-            //     "variant_id": 8243
-            // }, {
-            //     "quantity": 5,
-            //     "variant_id": 8245
-            // }]
+            Authorization: process.env.PRINTFUL,
+            recipient: {
+                address1: this.state.saddress,
+                city: this.state.city,
+                country_code: 'US',
+                "state_code": this.state.state,
+                "zip": 91311
+            },
+            items: [{
+                "quantity": 1,
+                "variant_id": 8243
+            }, {
+                "quantity": 5,
+                "variant_id": 8245
+            }]
 
         }).then((res) => {
             this.setState({
@@ -128,7 +135,10 @@ export default class Checkout extends Component {
                 city: '',
                 state: '',
                 zip: '',
-                disabled: false
+                disabled: false,
+                showFinal:
+                    'visible',
+                showShipping: 'hidden'
             })
         })
     }
@@ -156,12 +166,21 @@ export default class Checkout extends Component {
     }
 
     addShipping() {
-        this.setState({ showShipping: 'visible' })
+        axios.get('/api/getshippinginfo').then(res => {
+            this.setState({
+                showShipping: 'visible',
+                fName: res.data[0].first_name,
+                lName: res.data[0].last_name,
+                sAddress: res.data[0].street_address,
+                City: res.data[0].user_city,
+                Zip: res.data[0].zip
+            })
+        })
     }
-    calculateFinal() {
-        axios.post('/api/shippingrate')
-        this.setState({ showFinal: 'visible', showShipping: 'hidden', disabled: false })
-    }
+    // calculateFinal() {
+    //     axios.post('/api/shippingrate')
+    //     this.setState({ showFinal: 'visible', showShipping: 'hidden', disabled: false })
+    // }
     cancelStuff() {
         this.setState({ showFinal: 'hidden', disabled: true })
     }
@@ -175,17 +194,21 @@ export default class Checkout extends Component {
             visibility: this.state.showShipping,
             position: 'absolute',
             background: 'white',
+            top: '0',
             height: '100%',
             width: '100%',
-            padding: '20%'
+            padding: '10%',
+            overflow: 'hidden',
         }
         const Final = {
             visibility: this.state.showFinal,
             position: 'absolute',
             background: 'white',
-            height: '95%',
+            top: '0',
+            height: '100%',
             width: '100%',
-            padding: '30%'
+            padding: '10%',
+            overflow: 'hidden',
         }
         return (
             <div>
@@ -207,30 +230,30 @@ export default class Checkout extends Component {
                                     direction='column'>
                                     <span>
                                         First Name:
-                                    <input onChange={(e) => this.handleChange('fname', e)} />
+                                    <input type='text' onChange={(e) => this.handleChange('fname', e)} defaultValue={this.state.fName}  />
                                     </span>
                                     <span>
                                         Last Name:
-                                    <input onChange={(e) => this.handleChange('lname', e)} />
+                                    <input type='text' onChange={(e) => this.handleChange('lname', e)} defaultValue={this.state.fName} />
                                     </span>
                                 </Holder1>
                                 <span>
                                     Street Address:
-                                    <input onChange={(e) => this.handleChange('saddress', e)} />
+                                    <input type='text' onChange={(e) => this.handleChange('saddress', e)} defaultValue={this.state.sAddress}  />
                                 </span>
                                 <Holder1
                                     direction='column'>
                                     <span>
                                         City:
-                                    <input onChange={(e) => this.handleChange('city', e)} />
+                                    <input type='text' onChange={(e) => this.handleChange('city', e)} defaultValue={this.state.City}  />
                                     </span>
                                     <span>
                                         Zip:
-                                    <input onChange={(e) => this.handleChange('zip', e)} />
+                                    <input type='text' onChange={(e) => this.handleChange('zip', e)} defaultValue={this.state.Zip} />
                                     </span>
                                 </Holder1>
                                 <FlatButton1
-                                    onClick={this.calculateFinal}>
+                                    onClick={this.updateTotal}>
                                     Calculate
                                 </FlatButton1>
                             </Holder8>

@@ -54,9 +54,11 @@ export default class RaglanMain extends Component {
                     <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
                 <Container1>
-                    <Holder11>
+                    <Holder11 
+                    block1smdis='none'>
                         <RectangleImage
-                            size="lg">
+                            size="lg"
+                           >
                             {sh}
                         </RectangleImage>
                         <H22>

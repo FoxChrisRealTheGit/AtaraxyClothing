@@ -45,7 +45,8 @@ export default class TShirtsMain extends Component {
                     <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
                 <Container1>
-                    <Holder9>
+                    <Holder9
+                        block1smdis='none'>
                         <RectangleImage
                             size="lg">
                             {Model2}

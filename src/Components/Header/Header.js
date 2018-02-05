@@ -59,7 +59,6 @@ class Header extends Component {
                                 <a href="/store/t-shirts">T-Shirts</a>
                                 <a href="/store/beanies">Beanies</a>
                             </DropDownNav1>
-                            <a href="/contact">Contact</a>
                         </NavBar1>
                         <NavBar1
                             navbarWidth="70%"
@@ -81,7 +80,6 @@ class Header extends Component {
                             <a href="/">Home</a>
                             <a href="/about">About</a>
                             <a href="/store">Store</a>
-                            <a href="/contact">Contact</a>
                             <a href="/store/checkout">Checkout</a>
                             <a href="http://localhost:4000/auth/logout">Logout</a>
                         </NavBar1>
