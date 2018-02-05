@@ -19,7 +19,7 @@
     "react-router-transition": "^1.2.0",
     "react-scripts": "1.1.0",
     "react-stripe-checkout": "^2.6.3",
-    "react-stylux": "^0.2.7",
+    "react-stylux": "^0.2.9",
     "redux": "^3.7.2",
     "request": "^2.83.0",
     "stripe": "^5.4.0"
