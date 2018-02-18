@@ -4,10 +4,8 @@ import Footer from '../../Footer/Footer';
 
 
 import {
-    Container1,
-    Holder2,
-    Holder6,
-    Holder7,
+    Container,
+    Holder,
     SubNavBar1,
     RectangleImage,
     SquareImage,
@@ -33,8 +31,9 @@ export default class BeaniesMain extends Component {
                     <a href="/store/t-shirts">T-Shirts</a>
                     <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
-                <Container1>
-                    <Holder7>
+                <Container>
+                    <Holder
+                        direction="column">
                         <RectangleImage
                             size="lg">
                             {bp}
@@ -42,8 +41,9 @@ export default class BeaniesMain extends Component {
                         <H22>
                             Handmade Beanies
                         </H22>
-                        <Holder2>
-                            <Holder6>
+                        <Holder>
+                            <Holder
+                                direction="column">
                                 <a href="/store/beanies">
                                     <H42>
                                         beanie name
@@ -56,8 +56,9 @@ export default class BeaniesMain extends Component {
                                         a handmade beanie
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                                direction="column">
                                 <H42>
                                     beanie name
                                 </H42>
@@ -66,8 +67,9 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                                direction="column">
                                 <H42>
                                     beanie name
                                 </H42>
@@ -76,10 +78,11 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                                direction="column">
                                 <H42>
                                     beanie name
                                 </H42>
@@ -88,8 +91,9 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                                direction="column">
                                 <H42>
                                     beanie name
                                 </H42>
@@ -98,8 +102,9 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                                direction="column">
                                 <H42>
                                     beanie name
                                 </H42>
@@ -108,10 +113,10 @@ export default class BeaniesMain extends Component {
                                     {}
                                     a handmade beanie
                                 </SquareImage>
-                            </Holder6>
-                        </Holder2>
-                    </Holder7>
-                </Container1>
+                            </Holder>
+                        </Holder>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

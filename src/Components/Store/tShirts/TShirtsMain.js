@@ -4,10 +4,8 @@ import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
 import {
-    Container1,
-    Holder2,
-    Holder6,
-    Holder9,
+    Container,
+    Holder,
     SubNavBar1,
     H22,
     RectangleImage,
@@ -44,8 +42,9 @@ export default class TShirtsMain extends Component {
                     <a href="/store/t-shirts">T-Shirts</a>
                     <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
-                <Container1>
-                    <Holder9
+                <Container>
+                    <Holder
+                    direction="column"
                         block1smdis='none'>
                         <RectangleImage
                             size="lg">
@@ -54,8 +53,9 @@ export default class TShirtsMain extends Component {
                         <H22>
                             T-Shirts
                         </H22>
-                        <Holder2>
-                            <Holder6>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/idontbelieve">
                                     <H42>
                                         I Don't Believe
@@ -68,8 +68,9 @@ export default class TShirtsMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/bethebestyou">
                                     <H42>
                                         Be The Best You
@@ -82,8 +83,9 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/gendersmile">
                                     <H42>
                                         Gender Smile
@@ -96,10 +98,11 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/serotonin">
                                     <H42>
                                         Serotonin Chemical Structure
@@ -112,8 +115,9 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/dopamine">
                                     <H42>
                                         Dopamine Chemical Structure
@@ -126,8 +130,9 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/dontassume">
                                     <H42>
                                         Don't Assume
@@ -140,10 +145,11 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/dmt">
                                     <H42>
                                         DMT Chemical Structure
@@ -156,8 +162,9 @@ export default class TShirtsMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/lsd">
                                     <H42>
                                         LSD Chemical Structure
@@ -170,8 +177,9 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/mdma">
                                     <H42>
                                         MDMA Chemical Structure
@@ -184,10 +192,11 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/t-shirts/ketamine">
                                     <H42>
                                         Ketamine Chemical Structure
@@ -200,10 +209,10 @@ export default class TShirtsMain extends Component {
 
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                    </Holder9>
-                </Container1>
+                            </Holder>
+                        </Holder>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Holder6,
+    Holder,
     P2,
     P4,
     Modul1,
@@ -13,7 +13,8 @@ export default function RaglanSizeChart() {
             buttonText="Size Chart"
             boxWidth="550px"
             boxHeight="300px">
-            <Holder6>
+            <Holder
+            direction="column">
                 <P4
                     height='inherit'>
                     3/4 Sleeve Shirt Size Chart
@@ -50,7 +51,7 @@ export default function RaglanSizeChart() {
                 <P2>
                     As the shirts are hand made, the size measurements can vary by 2 inches.
                 </P2>
-            </Holder6>
+            </Holder>
         </Modul1>
     )
 }

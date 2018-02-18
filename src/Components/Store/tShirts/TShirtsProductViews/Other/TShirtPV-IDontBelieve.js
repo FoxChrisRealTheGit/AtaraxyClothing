@@ -6,10 +6,8 @@ import TShirtSizeChart from '../TShirtSizeChart';
 import productVariant from '../TShirtProductVariant';
 import '../../../../../css/colorPicker.css';
 import {
-    Container1,
-    Holder1,
-    Holder6,
-    Holder10,
+    Container,
+    Holder,
     H32,
     SquareImage,
     P3,
@@ -112,12 +110,13 @@ export default class TShirtPVIDontBelieve extends Component {
         return (
             <section>
                 <Header />
-                <Container1>
-                    <Holder6>
+                <Container>
+                    <Holder
+                    direction="column">
                         <H32>
                             {this.state.name}
                         </H32>
-                        <Holder1
+                        <Holder
                             alignBlock1="flex-end"
                             alignBlock2="flex-start">
                             <SquareImage
@@ -125,7 +124,8 @@ export default class TShirtPVIDontBelieve extends Component {
                                 {this.state.cur}
                                 I Dont Believe in Humans T-Shirt
                             </SquareImage>
-                            <Holder10>
+                            <Holder
+                            direction="column">
                                 <P3>
                                     {'$' + this.state.price}
                                 </P3>
@@ -166,12 +166,12 @@ export default class TShirtPVIDontBelieve extends Component {
                                 <P4>
                                     Product decription
                                 </P4>
-                            </Holder10>
-                        </Holder1>
+                            </Holder>
+                        </Holder>
                         <Carousel4>
                         </Carousel4>
-                    </Holder6>
-                </Container1>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

@@ -4,10 +4,8 @@ import { connect } from 'react-redux';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import {
-    Container1,
-    Holder2,
-    Holder5,
-    Holder10,
+    Container,
+    Holder,
     Carousel1,
     Hero1,
     H31,
@@ -35,8 +33,9 @@ class Home extends Component {
         return (
             <section>
                 <Header />
-                <Container1>
-                    <Holder10
+                <Container>
+                    <Holder
+                        direction="column"
                         block1smdis='none'>
                         <Carousel1
                             background='white'
@@ -56,11 +55,12 @@ class Home extends Component {
                                 Products
                             </H31>
                         </a>
-                        <Holder2
+                        <Holder
                             alignBlock1="flex-end"
                             alignBlock3="flex-start">
 
-                            <Holder5>
+                            <Holder
+                                direction="column">
                                 <a href="/store/raglans">
                                     <SquareImage
                                         size="md">
@@ -72,8 +72,9 @@ class Home extends Component {
                                         3/4 Sleeve Shirts
                                     </H42>
                                 </a>
-                            </Holder5>
-                            <Holder5>
+                            </Holder>
+                            <Holder
+                                direction="column">
                                 <a href="/store/t-shirts">
                                     <SquareImage
                                         size="md">
@@ -85,8 +86,9 @@ class Home extends Component {
                                         T-Shirts
                                     </H42>
                                 </a>
-                            </Holder5>
-                            <Holder5>
+                            </Holder>
+                            <Holder
+                                direction="column">
                                 <a href="/store/beanies">
                                     <SquareImage
                                         size="md">
@@ -98,14 +100,14 @@ class Home extends Component {
                                         Handmade Beanies
                                     </H42>
                                 </a>
-                            </Holder5>
-                        </Holder2>
+                            </Holder>
+                        </Holder>
                         <Hero1
                             height="500px"
                             image={`url(${gutair})`}>
                         </Hero1>
-                    </Holder10>
-                </Container1>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

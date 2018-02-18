@@ -4,8 +4,8 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 import {
-    Container1,
-    Holder7,
+    Container,
+    Holder,
     RectangleImage,
     P1,
     P4,
@@ -24,8 +24,9 @@ export default class About extends Component {
         return (
             <section>
                 <Header />
-                <Container1>
-                    <Holder7>
+                <Container>
+                    <Holder
+                        direction='column'>
                         <RectangleImage
                             size="lg">
                             {fb}
@@ -36,9 +37,9 @@ export default class About extends Component {
                         <P1>
                             <a href="/about/fullstory">Read The Full Story...</a>
                         </P1>
-                    </Holder7>
+                    </Holder>
 
-                </Container1>
+                </Container>
                 <Footer />
             </section>
         )

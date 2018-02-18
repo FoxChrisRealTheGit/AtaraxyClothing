@@ -4,9 +4,8 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 import {
-    Container1,
-    Holder1,
-    Holder7,
+    Container,
+    Holder,
     H21,
 
 } from 'react-stylux';
@@ -33,11 +32,12 @@ export default class UserProfilePage extends Component {
         return (
             <section>
                 <Header />
-                <Container1>
-                    <Holder1
+                <Container>
+                    <Holder
                         alignBlock1='flex-end'
                         block2='2'>
-                        <Holder7>
+                        <Holder
+                            direction="column">
                             <CircleImage>
                                 {this.state.picture}
                             </CircleImage>
@@ -47,8 +47,9 @@ export default class UserProfilePage extends Component {
                             <Paragraph1>
                                 <a href='http://localhost:4000/auth/logout'>Logout</a>
                             </Paragraph1>
-                        </Holder7>
-                        <Holder7>
+                        </Holder>
+                        <Holder
+                            direction="column">
                             <H21>
                                 {`Welcome ${this.state.name}`}
                             </H21>
@@ -58,9 +59,9 @@ export default class UserProfilePage extends Component {
                             <Paragraph1>
                                 Past Orders
                             </Paragraph1>
-                        </Holder7>
-                    </Holder1>
-                </Container1>
+                        </Holder>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

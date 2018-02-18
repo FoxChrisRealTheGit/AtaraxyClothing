@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Holder5,
+    Holder,
     P4,
     Modul1,
     Table1,
@@ -12,7 +12,8 @@ export default function TShirtSizeChart() {
             buttonText="Size Chart"
             boxWidth="550px"
             boxHeight="300px">
-            <Holder5>
+            <Holder
+            direction="column">
                 <P4
                     height='inherit'>
                     T-Shirt Size Chart
@@ -43,7 +44,7 @@ export default function TShirtSizeChart() {
                     {'26'}
                     {'28'}
                 </Table1>
-            </Holder5>
+            </Holder>
         </Modul1>
     )
 }

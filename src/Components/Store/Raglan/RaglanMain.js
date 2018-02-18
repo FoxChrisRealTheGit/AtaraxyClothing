@@ -3,10 +3,8 @@ import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
 import {
-    Container1,
-    Holder6,
-    Holder11,
-    Holder2,
+    Container,
+    Holder,
     SubNavBar1,
     RectangleImage,
     H22,
@@ -53,8 +51,9 @@ export default class RaglanMain extends Component {
                     <a href="/store/t-shirts">T-Shirts</a>
                     <a href="/store/beanies">Beanies</a>
                 </SubNavBar1>
-                <Container1>
-                    <Holder11 
+                <Container>
+                    <Holder 
+                    direction="column"
                     block1smdis='none'>
                         <RectangleImage
                             size="lg"
@@ -64,8 +63,9 @@ export default class RaglanMain extends Component {
                         <H22>
                             3/4 Sleeve Shirts
                         </H22>
-                        <Holder2>
-                            <Holder6>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/bethebestyou">
                                     <H42>
                                         Be The Best You
@@ -78,8 +78,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/idontbelieve">
                                     <H42>
                                         I Dont Believe
@@ -92,8 +93,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/gendersmile">
                                     <H42>
                                         Gender Smiley Face
@@ -106,10 +108,11 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/serotonin">
                                     <H42>
                                         Serotonin Chemical Structure
@@ -122,8 +125,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/minimalperfection">
                                     <H42>
                                         Minimal Perfection
@@ -136,8 +140,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/dopamine">
                                     <H42>
                                         Dopamine Chemical Structure
@@ -150,10 +155,11 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/minimalhouse">
                                     <H42>
                                         Minimal House
@@ -166,8 +172,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/discoveryourself">
                                     <H42>
                                         Discover Yourself
@@ -180,8 +187,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/worldsstudent">
                                     <H42>
                                         World's Okayest Student
@@ -194,10 +202,11 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/occupymind">
                                     <H42>
                                         Occupy Your Mind
@@ -210,8 +219,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/ketamine">
                                     <H42>
                                         Ketamine Chemical Structure
@@ -224,8 +234,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/lsd">
                                     <H42>
                                         LSD Chemical Structure
@@ -238,10 +249,11 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/psilocybn">
                                     <H42>
                                         Psilocybn Chemical Structure
@@ -254,8 +266,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/dmt">
                                     <H42>
                                         DMT Chemical Structure
@@ -268,8 +281,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/mdma">
                                     <H42>
                                         MDMA Chemical Structure
@@ -282,10 +296,11 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                        <Holder2>
-                            <Holder6>
+                            </Holder>
+                        </Holder>
+                        <Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/thc">
                                     <H42>
                                         THC Chemical Structure
@@ -298,8 +313,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/worldspoet">
                                     <H42>
                                         World's Okayest Poet
@@ -312,8 +328,9 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                            <Holder6>
+                            </Holder>
+                            <Holder
+                            direction="column">
                                 <a href="/store/raglans/bethebestyou">
                                     <H42>
                                         Don't Assume
@@ -326,10 +343,10 @@ export default class RaglanMain extends Component {
                                         a 3/4 sleeve shirt
                                     </SquareImage>
                                 </a>
-                            </Holder6>
-                        </Holder2>
-                    </Holder11>
-                </Container1>
+                            </Holder>
+                        </Holder>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

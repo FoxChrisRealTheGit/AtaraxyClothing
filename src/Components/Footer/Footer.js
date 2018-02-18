@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-    Container1,
-    Holder5,
+    Container,
+    Holder,
     NavBar1,
     P2,
 } from 'react-stylux';
@@ -15,8 +15,9 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <Container1>
-                    <Holder5>
+                <Container>
+                    <Holder
+                        direction="column">
                         <NavBar1
                             navbarWidth="60%">
                             <a href="https://www.facebook.com/ataraxyclothing" target="_blank" rel="noopener noreferrer"></a>
@@ -25,8 +26,8 @@ export default class Footer extends Component {
                             <a href="http://www.pinterest.com" target="_blank" rel="noopener noreferrer"></a>
                         </NavBar1>
                         <P2>Copyright 2018 Fox Design Agency</P2>
-                    </Holder5>
-                </Container1>
+                    </Holder>
+                </Container>
             </footer>
         )
     }

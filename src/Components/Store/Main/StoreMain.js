@@ -3,15 +3,10 @@ import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
 import {
-    Container1,
-    Holder1,
-    Holder3,
-    Holder5,
-    Holder6,
-    Holder11,
+    Container,
+    Holder,
     H42,
     P1,
-    P2,
     Carousel4,
     SquareImage,
 } from 'react-stylux';
@@ -43,8 +38,9 @@ export default class StoreMain extends Component {
         return (
             <section>
                 <Header />
-                <Container1>
-                    <Holder11>
+                <Container>
+                    <Holder
+                        direction="column">
                         <H42>
                             Featured Products
                         </H42>
@@ -56,9 +52,11 @@ export default class StoreMain extends Component {
                                 3/4 Sleeve Shirts
                             </H42>
                         </a>
-                        <Holder5>
-                            <Holder3>
-                                <Holder6>
+                        <Holder
+                            direction="column">
+                            <Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/raglans/idontbelieve">
                                         <H42>
                                             I Don't Believe
@@ -71,8 +69,9 @@ export default class StoreMain extends Component {
                                             I Don't Believe in Humans 3/4 Sleeve Shirt
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/raglans/bethebestyou">
                                         <H42>
                                             Be The Best You
@@ -85,8 +84,9 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve shirt
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/raglans/minimalperfection">
                                         <H42>
                                             Minimal Perfection
@@ -99,8 +99,9 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve shirt
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/raglans/gendersmile">
                                         <H42>
                                             Gender Smile
@@ -113,19 +114,21 @@ export default class StoreMain extends Component {
                                             Gender Smile 3/4 Sleeve Shirt
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                            </Holder3>
+                                </Holder>
+                            </Holder>
                             <P1><a href="/store/raglans">Shop 3/4 Sleeve Shirts...</a></P1>
-                        </Holder5>
+                        </Holder>
                         <a href="/store/t-shirts">
                             <H42
                                 margin="70px 0 30px 0">
                                 T-Shirts
                         </H42>
                         </a>
-                        <Holder5>
-                            <Holder3>
-                                <Holder6>
+                        <Holder
+                            direction="column">
+                            <Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/t-shirts/idontbelieve">
                                         <H42>
                                             I Dont Believe
@@ -138,8 +141,9 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/t-shirts/serotonin">
                                         <H42>
                                             Serotonin Chemical
@@ -152,8 +156,9 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/t-shirts/gendersmile">
                                         <H42>
                                             Gender Smile
@@ -166,8 +171,9 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/t-shirts/bethebestyou">
                                         <H42>
                                             Be The Best You
@@ -180,19 +186,21 @@ export default class StoreMain extends Component {
                                             a 3/4 sleeve
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                            </Holder3>
+                                </Holder>
+                            </Holder>
                             <P1><a href="/store/t-shirts">Shop T-Shirts...</a></P1>
-                        </Holder5>
+                        </Holder>
                         <a href="/store/beanies">
                             <H42
                                 margin="70px 0 30px 0">
                                 Handmade Beanies
                             </H42>
                         </a>
-                        <Holder5>
-                            <Holder3>
-                                <Holder6>
+                        <Holder
+                            direction="column">
+                            <Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/beanies">
                                         <H42>
                                             Colorado Flag Beanie
@@ -205,8 +213,9 @@ export default class StoreMain extends Component {
                                             Handmade Colorado Flag Beanie
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/beanies">
                                         <H42>
                                             Black Beanie
@@ -219,8 +228,9 @@ export default class StoreMain extends Component {
                                             A Handmade Black Beanie
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/beanies">
                                         <H42>
                                             Home Team Three Beanie
@@ -233,8 +243,9 @@ export default class StoreMain extends Component {
                                             A Handmade Beanie
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                                <Holder6>
+                                </Holder>
+                                <Holder
+                                    direction="column">
                                     <a href="/store/beanies">
                                         <H42>
                                             Agender Flag Beanie
@@ -247,12 +258,12 @@ export default class StoreMain extends Component {
                                             Handmade Agender Flag Beanie
                                         </SquareImage>
                                     </a>
-                                </Holder6>
-                            </Holder3>
+                                </Holder>
+                            </Holder>
                             <P1><a href="/store/beanies">Shop Beanies...</a></P1>
-                        </Holder5>
-                    </Holder11>
-                </Container1>
+                        </Holder>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )

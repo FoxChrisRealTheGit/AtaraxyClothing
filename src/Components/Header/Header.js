@@ -3,8 +3,8 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import { addToCart } from '../../ducks/reducer';
 import {
-    Container1,
-    Holder2,
+    Container,
+    Holder,
     NavBar1,
     Brand2,
     DropDownNav1,
@@ -38,8 +38,8 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <Container1>
-                    <Holder2
+                <Container>
+                    <Holder
                         block1="0.5"
                         alignBlock1="flex-end"
                         block2="3">
@@ -83,8 +83,8 @@ class Header extends Component {
                             <a href="/store/checkout">Checkout</a>
                             <a href="http://localhost:4000/auth/logout">Logout</a>
                         </NavBar1>
-                    </Holder2>
-                </Container1>
+                    </Holder>
+                </Container>
             </header>
         )
     }

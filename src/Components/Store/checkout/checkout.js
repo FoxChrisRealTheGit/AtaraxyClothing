@@ -5,12 +5,8 @@ import pubKey from './stripeKey';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 import {
-    Container1,
-    Holder1,
-    Holder4,
-    Holder5,
-    Holder7,
-    Holder8,
+    Container,
+    Holder,
     H42,
     FlatButton1,
 } from 'react-stylux';
@@ -57,18 +53,18 @@ export default class Checkout extends Component {
         }).then((res) => {
             let tempcart = res.data.cart.map((x, i) => {
                 return (<section key={i}>
-                    <Holder4 >
+                    <Holder>
                         {x.name}
                         {x.color}
                         {x.size}
 
                         {x.quantity}
 
-                        <Holder1>
+                        <Holder>
                             {'$' + x.price}
                             <button style={btnStyle} onClick={() => this.removeItem(i)}>X</button>
-                        </Holder1>
-                    </Holder4>
+                        </Holder>
+                    </Holder>
                 </section>
                 )
             })
@@ -86,18 +82,18 @@ export default class Checkout extends Component {
             console.log(res)
             let tempcart = res.data.cart.map((x, i) => {
                 return (<section key={i}>
-                    <Holder4 >
+                    <Holder>
                         {x.name}
                         {x.color}
                         {x.size}
 
                         {x.quantity}
 
-                        <Holder1>
+                        <Holder>
                             {x.price}
                             <button style={btnStyle} onClick={() => this.removeItem(i)}>X</button>
-                        </Holder1>
-                    </Holder4>
+                        </Holder>
+                    </Holder>
                 </section>
                 )
             })
@@ -213,8 +209,9 @@ export default class Checkout extends Component {
         return (
             <div>
                 <Header />
-                <Container1>
-                    <Holder8>
+                <Container>
+                    <Holder
+                        direction="column">
                         <H42>
                             Checkout
                         </H42>
@@ -222,49 +219,55 @@ export default class Checkout extends Component {
                             {this.state.cart}
                         </div>
                         <div style={Shipping}>
-                            <Holder8>
+                            <Holder
+                                direction="column">
                                 <H42>
                                     Shipping Information
                                 </H42>
-                                <Holder1
+                                <Holder
                                     direction='column'>
                                     <span>
                                         First Name:
-                                    <input type='text' onChange={(e) => this.handleChange('fname', e)} defaultValue={this.state.fName}  />
+                                    <input type='text' onChange={(e) => this.handleChange('fname', e)} defaultValue={this.state.fName} />
                                     </span>
                                     <span>
                                         Last Name:
                                     <input type='text' onChange={(e) => this.handleChange('lname', e)} defaultValue={this.state.fName} />
                                     </span>
-                                </Holder1>
+                                </Holder>
                                 <span>
                                     Street Address:
-                                    <input type='text' onChange={(e) => this.handleChange('saddress', e)} defaultValue={this.state.sAddress}  />
+                                    <input type='text' onChange={(e) => this.handleChange('saddress', e)} defaultValue={this.state.sAddress} />
                                 </span>
-                                <Holder1
+                                <Holder
                                     direction='column'>
                                     <span>
                                         City:
-                                    <input type='text' onChange={(e) => this.handleChange('city', e)} defaultValue={this.state.City}  />
+                                    <input type='text' onChange={(e) => this.handleChange('city', e)} defaultValue={this.state.City} />
+                                    </span>
+                                    <span>
+                                        State:
+                                    <input type='text' onChange={(e) => this.handleChange('state', e)} defaultValue={this.state.State} />
                                     </span>
                                     <span>
                                         Zip:
                                     <input type='text' onChange={(e) => this.handleChange('zip', e)} defaultValue={this.state.Zip} />
                                     </span>
-                                </Holder1>
+                                </Holder>
                                 <FlatButton1
                                     onClick={this.updateTotal}>
                                     Calculate
                                 </FlatButton1>
-                            </Holder8>
+                            </Holder>
                         </div>
                         <div style={Final}>
-                            <Holder1
+                            <Holder
                                 alignBlock2="flex-start"
                                 margin="20px"
                                 width='60%'
                                 border="2px solid black">
-                                <Holder7
+                                <Holder
+                                    direction="column"
                                     alignBlock1='flex-end'
                                     alignBlock2='flex-end'
                                     alignBlock3='flex-end'
@@ -272,8 +275,9 @@ export default class Checkout extends Component {
                                     {'Tax: $' + this.state.tax}
                                     {'Shipping: $' + this.state.shipping}
                                     {'Total: $' + this.state.total}
-                                </Holder7>
-                                <Holder5
+                                </Holder>
+                                <Holder
+                                    direction="column"
                                     alignBlock1="flex-start"
                                     alignBlock2="flex-start"
                                 >
@@ -292,18 +296,19 @@ export default class Checkout extends Component {
                                         onClick={this.cancelStuff}>
                                         Cancel
                                     </FlatButton1>
-                                </Holder5>
-                            </Holder1>
+                                </Holder>
+                            </Holder>
                         </div>
-                        <Holder5
+                        <Holder
+                            direction="column"
                             border="2px solid black">
                             <FlatButton1
                                 onClick={this.addShipping}>
                                 Add Shipping...
                             </FlatButton1>
-                        </Holder5>
-                    </Holder8>
-                </Container1 >
+                        </Holder>
+                    </Holder>
+                </Container>
                 <Footer />
             </div >
         )

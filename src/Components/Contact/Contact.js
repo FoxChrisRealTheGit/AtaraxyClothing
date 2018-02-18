@@ -5,8 +5,8 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 import {
-    Container1,
-    Holder5,
+    Container,
+    Holder,
     H22,
 } from 'react-stylux';
 
@@ -21,13 +21,14 @@ class Contact extends Component {
         return (
             <section>
                 <Header />
-                <Container1>
-                    <Holder5>
+                <Container>
+                    <Holder
+                        direction="column">
                         <H22>
                             Contact
                         </H22>
-                    </Holder5>
-                </Container1>
+                    </Holder>
+                </Container>
                 <Footer />
             </section>
         )
